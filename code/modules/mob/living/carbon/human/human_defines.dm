@@ -42,7 +42,7 @@
 	var/home_system = ""
 	var/citizenship = ""
 	var/personal_faction = ""
-	var/religion = ""
+
 
 	//Equipment slots
 	var/obj/item/wear_suit = null
@@ -118,3 +118,4 @@
 	var/obj/screen/fov = null//The screen object because I can't figure out how the hell TG does their screen objects so I'm just using legacy code.
 	var/usefov = 1
 	var/decaylevel = 0 //For rotting bodies
+	var/branded = null

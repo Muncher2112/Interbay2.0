@@ -11,7 +11,8 @@
 	var/spawn_positions = 0               // How many players can spawn in as this job
 	var/current_positions = 0             // How many players have this job
 	var/availablity_chance = 100          // Percentage chance job is available each round
-
+	var/faction = "None"	          	  // Players will be allowed to spawn in as jobs that are set to "Station"
+	var/has_email = 0					  // Do they have an email address? Considering emails aren't used anymore pretty much no one has them.
 	var/supervisors = null                // Supervisors, who this person answers to directly
 	var/selection_color = "#ffffff"       // Selection screen color
 	var/list/alt_titles                   // List of alternate titles, if any and any potential alt. outfits as assoc values.
@@ -36,6 +37,9 @@
 	var/latejoin_at_spawnpoints           //If this job should use roundstart spawnpoints for latejoin (offstation jobs etc)
 
 	var/hud_icon						  //icon used for Sec HUD overlay
+
+	var/social_class = SOCIAL_CLASS_MED	  //Job's social standing.
+	var/no_late_join = 0				  //Can this job join after the round has started?
 
 /datum/job/New()
 	..()

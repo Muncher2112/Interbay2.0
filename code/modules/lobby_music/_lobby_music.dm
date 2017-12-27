@@ -7,6 +7,7 @@
 	var/license
 	var/song
 	var/url // Remember to include http:// or https://
+	var/has_info = 1
 
 /lobby_music/proc/play_to(var/listener)
 	if(!song)

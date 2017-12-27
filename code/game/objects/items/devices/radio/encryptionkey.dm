@@ -125,3 +125,8 @@
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"
 	channels = list("Entertainment" = 1)
+
+/obj/item/device/encryptionkey/headset_inquisition
+	name = "inquisition radio key"
+	icon_state = "hos_cypherkey"
+	channels = list("Inquisition" = 1)

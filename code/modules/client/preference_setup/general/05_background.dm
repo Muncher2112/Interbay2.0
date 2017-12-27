@@ -9,7 +9,7 @@
 	var/home_system = "Unset"           //System of birth.
 	var/citizenship = "None"            //Current home system.
 	var/faction = "None"                //Antag faction/general associated faction.
-	var/religion = "None"               //Religious association.
+	var/religion = LEGAL_RELIGION              //Religious association.
 /*
 /datum/category_item/player_setup_item/general/background
 	name = "Religion"

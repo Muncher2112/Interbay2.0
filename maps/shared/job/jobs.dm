@@ -20,7 +20,7 @@
 						///datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
-						/datum/job/supreme_arbiter						
+						/datum/job/supreme_arbiter
 						///datum/job/rd,
 						///datum/job/scientist,
 						///datum/job/raider,
@@ -49,7 +49,7 @@
 						///datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
-						/datum/job/supreme_arbiter						
+						/datum/job/supreme_arbiter
 						///datum/job/rd,
 						///datum/job/scientist,
 						///datum/job/raider,
@@ -79,7 +79,7 @@
 						///datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
-						/datum/job/supreme_arbiter,						
+						/datum/job/supreme_arbiter,
 						/datum/job/rd,
 						/datum/job/scientist
 						///datum/job/raider,
@@ -579,3 +579,36 @@
 
 /obj/item/clothing/under/ert/raider
 	name = "raiders uniform"
+
+/obj/item/clothing/suit/storage/toggle/lawyer/bluejacket
+	name = "Blue Suit Jacket"
+	desc = "A snappy dress jacket."
+	icon_state = "suitjacket_blue_open"
+	item_state = "suitjacket_blue_open"
+	icon_open = "suitjacket_blue_open"
+	icon_closed = "suitjacket_blue"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/lawyer/purpjacket
+	name = "Purple Suit Jacket"
+	desc = "A snappy dress jacket."
+	icon_state = "suitjacket_purp"
+	item_state = "suitjacket_purp"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/toggle/internalaffairs
+	name = "Internal Affairs Jacket"
+	desc = "A smooth black jacket."
+	icon_state = "ia_jacket_open"
+	item_state = "ia_jacket"
+	icon_open = "ia_jacket_open"
+	icon_closed = "ia_jacket"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/toggle/internalaffairs/plain
+	name = "black suit jacket"
+	desc = "A smooth black suit jacket."
+

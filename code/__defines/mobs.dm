@@ -111,6 +111,11 @@
 #define COMPANY_SKEPTICAL		"Skeptical"
 #define COMPANY_OPPOSED			"Opposed"
 
+//RELIGIONS
+#define LEGAL_RELIGION 			"Deo Machina"
+#define ILLEGAL_RELIGION 		"Old Gods"
+#define NARSIE_RELIGION			"Narsie"
+
 #define COMPANY_ALIGNMENTS		list(COMPANY_LOYAL,COMPANY_SUPPORTATIVE,COMPANY_NEUTRAL,COMPANY_SKEPTICAL,COMPANY_OPPOSED)
 
 // Defines mob sizes, used by lockers and to determine what is considered a small sized mob, etc.
@@ -269,12 +274,19 @@
 #define SPECIES_BOGANI "Bogani"
 #define SPECIES_EGYNO "Egyno"
 
+#define SOCIAL_CLASS_MIN 1
+#define SOCIAL_CLASS_MED 2
+#define SOCIAL_CLASS_HIGH 3
+#define SOCIAL_CLASS_MAX 4
+
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
 #define SURGERY_RETRACTED 2
 #define SURGERY_ENCASED 3
 
 #define STAMINA_EXHAUST 200
+
+
 
 //Moods levels for humans
 #define MOOD_LEVEL_HAPPY4 20

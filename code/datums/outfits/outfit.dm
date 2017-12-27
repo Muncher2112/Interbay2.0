@@ -41,6 +41,10 @@ var/list/outfits_decls_by_type_
 	var/l_hand = null
 	var/list/backpack_contents = list() // In the list(path=count,otherpath=count) format
 
+
+	var/backpack = /obj/item/weapon/storage/backpack
+	var/satchel_one  = /obj/item/weapon/storage/backpack/satchel
+	var/messenger_bag = /obj/item/weapon/storage/backpack/messenger
 	var/id_type
 	var/id_desc
 	var/id_slot

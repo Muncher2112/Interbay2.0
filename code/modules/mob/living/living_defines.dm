@@ -31,6 +31,7 @@
 	var/mob_swap_flags = 0
 	var/mob_push_flags = 0
 	var/mob_always_swap = 0
+	var/doing_something = 0	//Like pulling teeth?
 
 	var/mob/living/cameraFollow = null
 	var/list/datum/action/actions = list()
@@ -53,3 +54,4 @@
 
 	var/obj/screen/cells = null
 	var/list/in_vision_cones = list()
+	var/religion = LEGAL_RELIGION

@@ -44,3 +44,12 @@
 	desc = "A pair of toeless work boots designed for use in industrial settings. Modified for species whose toes have claws."
 	icon_state = "workbootstoeless"
 	species_restricted = null
+
+
+
+/obj/item/clothing/shoes/child_shoes
+	name = "black children's shoes"
+	desc = "Shoes for the little ones."
+	icon_state = "child_black"
+	can_be_worn_by_child = TRUE
+	child_exclusive = TRUE

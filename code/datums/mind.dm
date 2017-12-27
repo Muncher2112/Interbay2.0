@@ -43,6 +43,8 @@
 	var/assigned_role
 	var/special_role
 
+	var/religion
+
 	var/role_alt_title
 
 	var/datum/job/assigned_job
