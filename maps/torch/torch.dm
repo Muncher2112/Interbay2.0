@@ -1,4 +1,4 @@
-#if !defined(using_map_DATUM)
+#if !defined(USING_MAP_DATUM)
 
 	#include "torch_announcements.dm"
 	#include "torch_areas.dm"
@@ -91,7 +91,7 @@
 	#include "../../code/modules/lobby_music/comet_haley.dm"
 	#include "../../code/modules/lobby_music/lysendraa.dm"
 
-	#define using_map_DATUM /datum/map/torch
+	#define USING_MAP_DATUM /datum/map/torch
 
 #elif !defined(MAP_OVERRIDE)
 
