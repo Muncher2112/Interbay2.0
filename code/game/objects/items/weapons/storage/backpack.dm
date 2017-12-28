@@ -299,6 +299,11 @@
 		slot_r_hand_str = "securitypack",
 		)
 
+/obj/item/weapon/storage/backpack/satchel_black
+	name = "black leather satchel"
+	desc = "It's a very fancy satchel made with fine black leather."
+	icon_state = "satchel_black"
+
 /obj/item/weapon/storage/backpack/satchel_hyd
 	name = "hydroponics satchel"
 	desc = "A green satchel for plant related work."

@@ -206,6 +206,34 @@
 			/obj/item/device/encryptionkey/headset_med
 		))
 
+//INQUISITION LOCKER
+/obj/structure/closet/secure_closet/arbiter
+	name = "arbiter's locker"
+	req_access = list(access_chapel_office)
+	icon_state = "chaplainsecure1"
+	icon_closed = "chaplainsecure"
+	icon_locked = "chaplainsecure1"
+	icon_opened = "chaplainsecureopen"
+	icon_broken = "chaplainsecurebroken"
+	icon_off = "chaplainsecureoff"
+
+/obj/structure/closet/secure_closet/arbiter/WillContain()
+	return list(
+		/obj/item/weapon/storage/backpack/satchel_black,
+		/obj/item/clothing/suit/storage/vest/arbiter,
+		/obj/item/clothing/under/rank/arbiter,
+		/obj/item/clothing/head/helmet/arbiter,
+		/obj/item/weapon/reagent_containers/spray/pepper,
+		/obj/item/weapon/grenade/chem_grenade/teargas,
+		/obj/item/weapon/melee/baton/loaded,
+		/obj/item/taperoll/police,
+		/obj/item/weapon/reagent_containers/syringe/revelator,
+		/obj/item/weapon/reagent_containers/syringe/revelator,
+		/obj/item/device/arbiter_scanner,
+		/obj/item/weapon/handcuffs,
+		/obj/item/weapon/handcuffs,
+	)
+
 /obj/structure/closet/secure_closet/detective
 	name = "detective's cabinet"
 	req_access = list(access_forensics_lockers)

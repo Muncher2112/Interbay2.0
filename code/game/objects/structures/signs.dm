@@ -404,3 +404,48 @@
 		to_chat(user,"This one belongs to Dr.[claimant], MD.")
 	else
 		to_chat(user,"The name is left blank for some reason.")
+
+/obj/structure/sign/deck1
+	desc = "A silver sign which reads 'DECK I'."
+	name = "DECK I"
+	icon_state = "deck1"
+
+/obj/structure/sign/deck2
+	desc = "A silver sign which reads 'DECK II'."
+	name = "DECK II"
+	icon_state = "deck2"
+
+/obj/structure/sign/deck3
+	desc = "A silver sign which reads 'DECK III'."
+	name = "DECK III"
+	icon_state = "deck3"
+
+/obj/structure/sign/deck4
+	desc = "A silver sign which reads 'DECK IV'."
+	name = "DECK IV"
+	icon_state = "deck4"
+
+/obj/structure/sign/deck5
+	desc = "A silver sign which reads 'DECK V'."
+	name = "DECK V"
+	icon_state = "deck5"
+
+/obj/structure/sign/nanotrasen
+	name = "\improper NanoTrasen"
+	desc = "An old metal sign which reads 'NanoTrasen'."
+	icon_state = "NT"
+
+/obj/structure/sign/church
+	name = "\improper Church"
+	desc = "Heretics beware."
+	icon_state = "church"
+
+/obj/structure/sign/kitchen
+	name = "\improper Kitchen"
+	desc = "Food be here."
+	icon_state = "kitchen"
+
+/obj/structure/sign/magistrate
+	name = "\improper Magistrate"
+	desc = "How regal."
+	icon_state = "magistrate"

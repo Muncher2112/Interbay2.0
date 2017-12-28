@@ -112,7 +112,7 @@ var/list/flooring_types
 	name = "floor"
 	desc = "Scuffed from the passage of countless greyshirts."
 	icon = 'icons/turf/flooring/tiles.dmi'
-	icon_base = "tiled"
+	icon_base = "steel"
 	color = COLOR_GUNMETAL
 	has_damage_range = 4
 	damage_temperature = T0C+1400
