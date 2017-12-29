@@ -199,7 +199,7 @@
 "dQ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/airless,/area/tcommsat/computer)
 "dR" = (/obj/structure/catwalk,/obj/machinery/light/small{dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/airless,/area/tcommsat/computer)
 "dS" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/airless,/area/tcommsat/computer)
-"dT" = (/obj/structure/catwalk,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tiled/airless,/area/tcommsat/computer)
+"dT" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tiled/airless,/area/tcommsat/computer)
 "dU" = (/obj/machinery/atmospherics/binary/pump{dir = 2},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/plating,/area/engineering/engine_room)
 "dV" = (/obj/machinery/atmospherics/binary/pump{dir = 1},/turf/simulated/floor/plating,/area/engineering/engine_room)
 "dW" = (/obj/machinery/atmospherics/pipe/simple/visible/red{tag = "icon-intact (NORTHEAST)"; icon_state = "intact"; dir = 5},/obj/effect/floor_decal/industrial/warning{dir = 10},/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/industrial/warning{dir = 10},/turf/simulated/floor/tiled/dark,/area/engineering/engine_room)
@@ -490,9 +490,9 @@
 "jv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/bunker/polar,/area/maintenance/library)
 "jw" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/turf/space,/area/space)
 "jx" = (/obj/machinery/atmospherics/pipe/simple/visible/green,/turf/space,/area/space)
-"jy" = (/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/tiled,/area/chapel)
-"jz" = (/obj/structure/bed/chair{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 1},/obj/effect/landmark/start{name = "Supreme Arbiter"},/turf/simulated/floor/tiled,/area/chapel)
-"jA" = (/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/arbiter_computer{tag = "icon-arbiter_computer (WEST)"; icon_state = "arbiter_computer"; dir = 8},/turf/simulated/floor/tiled,/area/chapel)
+"jy" = (/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/chapel)
+"jz" = (/obj/structure/bed/chair{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 1},/obj/effect/landmark/start{name = "Supreme Arbiter"},/turf/simulated/floor/tiled/dark,/area/chapel)
+"jA" = (/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/arbiter_computer{tag = "icon-arbiter_computer (WEST)"; icon_state = "arbiter_computer"; dir = 8},/turf/simulated/floor/tiled/dark,/area/chapel)
 "jB" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled/freezer,/area/chapel)
 "jC" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/tiled/freezer,/area/chapel)
 "jD" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/freezer,/area/chapel)
@@ -639,7 +639,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafW
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafWfWfWfWaqiPiQiRiSiTiRiUfWiVhSiWiXiYiZhShShSjajbjbjcjdiqiqiqePjeeDjfjfaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaqaqaqaqaqhLjgaqhLjgaqfWfWhSjhjijjjkjljmjnjojpjqjrjsjbjtiqjujveDaqaqaqaqaqaqaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaqjwjxaajwjxaqaqaqhSjyjzjAhShShShSjBjCjDjbjEjFjGiqjujHeDaqaaaaaqaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfWjIjJfWjIjJfWaqaahShShShShSaaaqhShSjKjDjLiqiqiqiqePjMeDeDeDeDeDeDeDaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfWjIjJfWjIjJfWaqaahShShShShSaqaqhShSjKjDjLiqiqiqiqePjMeDeDeDeDeDeDeDaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfWjNjOfWjPjQfWaqaaaaaaaaaaaaaqaqaqhSiqjRiqiqjSjSjSjShkePjTjUjVjWjXeDaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfWjYjZfWkakbfWaqaaaaaaaaaaaaaqhShShSkckdkeiqhShThTeDhkePkfkgkhkikjkkaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfWfWfWfWfWfWfWaqaaaaaaaaaaaaaqhSklkekekdkekmhSeDeDeDhVknkokpkqkrksktaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
