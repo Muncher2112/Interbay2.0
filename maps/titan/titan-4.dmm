@@ -1,0 +1,765 @@
+"aa" = (/turf/unsimulated/mineral,/area/mine/unexplored)
+"ab" = (/obj/structure/ladder,/turf/simulated/floor/plating,/area/space)
+"ac" = (/turf/simulated/floor/plating,/area/space)
+"ad" = (/turf/simulated/wall/r_wall,/area/crew_quarters/captain)
+"ae" = (/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"af" = (/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"ag" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/maintenance_hatch{req_access = list(20)},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"ah" = (/obj/item/stack/material/steel/fifty,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"ai" = (/obj/item/stack/material/glass/fifty,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aj" = (/obj/item/stack/material/wood/fifty,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"ak" = (/obj/item/stack/tile/carpet/fifty,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"al" = (/turf/simulated/wall,/area/crew_quarters/captain)
+"am" = (/obj/structure/mirror{pixel_x = 0; pixel_y = 32},/obj/structure/sink{pixel_y = 20},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"an" = (/obj/structure/toilet{dir = 8},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"ao" = (/obj/structure/bed/chair/comfy/brown,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"ap" = (/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"aq" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"ar" = (/obj/item/stack/material/steel/fifty,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"as" = (/obj/machinery/shower{dir = 4; pixel_x = -5; pixel_y = -5},/obj/machinery/door/window/eastright{base_state = "left"; dir = 4; icon_state = "left"; name = "Shower"},/obj/item/weapon/soap/deluxe,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"at" = (/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"au" = (/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"av" = (/obj/machinery/door/airlock{name = "Toilet"},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"aw" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/maintenance_hatch{name = "Construction Site"; req_access = list(20)},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"ax" = (/obj/machinery/door/airlock{name = "Private Restroom"},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/captain)
+"ay" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"az" = (/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"aA" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"aB" = (/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aC" = (/obj/structure/reagent_dispensers/water_cooler,/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aD" = (/obj/machinery/disposal,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aE" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aF" = (/obj/structure/table/woodentable,/obj/item/device/flashlight/lamp/green,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aG" = (/obj/structure/ladder,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"aH" = (/turf/simulated/open,/area/crew_quarters/captain)
+"aI" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/open,/area/crew_quarters/captain)
+"aJ" = (/obj/structure/bookcase,/obj/item/weapon/book/rpbook/anatomy,/obj/item/weapon/book/rpbook/surgery,/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aK" = (/obj/structure/bookcase,/obj/item/weapon/book/rpbook/cooking_fancy,/obj/item/weapon/book/rpbook/cooking_basic,/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aL" = (/obj/structure/bookcase,/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aM" = (/obj/machinery/door/airlock/command{name = "Captain's Quarters"; req_access = list(20)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"aN" = (/obj/structure/bed/chair/wood{icon_state = "wooden_chair_preview"; dir = 1},/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aO" = (/obj/structure/table/woodentable,/obj/item/device/camera,/obj/item/weapon/storage/photo_album{pixel_y = -10},/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aP" = (/turf/simulated/wall,/area/engineering/hangar)
+"aQ" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"aR" = (/obj/structure/table/woodentable,/obj/item/weapon/book/rpbook/kids_eval,/turf/simulated/floor/carpet,/area/crew_quarters/captain)
+"aS" = (/obj/structure/table/woodentable,/obj/item/weapon/melee/whip/chainofcommand,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aT" = (/turf/simulated/floor/tiled,/area/engineering/hangar)
+"aU" = (/obj/structure/stairs/south,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aV" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aW" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"aX" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/glass_command{name = "Storage"; req_access = list(20)},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"aY" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/captain,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"aZ" = (/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"ba" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/donkpockets,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"bb" = (/obj/structure/bed/chair/comfy/brown{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bc" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/donut,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bd" = (/obj/structure/bed/chair/comfy/brown{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"be" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/spline/plain{dir = 4},/obj/item/ammo_magazine/box/c45,/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bf" = (/obj/structure/closet,/obj/item/clothing/suit/captunic,/obj/item/clothing/suit/captunic/capjacket,/obj/item/weapon/storage/backpack/satchel_cap,/obj/item/clothing/head/caphat/formal,/obj/item/clothing/under/captainformal,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bg" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/matches,/obj/item/clothing/mask/smokable/cigarette/cigar,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"bh" = (/obj/structure/table/woodentable,/obj/item/weapon/pinpointer,/obj/item/weapon/disk/nuclear,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"bi" = (/obj/structure/table/woodentable,/obj/machinery/microwave,/turf/simulated/floor/wood,/area/crew_quarters/captain)
+"bj" = (/obj/item/weapon/paper_bin{pixel_x = -3; pixel_y = 7},/obj/item/weapon/pen,/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bk" = (/obj/structure/table/rack,/obj/effect/floor_decal/spline/plain{dir = 4},/obj/item/clothing/suit/armor/vest/nt,/obj/item/clothing/head/helmet,/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bl" = (/obj/structure/table/rack,/obj/item/weapon/melee/telebaton,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bm" = (/obj/structure/stairs/south,/turf/simulated/floor/tiled,/area/engineering/hangar)
+"bn" = (/turf/simulated/wall,/area/crew_quarters)
+"bo" = (/turf/simulated/wall/r_wall,/area/crew_quarters)
+"bp" = (/obj/machinery/door/airlock/multi_tile/glass{autoclose = 1; dir = 4; name = "Bridge"; req_access = list(19)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"bq" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"br" = (/obj/structure/table/rack,/obj/item/ammo_magazine/a50,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bs" = (/obj/structure/table/rack,/obj/item/clothing/gloves/captain,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bt" = (/turf/simulated/floor/tiled,/area/crew_quarters)
+"bu" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (WEST)"; icon_state = "plating"; dir = 8},/turf/simulated/floor/wood,/area/crew_quarters)
+"bv" = (/obj/machinery/door/airlock{id_tag = "Dormitory 2"; name = "Dorm"},/turf/simulated/floor/wood,/area/crew_quarters)
+"bw" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters)
+"bx" = (/turf/simulated/floor/carpet,/area/crew_quarters)
+"by" = (/obj/structure/bed/chair/wood,/turf/simulated/floor/carpet,/area/crew_quarters)
+"bz" = (/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bA" = (/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bB" = (/obj/machinery/disposal,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bC" = (/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bD" = (/obj/structure/table/marble,/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bE" = (/obj/machinery/cooker/fryer,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bF" = (/obj/machinery/cooker/candy,/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bG" = (/turf/simulated/wall,/area/crew_quarters/kitchen)
+"bH" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/magnum_pistol,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bI" = (/obj/structure/table/rack,/obj/effect/floor_decal/spline/plain{dir = 8},/obj/item/weapon/gun/projectile/sec/MK{magazine_type = /obj/item/ammo_magazine/c45m},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bJ" = (/obj/structure/closet{icon_closed = "cabinet_closed"; icon_opened = "cabinet_open"; icon_state = "cabinet_closed"},/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters)
+"bK" = (/obj/structure/bed/padded,/turf/simulated/floor/carpet,/area/crew_quarters)
+"bL" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet,/area/crew_quarters)
+"bM" = (/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bN" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bO" = (/obj/structure/bed/chair/wood,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bP" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bQ" = (/obj/effect/floor_decal/spline/plain,/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bR" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/freezer{name = "Kitchen cold room"; req_access = list(28)},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bS" = (/obj/machinery/door/airlock/command{req_access = list(19)},/turf/simulated/floor/tiled,/area/crew_quarters/captain)
+"bT" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"bU" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bV" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/captain)
+"bW" = (/obj/structure/bed/chair{dir = 8},/turf/simulated/floor/tiled/freezer,/area/crew_quarters/kitchen)
+"bX" = (/turf/simulated/floor/asteroid,/area/engineering/hangar)
+"bY" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"bZ" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"ca" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"cb" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"cc" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/captain)
+"cd" = (/turf/simulated/wall/r_wall,/area/crew_quarters/kitchen)
+"ce" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/freezer{name = "Kitchen cold room"; req_access = list(28)},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cf" = (/turf/unsimulated/mineral,/area/mine/explored)
+"cg" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"ch" = (/turf/simulated/floor/tiled/dark,/area/crew_quarters/kitchen)
+"ci" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cj" = (/obj/structure/bed/chair,/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"ck" = (/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cl" = (/obj/machinery/vending/dinnerware,/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cm" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/tiled/bunker,/area/engineering/hangar)
+"cn" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/kitchen)
+"co" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/kitchen)
+"cp" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cq" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cr" = (/obj/structure/bed/chair{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/kitchen)
+"cs" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/crew_quarters/kitchen)
+"ct" = (/obj/structure/table/marble,/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cu" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cv" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cw" = (/obj/structure/railing,/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cx" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cy" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cz" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/tiled,/area/crew_quarters/kitchen)
+"cA" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/obj/machinery/atm{pixel_x = 28},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cB" = (/turf/simulated/open,/area/crew_quarters/kitchen)
+"cC" = (/turf/simulated/floor/tiled/bunker,/area/engineering/hangar)
+"cD" = (/turf/simulated/wall/r_wall,/area/bridge)
+"cE" = (/turf/simulated/wall,/area/space)
+"cF" = (/obj/effect/floor_decal/newcorner/plating/quarter,/turf/simulated/floor/wood,/area/crew_quarters)
+"cG" = (/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/wood,/area/crew_quarters)
+"cH" = (/turf/simulated/floor/plating,/area/crew_quarters)
+"cI" = (/obj/structure/stairs/east,/turf/simulated/floor/plating,/area/crew_quarters)
+"cJ" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters)
+"cK" = (/obj/effect/floor_decal/turf/bloodbar,/obj/effect/floor_decal/spline/plain{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cL" = (/obj/effect/floor_decal/turf/bloodbar,/obj/effect/floor_decal/spline/plain{dir = 8},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cM" = (/turf/simulated/floor/wood,/area/bridge)
+"cN" = (/turf/simulated/floor/tiled,/area/bridge)
+"cO" = (/obj/structure/stairs/east,/turf/simulated/floor/tiled,/area/bridge)
+"cP" = (/turf/simulated/open,/area/space)
+"cQ" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters)
+"cR" = (/obj/structure/table/standard,/turf/simulated/floor/tiled,/area/crew_quarters)
+"cS" = (/turf/simulated/wall,/area/crew_quarters/bar)
+"cT" = (/turf/simulated/wall/r_wall,/area/crew_quarters/bar)
+"cU" = (/obj/effect/floor_decal/spline/plain{dir = 4},/obj/machinery/disposal,/turf/simulated/floor/wood,/area/crew_quarters/kitchen)
+"cV" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/structure/flora/pottedplant/stoutbush,/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cW" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/flora/pottedplant/stoutbush,/turf/simulated/floor/plating,/area/crew_quarters/kitchen)
+"cX" = (/obj/machinery/door/airlock/multi_tile/glass{autoclose = 1; dir = 2; name = "Bridge"; req_access = list(19)},/turf/simulated/floor/wood,/area/bridge)
+"cY" = (/obj/machinery/door/airlock{name = "Shower"},/turf/simulated/floor/tiled/freezer,/area/crew_quarters)
+"cZ" = (/turf/simulated/open,/area/crew_quarters/bar)
+"da" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/door/airlock/glass{name = "Dining Room"},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"db" = (/obj/machinery/shower{dir = 4; icon_state = "shower"; pixel_x = 5; pixel_y = -5},/turf/simulated/floor/tiled/freezer,/area/crew_quarters)
+"dc" = (/turf/simulated/floor/tiled/freezer,/area/crew_quarters)
+"dd" = (/obj/machinery/shower{pixel_y = 10},/turf/simulated/floor/tiled/freezer,/area/crew_quarters)
+"de" = (/obj/machinery/shower{dir = 8; pixel_x = -5; pixel_y = -5},/turf/simulated/floor/tiled/freezer,/area/crew_quarters)
+"df" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/machinery/reagentgrinder,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dg" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/drinks/shaker,/obj/item/weapon/reagent_containers/glass/rag,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dh" = (/obj/structure/table/reinforced,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"di" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/box/beanbags,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dj" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/projectile/shotgun/doublebarrel,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dk" = (/obj/structure/flora/pottedplant/minitree,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/lino,/area/crew_quarters/bar)
+"dl" = (/obj/effect/floor_decal/turf/bar3,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dm" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dn" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/cups,/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"do" = (/obj/structure/reagent_dispensers/water_cooler,/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dp" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dq" = (/obj/machinery/vending/boozeomat,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dr" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ds" = (/obj/item/weapon/stool/padded,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dt" = (/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"du" = (/obj/effect/floor_decal/turf/bloodbar,/obj/structure/table/rack,/obj/effect/floor_decal/industrial/plaza/box,/obj/effect/floor_decal/industrial/plaza/box{tag = "icon-plazabox (EAST)"; icon_state = "plazabox"; dir = 4},/obj/effect/floor_decal/industrial/plaza/box{tag = "icon-plazabox (WEST)"; icon_state = "plazabox"; dir = 8},/obj/effect/floor_decal/industrial/plaza/box{tag = "icon-plazabox (NORTH)"; icon_state = "plazabox"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dv" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dw" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"dx" = (/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dy" = (/turf/simulated/wall,/area/chapel/main)
+"dz" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters)
+"dA" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters)
+"dB" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters)
+"dC" = (/obj/effect/floor_decal/turf/bar,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"dD" = (/obj/structure/railing,/obj/structure/bed/chair,/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dE" = (/turf/simulated/floor/plating,/area/chapel/main)
+"dF" = (/turf/simulated/floor/tiled,/area/chapel/main)
+"dG" = (/obj/structure/lattice,/turf/simulated/open,/area/space)
+"dH" = (/obj/effect/floor_decal/turf/bar,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"dI" = (/obj/effect/floor_decal/turf/bar,/obj/machinery/button/remote/blast_door{id = "bar"; name = "Bar Shutters"; pixel_y = -25; req_access = list(25)},/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"dJ" = (/obj/effect/floor_decal/turf/bar,/obj/item/weapon/stool/padded,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"dK" = (/obj/machinery/door/airlock/glass{name = "Bar"; req_access = list(25)},/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"dL" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dM" = (/obj/structure/lattice,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/open,/area/hallway/primary/central_one)
+"dN" = (/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/open,/area/hallway/primary/central_one)
+"dO" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/open,/area/hallway/primary/central_one)
+"dP" = (/turf/simulated/floor/wood,/area/chapel/main)
+"dQ" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/cafe2,/obj/effect/floor_decal/spline/plain,/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/door/blast/shutters{dir = 2; id = "bar"; name = "Bar Shutters"},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dR" = (/obj/structure/table/standard,/obj/effect/floor_decal/turf/cafe2,/obj/effect/floor_decal/spline/plain,/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/door/blast/shutters{dir = 2; id = "bar"; name = "Bar Shutters"},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"dS" = (/obj/machinery/light/small{dir = 8},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/wood,/area/crew_quarters/bar)
+"dT" = (/obj/structure/lattice,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/open,/area/hallway/primary/central_one)
+"dU" = (/turf/simulated/open,/area/hallway/primary/central_one)
+"dV" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/open,/area/hallway/primary/central_one)
+"dW" = (/turf/simulated/floor/tiled/ramp/bottom,/area/chapel/main)
+"dX" = (/turf/simulated/open,/area/chapel/main)
+"dY" = (/turf/simulated/wall,/area/library)
+"dZ" = (/turf/simulated/wall/r_wall,/area/space)
+"ea" = (/obj/structure/stairs/north,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"eb" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/obj/machinery/vending/snack,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ec" = (/obj/machinery/vending/coffee,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ed" = (/obj/machinery/disposal,/obj/structure/window/reinforced/tinted{tag = "icon-twindow (EAST)"; icon_state = "twindow"; dir = 4},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ee" = (/obj/item/weapon/stool/bar/padded,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ef" = (/obj/machinery/atm{pixel_y = 28},/obj/structure/window/reinforced/tinted{tag = "icon-twindow (WEST)"; icon_state = "twindow"; dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eg" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eh" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ei" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/turf/plating,/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ej" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/open,/area/hallway/primary/central_one)
+"ek" = (/turf/simulated/floor/tiled,/area/library)
+"el" = (/turf/simulated/floor/tiled,/area/space)
+"em" = (/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"en" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eo" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ep" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eq" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"er" = (/obj/structure/bed/chair{dir = 8},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"es" = (/turf/simulated/wall,/area/hallway/primary/central_one)
+"et" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/space)
+"eu" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ev" = (/obj/effect/floor_decal/turf/bar3{tag = "icon-bar3 (EAST)"; icon_state = "bar3"; dir = 4},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ew" = (/obj/structure/window/reinforced,/obj/effect/floor_decal/newcorner/plazaf,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ex" = (/obj/structure/window/reinforced,/obj/effect/floor_decal/turf/bar3{tag = "icon-bar3 (EAST)"; icon_state = "bar3"; dir = 4},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ey" = (/obj/structure/window/reinforced,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ez" = (/obj/effect/floor_decal/turf/bar3{tag = "icon-bar3 (NORTH)"; icon_state = "bar3"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"eA" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"eB" = (/obj/structure/stairs/north,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"eC" = (/obj/structure/railing,/obj/structure/ladder,/turf/simulated/floor/plating,/area/chapel/main)
+"eD" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/structure/grille,/turf/simulated/floor/plating,/area/space)
+"eE" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eF" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eG" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eH" = (/obj/effect/floor_decal/spline/plain{dir = 4},/obj/structure/window/reinforced{dir = 4},/obj/structure/railing,/obj/effect/floor_decal/newcorner/plazaf,/obj/effect/floor_decal/newcorner/plazaf{tag = "icon-plazaf (NORTH)"; icon_state = "plazaf"; dir = 1},/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/industrial/plaza/box{tag = "icon-plazabox (WEST)"; icon_state = "plazabox"; dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eI" = (/obj/structure/device/piano{tag = "icon-piano"; icon_state = "piano"},/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"eJ" = (/obj/structure/bed/chair{dir = 8},/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"eK" = (/obj/machinery/media/jukebox,/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"eL" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/railing,/obj/effect/floor_decal/newcorner/plazaf,/obj/effect/floor_decal/newcorner/plazaf{tag = "icon-plazaf (NORTH)"; icon_state = "plazaf"; dir = 1},/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/industrial/plaza/box{tag = "icon-plazabox (EAST)"; icon_state = "plazabox"; dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eM" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eN" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eO" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eP" = (/obj/structure/bed/chair{dir = 8},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"eQ" = (/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"eR" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/open,/area/hallway/primary/central_one)
+"eS" = (/turf/simulated/floor/tiled/ramp/bottom{tag = "icon-rampbot (NORTH)"; icon_state = "rampbot"; dir = 1},/area/chapel/main)
+"eT" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/bunker,/area/hallway/primary/central_one)
+"eU" = (/turf/simulated/floor/tiled/bunker,/area/hallway/primary/central_one)
+"eV" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/bunker,/area/hallway/primary/central_one)
+"eW" = (/obj/structure/table/reinforced,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eX" = (/obj/structure/bed/chair{dir = 8},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eY" = (/obj/machinery/light/small,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"eZ" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/ramp/bottom{tag = "icon-rampbot (WEST)"; icon_state = "rampbot"; dir = 8},/area/crew_quarters/bar)
+"fa" = (/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/tiled,/area/crew_quarters/bar)
+"fb" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/ramp/bottom{tag = "icon-rampbot (EAST)"; icon_state = "rampbot"; dir = 4},/area/crew_quarters/bar)
+"fc" = (/obj/machinery/light/small,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"fd" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"fe" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"ff" = (/obj/structure/bed/chair{dir = 1},/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"fg" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/crew_quarters/bar)
+"fh" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fi" = (/obj/effect/floor_decal/newcorner/plating/corner,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fj" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fk" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (NORTH)"; icon_state = "plating-corner"; dir = 1},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fl" = (/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fm" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (WEST)"; icon_state = "plating"; dir = 8},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"fn" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (EAST)"; icon_state = "plating"; dir = 4},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"fo" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fp" = (/obj/machinery/door/airlock/security{req_access = list(63)},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"fq" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/space)
+"fr" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/space)
+"fs" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"ft" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"fu" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"fv" = (/obj/machinery/door/airlock/multi_tile/glass{name = "Bar"},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/turf/simulated/floor/plating,/area/crew_quarters/bar)
+"fw" = (/obj/structure/sign/double/barsign,/turf/simulated/wall,/area/crew_quarters/bar)
+"fx" = (/obj/effect/floor_decal/spline/plain{dir = 8},/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"fy" = (/obj/effect/floor_decal/spline/plain{dir = 4},/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"fz" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fA" = (/turf/simulated/wall/r_wall,/area/hallway/primary/central_one)
+"fB" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fC" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"fD" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"fE" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"fF" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"fG" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/bed/chair,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fH" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fI" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fJ" = (/obj/machinery/vending/cola,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fK" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (EAST)"; icon_state = "plating-corner"; dir = 4},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fL" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (NORTH)"; icon_state = "plating"; dir = 1},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fM" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (WEST)"; icon_state = "plating-corner"; dir = 8},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fN" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/railing,/obj/structure/table/reinforced,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fO" = (/obj/structure/railing,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fP" = (/obj/structure/railing,/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fQ" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/railing,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"fR" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/chapel/main)
+"fS" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/chapel/main)
+"fT" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/chapel/main)
+"fU" = (/turf/simulated/floor/plating,/area/library)
+"fV" = (/obj/structure/stairs/south,/turf/simulated/floor/tiled,/area/space)
+"fW" = (/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"fX" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (NORTH)"; icon_state = "plating-corner"; dir = 1},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"fY" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"fZ" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/structure/flora/pottedplant/stoutbush,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"ga" = (/turf/simulated/floor/tiled/ramp/bottom,/area/hallway/primary/central_one)
+"gb" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/flora/pottedplant/stoutbush,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"gc" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (WEST)"; icon_state = "shaft"; dir = 8},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"gd" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/plating,/area/hallway/primary/central_one)
+"ge" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/open,/area/hallway/primary/central_one)
+"gf" = (/obj/effect/floor_decal/spline/plain{dir = 1},/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"gg" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"gh" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/open,/area/hallway/primary/central_one)
+"gi" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/tiled,/area/chapel/main)
+"gj" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/flora/pottedplant/unusual,/turf/simulated/floor/plating,/area/chapel/main)
+"gk" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled,/area/chapel/main)
+"gl" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"gm" = (/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"gn" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"go" = (/obj/machinery/door/airlock{name = "Toilet"},/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"gp" = (/obj/effect/floor_decal/newcorner/plating/corner,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gq" = (/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"gr" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"gs" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"gt" = (/obj/machinery/door/airlock/glass{name = "Chapel"},/turf/simulated/floor/tiled/dark,/area/chapel/main)
+"gu" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/open,/area/hallway/primary/central_one)
+"gv" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/open,/area/hallway/primary/central_one)
+"gw" = (/obj/structure/railing,/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"gx" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"gy" = (/obj/structure/railing,/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/floor/tiled/bunker/cafe,/area/library)
+"gz" = (/obj/structure/table/rack,/turf/simulated/floor/tiled,/area/space)
+"gA" = (/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"gB" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 11; pixel_y = 0},/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"gC" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gD" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/open,/area/hallway/primary/central_one)
+"gE" = (/turf/simulated/floor/tiled/dark,/area/chapel/main)
+"gF" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/dark,/area/chapel/main)
+"gG" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/open,/area/hallway/primary/central_one)
+"gH" = (/obj/structure/flora/pottedplant/stoutbush,/turf/simulated/floor/wood,/area/hallway/primary/central_one)
+"gI" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (EAST)"; icon_state = "plating-corner"; dir = 4},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gJ" = (/obj/effect/floor_decal/newcorner/plating/corner{tag = "icon-plating-corner (WEST)"; icon_state = "plating-corner"; dir = 8},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gK" = (/obj/effect/floor_decal/spline/plain,/obj/structure/lattice,/turf/simulated/open,/area/hallway/primary/central_one)
+"gL" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/structure/flora/pottedplant/minitree,/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (NORTH)"; icon_state = "plating"; dir = 1},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"gM" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/structure/flora/pottedplant/minitree,/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (NORTH)"; icon_state = "plating"; dir = 1},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/hallway/primary/central_one)
+"gN" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHEAST)"; icon_state = "spline_plain"; dir = 6},/turf/simulated/open,/area/hallway/primary/central_one)
+"gO" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/flora/pottedplant/unusual,/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/turf/simulated/floor/plating,/area/chapel/main)
+"gP" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/open,/area/hallway/primary/central_one)
+"gQ" = (/obj/machinery/door/airlock{name = "Toilet"},/turf/simulated/floor/tiled/freezer,/area/hallway/primary/central_one)
+"gR" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gS" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gT" = (/turf/simulated/floor/tiled/freezer,/area/hallway/primary/central_one)
+"gU" = (/obj/structure/toilet{tag = "icon-base (WEST)"; icon_state = "base"; dir = 8},/turf/simulated/floor/tiled/freezer,/area/hallway/primary/central_one)
+"gV" = (/obj/effect/floor_decal/newcorner/plating/quarter,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gW" = (/obj/effect/floor_decal/spline/plain{dir = 4},/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gX" = (/obj/effect/floor_decal/spline/plain{dir = 8},/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled,/area/hallway/primary/central_one)
+"gY" = (/turf/simulated/wall,/area/quartermaster/office)
+"gZ" = (/obj/machinery/door/airlock/glass_mining{name = "Machinist Office"; req_access = list(50)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"ha" = (/obj/structure/table/standard,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/quartermaster/office)
+"hb" = (/obj/machinery/door/firedoor/border_only,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/quartermaster/office)
+"hc" = (/obj/machinery/door/firedoor/border_only,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/quartermaster/office)
+"hd" = (/turf/simulated/wall,/area/medical/medbay)
+"he" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/turf/simulated/floor/plating,/area/medical/medbay)
+"hf" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/medical/medbay)
+"hg" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/medical/medbay)
+"hh" = (/turf/simulated/wall,/area/medical/chemistry)
+"hi" = (/obj/machinery/door/firedoor/border_only,/obj/structure/table/reinforced,/obj/machinery/door/window/westright{dir = 1; name = "Chemistry Desk"; req_access = list(33)},/turf/simulated/floor/tiled/white,/area/medical/chemistry)
+"hj" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/medical/chemistry)
+"hk" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/medical/chemistry)
+"hl" = (/turf/simulated/wall/r_wall,/area/medical/chemistry)
+"hm" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/glass_security{id_tag = "BrigFoyer"; name = "Security Wing"; req_access = list(63)},/turf/simulated/floor/tiled,/area/space)
+"hn" = (/turf/simulated/floor/tiled,/area/quartermaster/office)
+"ho" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/structure/bed/chair{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hp" = (/turf/simulated/open,/area/quartermaster/office)
+"hq" = (/obj/machinery/vending/snack,/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hr" = (/obj/structure/flora/pottedplant/large,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hs" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"ht" = (/obj/structure/bed/chair,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hu" = (/obj/machinery/disposal,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hv" = (/obj/structure/flora/pottedplant/orientaltree,/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/newcorner/green/solid,/turf/simulated/floor/tiled,/area/medical/medbay)
+"hw" = (/turf/simulated/open,/area/medical/medbay)
+"hx" = (/obj/structure/flora/pottedplant/orientaltree,/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/newcorner/green/solid,/turf/simulated/floor/tiled,/area/medical/medbay)
+"hy" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"hz" = (/obj/machinery/button/remote/airlock{desc = "A remote control switch for the medbay foyer."; id = "MedbayFoyerPort"; name = "Medbay Doors Control"; pixel_x = 0; pixel_y = 28},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"hA" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/medical/medbay)
+"hB" = (/obj/structure/table/standard,/obj/item/weapon/pen,/obj/item/weapon/pen/blue,/obj/item/weapon/pen/red,/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/obj/structure/railing,/turf/simulated/floor/tiled,/area/medical/chemistry)
+"hC" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"hD" = (/obj/structure/table/standard,/obj/item/weapon/paper_bin,/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"hE" = (/obj/structure/table/standard,/obj/item/weapon/folder/white,/obj/item/weapon/folder/white,/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"hF" = (/obj/structure/table/rack,/obj/item/weapon/shield/riot,/obj/item/clothing/head/helmet/riot,/obj/effect/floor_decal/industrial/outline/grey,/obj/item/clothing/suit/armor/riot/vest,/obj/item/weapon/melee/baton/loaded,/turf/simulated/floor/tiled/dark,/area/space)
+"hG" = (/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/tiled/dark,/area/space)
+"hH" = (/obj/structure/table/rack,/obj/item/weapon/storage/box/stunshells,/obj/item/weapon/storage/box/beanbags,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/tiled/dark,/area/space)
+"hI" = (/obj/structure/table/rack,/obj/effect/floor_decal/industrial/outline/grey,/obj/item/weapon/gun/projectile/shotgun/pump,/obj/item/weapon/gun/projectile/shotgun/pump,/turf/simulated/floor/tiled/dark,/area/space)
+"hJ" = (/obj/structure/table/rack,/obj/effect/floor_decal/industrial/outline/grey,/obj/item/weapon/storage/box/shotgunshells,/obj/item/weapon/storage/box/shotgunammo,/obj/structure/window/reinforced/full,/turf/simulated/floor/tiled/dark,/area/space)
+"hK" = (/obj/structure/flora/pottedplant/minitree,/turf/simulated/floor/tiled/dark,/area/space)
+"hL" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/space)
+"hM" = (/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"hN" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/space)
+"hO" = (/obj/machinery/porta_turret,/turf/simulated/floor/wood,/area/space)
+"hP" = (/obj/machinery/metal_press,/turf/simulated/floor/tiled/dark,/area/quartermaster/office)
+"hQ" = (/obj/machinery/metal_lathe,/turf/simulated/floor/tiled/dark,/area/quartermaster/office)
+"hR" = (/obj/machinery/metal_mill,/turf/simulated/floor/tiled/dark,/area/quartermaster/office)
+"hS" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hT" = (/obj/machinery/vending/coffee,/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hU" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{dir = 8},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/machinery/door/airlock/glass{name = "Cargo Bay"},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"hV" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/newcorner/green{tag = "icon-green (NORTH)"; icon_state = "green"; dir = 1},/turf/simulated/floor/tiled,/area/medical/medbay)
+"hW" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/newcorner/green{tag = "icon-green (NORTH)"; icon_state = "green"; dir = 1},/turf/simulated/floor/tiled,/area/medical/medbay)
+"hX" = (/obj/structure/bed/roller,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"hY" = (/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"hZ" = (/obj/machinery/door/airlock/multi_tile/glass{id_tag = "MedbayFoyerPort"; req_access = list(5)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/medical/medbay)
+"ia" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/medical/medbay)
+"ib" = (/turf/simulated/open,/area/medical/chemistry)
+"ic" = (/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"id" = (/obj/effect/floor_decal/newcorner/yellow/diagonal{tag = "icon-yellow-diagonal (NORTH)"; icon_state = "yellow-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"ie" = (/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/effect/floor_decal/industrial/warning/corner{dir = 4},/turf/simulated/floor/tiled/dark,/area/space)
+"if" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/tiled/dark,/area/space)
+"ig" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/dark,/area/space)
+"ih" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/space)
+"ii" = (/obj/machinery/vending/cigarette,/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"ij" = (/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"ik" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/atm{pixel_y = -30},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"il" = (/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"im" = (/obj/structure/railing{tag = "icon-railing0 (EAST)"; icon_state = "railing0"; dir = 4},/obj/effect/floor_decal/newcorner/blue,/turf/simulated/floor/tiled,/area/medical/medbay)
+"in" = (/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/obj/structure/table/standard,/obj/effect/floor_decal/newcorner/blue/solid,/turf/simulated/floor/tiled,/area/medical/medbay)
+"io" = (/obj/structure/railing{tag = "icon-railing0 (WEST)"; icon_state = "railing0"; dir = 8},/obj/effect/floor_decal/newcorner/blue,/turf/simulated/floor/tiled,/area/medical/medbay)
+"ip" = (/obj/machinery/disposal,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iq" = (/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"ir" = (/obj/structure/closet/wardrobe/chemistry_white,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"is" = (/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/effect/floor_decal/industrial/warning/corner,/turf/simulated/floor/tiled/dark,/area/space)
+"it" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/dark,/area/space)
+"iu" = (/obj/effect/floor_decal/industrial/warning/corner,/obj/effect/floor_decal/industrial/warning/corner{dir = 8},/turf/simulated/floor/tiled/dark,/area/space)
+"iv" = (/obj/structure/bed/chair/wood{tag = "icon-wooden_chair_preview (EAST)"; icon_state = "wooden_chair_preview"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/space)
+"iw" = (/obj/item/stack/material/steel/fifty,/obj/structure/table/rack,/turf/simulated/floor/tiled/dark,/area/quartermaster/office)
+"ix" = (/obj/machinery/door/firedoor/border_only,/obj/machinery/door/airlock/glass_mining{id_tag = "cargodoor"; name = "Cargo Office"; req_access = list(50)},/turf/simulated/floor/wood,/area/quartermaster/office)
+"iy" = (/obj/machinery/door/firedoor/border_only,/obj/machinery/door/window/westleft{dir = 1; name = "Cargo Desk"; req_access = list(50)},/obj/structure/noticeboard{dir = 2; pixel_x = -32; pixel_y = 0},/obj/structure/table/standard{name = "plastic table frame"},/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"iz" = (/obj/effect/floor_decal/newcorner/blue{tag = "icon-blue (NORTH)"; icon_state = "blue"; dir = 1},/turf/simulated/floor/tiled,/area/medical/medbay)
+"iA" = (/obj/structure/stairs/north,/turf/simulated/floor/plating,/area/medical/medbay)
+"iB" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/regular,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iC" = (/obj/effect/floor_decal/turf/aesculapius,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iD" = (/obj/machinery/smartfridge,/turf/simulated/wall,/area/medical/chemistry)
+"iE" = (/obj/machinery/disposal,/obj/effect/floor_decal/industrial/outline/yellow,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/medical/chemistry)
+"iF" = (/obj/structure/table/rack,/obj/effect/floor_decal/industrial/outline/grey,/obj/item/weapon/storage/box/flashbangs,/obj/item/weapon/storage/box/teargas,/turf/simulated/floor/tiled/dark,/area/space)
+"iG" = (/obj/item/weapon/airlock_brace,/obj/item/weapon/airlock_brace,/obj/item/weapon/airlock_brace,/obj/structure/table/rack,/obj/item/weapon/crowbar/brace_jack,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/tiled/dark,/area/space)
+"iH" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/tiled/dark,/area/space)
+"iI" = (/obj/structure/table/rack,/obj/machinery/door/window/brigdoor/southleft{dir = 8; name = "Weapons locker"; req_access = list(3)},/obj/effect/floor_decal/industrial/outline/grey,/obj/item/weapon/material/sword/sabre,/obj/item/weapon/material/sword/sabre,/obj/item/weapon/material/sword/sabre,/obj/item/weapon/material/sword/sabre,/turf/simulated/floor/tiled/dark,/area/space)
+"iJ" = (/obj/effect/floor_decal/newcorner/red/solid,/obj/machinery/porta_turret,/turf/simulated/floor/tiled,/area/space)
+"iK" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/spline/plain{dir = 8},/obj/machinery/recharger,/turf/simulated/floor/wood,/area/space)
+"iL" = (/obj/structure/closet/secure_closet/cargotech,/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"iM" = (/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/turf/simulated/floor/tiled/ramp/bottom{tag = "icon-rampbot (WEST)"; icon_state = "rampbot"; dir = 8},/area/quartermaster/office)
+"iN" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (EAST)"; icon_state = "shaft"; dir = 4},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/plating,/area/quartermaster/office)
+"iO" = (/turf/simulated/floor/wood,/area/quartermaster/office)
+"iP" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/wood,/area/quartermaster/office)
+"iQ" = (/obj/structure/bed/chair/office/dark{dir = 1},/turf/simulated/floor/wood,/area/quartermaster/office)
+"iR" = (/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"iS" = (/turf/simulated/floor/tiled,/area/medical/medbay)
+"iT" = (/turf/simulated/floor/plating,/area/medical/medbay)
+"iU" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iV" = (/obj/structure/table/standard,/obj/item/weapon/storage/toolbox/mechanical,/obj/item/weapon/crowbar,/obj/machinery/recharger/wallcharger{pixel_y = -25},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iW" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"iX" = (/obj/machinery/bodyscanner{dir = 8},/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"iY" = (/obj/machinery/body_scanconsole{density = 0; dir = 8},/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"iZ" = (/obj/machinery/door/airlock/security{name = "Riot Equipment Storage"; req_access = list(1)},/obj/machinery/door/blast/shutters{dir = 2; id = "Riot"; name = "Riot Shutters"},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"ja" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/blast/shutters{dir = 2; id = "Riot"; name = "Riot Shutters"},/turf/simulated/floor/plating,/area/space)
+"jb" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/machinery/door/blast/shutters{dir = 2; id = "Riot"; name = "Riot Shutters"},/turf/simulated/floor/plating,/area/space)
+"jc" = (/obj/machinery/disposal,/turf/simulated/floor/wood,/area/space)
+"jd" = (/obj/structure/lattice,/turf/simulated/open,/area/quartermaster/office)
+"je" = (/obj/structure/closet/secure_closet/cargotech,/obj/machinery/light/small,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jf" = (/turf/simulated/floor/tiled/ramp/bottom{tag = "icon-rampbot (WEST)"; icon_state = "rampbot"; dir = 8},/area/quartermaster/office)
+"jg" = (/obj/machinery/door/airlock/mining{name = "Cargo Backroom"; req_access = list(50)},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jh" = (/obj/machinery/sleeper{dir = 4},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"ji" = (/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (EAST)"; icon_state = "wgreen"; dir = 4},/turf/simulated/floor/tiled,/area/medical/medbay)
+"jj" = (/obj/machinery/door/firedoor/multi_tile,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/medical/medbay)
+"jk" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jl" = (/obj/structure/bed/chair,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jm" = (/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (WEST)"; icon_state = "wgreen"; dir = 8},/obj/effect/floor_decal/newcorner/red{tag = "icon-red (EAST)"; icon_state = "red"; dir = 4},/turf/simulated/floor/tiled,/area/medical/medbay)
+"jn" = (/obj/structure/bed/chair,/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/medical/medbay)
+"jo" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/medical/medbay)
+"jp" = (/obj/machinery/button/remote/blast_door{id = "Riot"; name = "Riot Equipment Shutter Control"; pixel_y = 28},/turf/simulated/floor/tiled,/area/space)
+"jq" = (/obj/effect/floor_decal/newcorner/red{tag = "icon-red (EAST)"; icon_state = "red"; dir = 4},/turf/simulated/floor/tiled,/area/space)
+"jr" = (/obj/machinery/door/airlock/security{name = "Equipment Storage"; req_access = list(1)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"js" = (/obj/machinery/turretid/lethal{enabled = 0; pixel_x = 28},/turf/simulated/floor/tiled,/area/space)
+"jt" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/quartermaster/office)
+"ju" = (/obj/item/weapon/tape_roll,/obj/structure/table/standard{name = "plastic table frame"},/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jv" = (/obj/structure/table/standard,/obj/machinery/cell_charger,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jw" = (/obj/item/weapon/folder/yellow,/obj/item/device/eftpos{eftpos_name = "Cargo Bay EFTPOS scanner"},/obj/structure/table/standard{name = "plastic table frame"},/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jx" = (/obj/machinery/autolathe,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jy" = (/turf/simulated/floor/tiled/ramp/bottom,/area/quartermaster/office)
+"jz" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/quartermaster/office)
+"jA" = (/obj/machinery/disposal,/turf/simulated/floor/wood,/area/quartermaster/office)
+"jB" = (/obj/machinery/photocopier,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jC" = (/obj/machinery/papershredder,/obj/effect/floor_decal/spline/plain{dir = 1},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jD" = (/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (WEST)"; icon_state = "wgreen"; dir = 8},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jE" = (/obj/machinery/recharger/wallcharger{pixel_y = 20},/obj/effect/floor_decal/turf/aesculapius,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jF" = (/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (EAST)"; icon_state = "wgreen"; dir = 4},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jG" = (/obj/machinery/door/airlock/glass_virology{id_tag = "MTB"; name = "Medbay-To-Brig"; req_access = list(5)},/obj/effect/floor_decal/newcorner/whitegreen/solid,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jH" = (/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (WEST)"; icon_state = "wgreen"; dir = 8},/obj/effect/floor_decal/newcorner/red{tag = "icon-red (EAST)"; icon_state = "red"; dir = 4},/turf/simulated/floor/tiled,/area/medical/medbay)
+"jI" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/medical/medbay)
+"jJ" = (/obj/machinery/door/airlock/glass_security{id_tag = "BrigFoyer"; name = "Brig-To-Medbay"; req_access = list(63)},/obj/machinery/door/blast/shutters{dir = 2; id = "tomedbay"; name = "Medbay Shutters"},/turf/simulated/floor/tiled,/area/space)
+"jK" = (/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/obj/machinery/button/remote/blast_door{id = "tomedbay"; name = "Medbay shutter access"; pixel_x = 0; pixel_y = -28; req_access = list(1)},/turf/simulated/floor/tiled,/area/space)
+"jL" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/tiled,/area/quartermaster/office)
+"jM" = (/obj/structure/flora/pottedplant/unusual,/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (SOUTHWEST)"; icon_state = "spline_plain"; dir = 10},/turf/simulated/floor/plating,/area/quartermaster/office)
+"jN" = (/obj/machinery/door/firedoor/border_only,/obj/machinery/door/airlock/glass_mining{id_tag = "cargodoor"; name = "Cargo Office"; req_access = list(50)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/quartermaster/office)
+"jO" = (/obj/structure/flora/pottedplant/large,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/dark,/area/medical/medbay)
+"jP" = (/obj/machinery/door/firedoor/multi_tile{tag = "icon-door_open (NORTH)"; icon_state = "door_open"; dir = 1},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/medical/medbay)
+"jQ" = (/obj/effect/floor_decal/newcorner/whitegreen{tag = "icon-wgreen (EAST)"; icon_state = "wgreen"; dir = 4},/obj/machinery/button/remote/airlock{id = "MTB"; name = "Medbay-to-Brig button"; pixel_x = 28; req_access = list(63)},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"jR" = (/obj/machinery/door/airlock/security{name = "Equipment Storage"; req_access = list(1)},/turf/simulated/floor/plating,/area/space)
+"jS" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/space)
+"jT" = (/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"jU" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHWEST)"; icon_state = "spline_plain"; dir = 9},/turf/simulated/floor/wood,/area/quartermaster/office)
+"jV" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/quartermaster/office)
+"jW" = (/obj/structure/railing,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/quartermaster/office)
+"jX" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/snacks/chips,/obj/structure/railing,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/quartermaster/office)
+"jY" = (/turf/simulated/wall,/area/medical/patient_wing)
+"jZ" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/curtain/medical,/turf/simulated/floor/plating,/area/medical/patient_wing)
+"ka" = (/obj/machinery/door/airlock/glass{name = "Recovery Room"},/obj/effect/floor_decal/newcorner/red/diagonal{icon_state = "red-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kb" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"kc" = (/obj/structure/bed/chair{dir = 8},/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"kd" = (/obj/machinery/vending/coffee,/turf/simulated/floor/tiled/white,/area/medical/medbay)
+"ke" = (/obj/machinery/disposal,/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"kf" = (/obj/effect/floor_decal/newcorner/red/corner,/turf/simulated/floor/tiled,/area/space)
+"kg" = (/obj/structure/closet/secure_closet/security,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled,/area/space)
+"kh" = (/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/obj/effect/floor_decal/newcorner/red,/turf/simulated/floor/tiled,/area/space)
+"ki" = (/obj/structure/table/steel_reinforced,/obj/item/device/flashlight,/obj/item/device/flashlight,/obj/item/device/flashlight,/obj/effect/floor_decal/newcorner/red/corner{tag = "icon-red-corner (NORTH)"; icon_state = "red-corner"; dir = 1},/turf/simulated/floor/tiled,/area/space)
+"kj" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/wood,/area/quartermaster/office)
+"kk" = (/obj/machinery/light/small,/turf/simulated/floor/wood,/area/quartermaster/office)
+"kl" = (/obj/structure/stairs/east,/turf/simulated/floor/wood,/area/quartermaster/office)
+"km" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/medical,/obj/effect/floor_decal/newcorner/whitegreen/solid,/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"kn" = (/obj/structure/closet/secure_closet/personal/patient,/obj/effect/floor_decal/newcorner/whitegreen/solid,/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"ko" = (/obj/structure/closet/secure_closet/personal/patient,/obj/structure/window/reinforced{dir = 4},/obj/effect/floor_decal/newcorner/whitegreen/solid,/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"kp" = (/obj/effect/floor_decal/newcorner/red/diagonal{icon_state = "red-diagonal"; dir = 1},/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kq" = (/obj/machinery/iv_drip,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kr" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/door/airlock/maintenance{name = "Cryo Cells"; req_access = list(40)},/obj/effect/floor_decal/turf/shaft{tag = "icon-shaft (NORTH)"; icon_state = "shaft"; dir = 1},/turf/simulated/floor/plating,/area/medical/medbay)
+"ks" = (/obj/structure/bed/chair{dir = 4},/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"kt" = (/obj/effect/floor_decal/newcorner/red{tag = "icon-red (NORTH)"; icon_state = "red"; dir = 1},/turf/simulated/floor/tiled,/area/space)
+"ku" = (/obj/structure/table/steel_reinforced,/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"kv" = (/turf/simulated/wall,/area/security/checkpoint2)
+"kw" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/plating,/area/security/checkpoint2)
+"kx" = (/obj/effect/floor_decal/newcorner/whitegreen/diagonal{tag = "icon-wgreen-diagonal (NORTH)"; icon_state = "wgreen-diagonal"; dir = 1},/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"ky" = (/obj/effect/floor_decal/newcorner/whitegreen/diagonal{tag = "icon-wgreen-diagonal (NORTH)"; icon_state = "wgreen-diagonal"; dir = 1},/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"kz" = (/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kA" = (/obj/effect/floor_decal/industrial/warning/dust{tag = "icon-warning_dust (EAST)"; icon_state = "warning_dust"; dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kB" = (/obj/machinery/atmospherics/unary/cryo_cell,/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kC" = (/obj/machinery/atmospherics/pipe/zpipe/down,/obj/structure/railing,/obj/machinery/light/small{dir = 1},/turf/simulated/open,/area/medical/medbay)
+"kD" = (/obj/effect/floor_decal/newcorner/red,/turf/simulated/floor/tiled,/area/space)
+"kE" = (/obj/structure/table/steel_reinforced,/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/turf/simulated/floor/tiled,/area/space)
+"kF" = (/obj/structure/ladder/up,/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/security/checkpoint2)
+"kG" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTH)"; icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/security/checkpoint2)
+"kH" = (/obj/effect/floor_decal/spline/plain{tag = "icon-spline_plain (NORTHEAST)"; icon_state = "spline_plain"; dir = 5},/turf/simulated/floor/wood,/area/security/checkpoint2)
+"kI" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled,/area/security/checkpoint2)
+"kJ" = (/obj/machinery/body_scanconsole{density = 0},/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kK" = (/obj/effect/floor_decal/industrial/warning/dust/corner{tag = "icon-warningcorner_dust (EAST)"; icon_state = "warningcorner_dust"; dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kL" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 5; icon_state = "intact"},/obj/effect/floor_decal/industrial/warning/dust{tag = "icon-warning_dust (NORTH)"; icon_state = "warning_dust"; dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kM" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/obj/effect/floor_decal/industrial/warning/dust{tag = "icon-warning_dust (NORTH)"; icon_state = "warning_dust"; dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kN" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 9},/obj/effect/floor_decal/industrial/warning/dust{tag = "icon-warning_dust (NORTH)"; icon_state = "warning_dust"; dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/medical/medbay)
+"kO" = (/obj/machinery/vending/security,/obj/effect/floor_decal/newcorner/red{tag = "icon-red (WEST)"; icon_state = "red"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"kP" = (/obj/effect/floor_decal/newcorner/red/corner{tag = "icon-red-corner (EAST)"; icon_state = "red-corner"; dir = 4},/turf/simulated/floor/tiled,/area/space)
+"kQ" = (/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/obj/effect/floor_decal/newcorner/red{tag = "icon-red (NORTH)"; icon_state = "red"; dir = 1},/turf/simulated/floor/tiled,/area/space)
+"kR" = (/obj/structure/table/steel_reinforced,/obj/machinery/cell_charger,/obj/effect/floor_decal/newcorner/red/corner{tag = "icon-red-corner (WEST)"; icon_state = "red-corner"; dir = 8},/turf/simulated/floor/tiled,/area/space)
+"kS" = (/turf/simulated/floor/wood,/area/security/checkpoint2)
+"kT" = (/obj/effect/floor_decal/spline/plain{dir = 4},/turf/simulated/floor/wood,/area/security/checkpoint2)
+"kU" = (/obj/machinery/bodyscanner,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled,/area/medical/patient_wing)
+"kV" = (/turf/simulated/wall/r_wall,/area/crew_quarters/heads/cmo)
+"kW" = (/turf/simulated/floor/tiled,/area/security/checkpoint2)
+"kX" = (/obj/structure/closet/secure_closet/CMO,/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"kY" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/hop,/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"kZ" = (/obj/effect/floor_decal/spline/plain{dir = 8},/turf/simulated/floor/tiled,/area/crew_quarters/heads/cmo)
+"la" = (/turf/simulated/wall,/area/crew_quarters/heads/cmo)
+"lb" = (/obj/structure/table/standard,/obj/item/weapon/reagent_containers/food/snacks/chips,/turf/simulated/floor/tiled,/area/crew_quarters/heads/cmo)
+"lc" = (/obj/machinery/vending/snack,/turf/simulated/floor/tiled,/area/crew_quarters/heads/cmo)
+"ld" = (/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"le" = (/obj/machinery/door/airlock{name = "Airlock"; req_access = list(40)},/obj/effect/floor_decal/turf/shaft,/turf/simulated/floor/plating,/area/crew_quarters/heads/cmo)
+"lf" = (/turf/simulated/floor/tiled,/area/crew_quarters/heads/cmo)
+"lg" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"lh" = (/obj/structure/table/woodentable,/obj/item/device/flashlight/lamp,/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"li" = (/obj/effect/floor_decal/spline/plain{dir = 8},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/tiled,/area/crew_quarters/heads/cmo)
+"lj" = (/obj/structure/railing{tag = "icon-railing0 (NORTH)"; icon_state = "railing0"; dir = 1},/obj/machinery/light/small{dir = 8},/turf/simulated/open,/area/crew_quarters/heads/cmo)
+"lk" = (/turf/simulated/open,/area/crew_quarters/heads/cmo)
+"ll" = (/obj/structure/bed/chair/wood{icon_state = "wooden_chair_preview"; dir = 1},/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"lm" = (/obj/structure/table/woodentable,/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/carpet/green,/area/crew_quarters/heads/cmo)
+"ln" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/heads/cmo)
+"lo" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/structure/grille,/turf/simulated/floor/plating,/area/crew_quarters/heads/cmo)
+"lp" = (/turf/simulated/wall/r_wall,/area/hallway/secondary/entry/port)
+"lq" = (/turf/simulated/wall/r_wall,/area/security/checkpoint2)
+"lr" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"ls" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/plating,/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lt" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (WEST)"; icon_state = "plating"; dir = 8},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lu" = (/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lv" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (EAST)"; icon_state = "plating"; dir = 4},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lw" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain,/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lx" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"ly" = (/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lz" = (/obj/structure/ladder,/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lA" = (/turf/unsimulated/wall,/area/hallway/secondary/entry/port)
+"lB" = (/obj/effect/floor_decal/newcorner/plating,/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lC" = (/obj/structure/stairs/east,/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lD" = (/obj/effect/floor_decal/newcorner/plating,/obj/effect/landmark{name = "Observer-Start"},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lE" = (/obj/structure/stairs/west,/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lF" = (/turf/simulated/open,/area/hallway/secondary/entry/port)
+"lG" = (/turf/unsimulated/wall{desc = "That looks like it doesn't open easily."; icon = 'icons/obj/doors/rapid_pdoor.dmi'; icon_state = "pdoor1"; name = "Shuttle Bay Blast Door"},/area/hallway/secondary/entry/port)
+"lH" = (/obj/structure/lattice,/turf/simulated/open,/area/hallway/secondary/entry/port)
+"lI" = (/turf/simulated/floor/tiled/bunker,/area/hallway/secondary/entry/port)
+"lJ" = (/obj/effect/floor_decal/turf/steel,/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lK" = (/obj/effect/floor_decal/turf/steel{tag = "icon-steel (NORTH)"; icon_state = "steel"; dir = 1},/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lL" = (/obj/effect/floor_decal/turf/steel{tag = "icon-steel (EAST)"; icon_state = "steel"; dir = 4},/turf/simulated/floor/plating,/area/hallway/secondary/entry/port)
+"lM" = (/obj/effect/floor_decal/newcorner/plating{tag = "icon-plating (NORTH)"; icon_state = "plating"; dir = 1},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+"lN" = (/obj/structure/bed/chair{dir = 1},/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain{dir = 1},/turf/simulated/floor/tiled,/area/hallway/secondary/entry/port)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadadadadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaeafafaeaeaeadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaeaeaeaeafafagacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadafafafaeafafadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadafahafaeafaiadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaeaeaeajafaeadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadafakaeaeaeaeadacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaeafafafaeafafaeadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadadaaaaaaaaaaaaadadadadaeafafafaeafafalalamanadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadaoapaoadadadaaaaaaaaadaqanalaraeaeaeaeafafalasatatadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadauauauauauauauadadadadadadavalalalalalalawalalalalaxalaladaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadayayayayayayauadazaAaBaBaBaBaeaeaeaeaeaeaBaBaCalaDaeaEaFadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaGaHaHaHaHaIauadazaAaBaBaBaBaJaBaKaBaLaBaBaBaBaMaBaBaNaOadadaaaaaaaaaaaaaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaHaHaHaHaHaIauaQazaAaBaBaBaBaeaeaeaeaeaeaBaBaBalaBaBaBaRaSadaaaaaaaaaPaPaPaTaTaTaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaHaHaHaHaHaIauadazaAaDaUaUaVaVaVaValalaWaXaWalalaBaBaBaBaYadaaaaaaaPaPaTaTaTaTaTaTaTaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaZaZaZaZaZaZauadazaAbaalalbbapbcbdalbeauaBaubfalbgbhadadadadaaaaaaaPaTaTaTaTaTaTaTaTaTaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadauauauauauauauadazaAbialalbbbjapbdalbkaBaBaBbladadadadaaaaaaaaaaaaaPaTaTaTaTbmaTaTaTaTaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobobnboboboboadadadadadadadadbpbqadadadadadadadadbrauaBaubsadaaaaaaaaaaaaaaaaaaaPaTaTaTaTaPaTaTaTaTaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubvbwbxbybobzbzbzbzbzbzbzbzbzbAadbBbCbDbEbFbGadbHauaBaubIadaaaaaaaaaaaaaaaaaaaPaPaTaTaTaPaTaTaTaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbJbKbLbobzbzbMbNbObObPbMbQbAbRbCbCbCbCbCbGadadadagadadadacaaaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbnbnbnboadbSbTbUapapbVbTbSadadbCbCbCbCbWbGacacacacacacacacaaaPbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubvbwbxbybobYbZcacbcbcbcbccbZbYcdcdcebGbGbGbGcfcfcfcfcfcfcfacaPaPbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbJbKbLbocgchchchchchchchchcicdcjckclbGcfcfcfcfcfcfcfcfcfacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbnbnbnbocncocpcqcrcocpcqcrcsctckckckbGcfcfcfcfcfcfcfcfcfacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubvbwbxbybocncocucvcrcocucvcrcsctcwcwckbGcfcfcfcfcfcfcfcfacacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbJbKbLbocxcocyczcrcocyczcrcAcdcBcBckbGcfacacacacacacacacaccCcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtbubnbnbnbnbocgchchchchchchchchcicDcDcDcDbGcfacaccEcEcEcfcfacacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtcFcGcHcIcJbocnchcKcocpcqcrcLchcscMcNcOcDcfcfaccEcEcPcPcfcfacacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbtcQcRcScScScTcUchcVcocucvcrcWchcscXcNcOcDcfcfaccEcPcPcPcfcfcfacaPcmbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbncYbnbncScZcZcTcTcTcTcTcTcTcTcTdacTcDcDcDcDcfacaccEcPcPcPcfcfcfacaPaPbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabndbdcdddecScZcZcScSdfdgdhdidjcSdkdldmdndocSacacacaccEcPcPcPcfcfcfacacaPbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXbXaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabndbdcdcdecSdpdpcSdqdrdsdtdtducSdvdwdmdxdxcSacacacaccEcPcPcPcfcfcfacdyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbndzdAdAdBcScZcZdCdCdCdCdCdCdCcSdvdwdmdDcScScfcfacaccEcPcPcPcfcfcfacdydEdEdEdEdEdEdEdEdEdEdEdEdEdEdEdydFdFdFdyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEcPdGcPdGcPcScZcZdHdIdHdHdJdHdHdKdvdldLdMdNdOcfcfcfaccEcPcPcPcfcfcfacdydEdydydydydydPdydPdydydydydydEdydFdFdFdyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEcPdGcPdGcScScScScScSdQdRdRdRdQcSdSdwdLdTdUdVcfcfcfaccEcPcPcPcfcfcfacdydEdydPdPdPdPdPdPdPdPdWdPdPdydEdydFdXdXdydYdYdYdYdYdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadZdZcEdZdZcTeaeaebecedeeeeeeeeeeefegdweheiejdVcfcfcfaccEcPcPcPcfcfcfacdydEdydPdPdPdPdPdPdPdPdPdPdPdydEdydFdXdXdyekekekekekdYdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeleleleleleldZcPcPcPcPcTememeneoeoeoeoeoeoeoeoepdleqerejdVcfcfcfacesesesesescfcfacdydEdydPdPdPdPdPdPdPdPdPdPdPdydydydFdFdFdyekekekekekekdYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeleleleleleletcPcPcPcPcTeueueveuewexeyeueveueuezdpezeAejdVcfcfcfaceseBeBeBescfabacdyeCdydydydPdPdFdFdFdPdPdydydydPdPdFdFdFdFekekekekekdYdYesesesaacEcEcEcEcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeleleleleleleDcPcPcPcPcTeEeFeGeHeIeJeKeLeMeNeNeGdleOePejdVeseseseseseQeQeQeseseseseseRdOdydFdWdWdFdFdFdWdWdFdydPdPdydFeSeSdyekekekekekdYeTeUeVesaacEelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeleleleleleldZcPcPcPcPcTeWeXeYeZfafafafbfcfdfdfedpfffgejdVfhfifjfkflfmeQfnflfifjfkfoejdVdydFdFdFdFdFdFdFdFdFdydydydydydFdFdyekekekekekdYesesfpesescEelelelelelelelelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaelelcEfqfrcEdZdZeleldZcTcScScScSfsftfucScSfveucSfwcScSfxfyfzfjfAfjfjfmeQfnfjfjfAfjfBfxfydydFdFdFdFdFdFdFdFdFdXdXdXdXdXdFdFdyekekekekekdYeQeQeQeQeQcEelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQfCfDfDfDfDfEeQeQfCfEeQfCfEeQfCfDfDfFfGflflfHfIfJfoejdVfhfKfLfMflfmeQfnflfKfLfMfoejdVdydFdFdFdFdFdFdFdFdFdXdXdXdXdXdFdFdyekekekekekdYeQeQeQeQeQcEelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQfFfNflflfOfOfOfPejdVfQfOfOfOflfmeQfnflfOfOfOfPejdVdydFdFdFdFdFdFdFdFdFdyfRfSfTdyfRfTdyfUfUfUfUfUdYeQeQeQeQeQelelelelelelelfVcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafWfWfWfWfWfWfWfWfWfWfWfWfWfWfXeQeQeQeQfYfZgagagbgcgcgdgedUdNdNgfdOfhfmeQfnfoeRggghghdUdVdydFdFgieSgjeSgkdFdFdyeRghghghghghdOglgmgmgmgndUdUeQeQeQeQcEcEcEelcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEcEcEcEcEelcEcEcEcEesgoesesfmeQeQgpfWfXeQeQeQeQeQgpfWfXejdUdUgqdVgrfmeQfngsejgqdUdUdUdVdydydydygtdygtdydydydyejdUgugugugugvgwgxgxgxgydUdUfAeQeQeQcEelelelelelelcEelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelelelelelelelgzesgAgBesgCgCgCgCfAgCgCgCgCgCgCgCfAgCejdUdUgqfyfAfmeQfnfAfxgqdUdUdUdUdNdNdNgDgEgFgEgGdNdNdNdUdVfAeQeQeQeQgHgagagagHdUdUdUeQeQeQcEelelelelelelelelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelcEcEcEcEcEelgzesgAgBesfmeQeQgIgCgJeQeQeQeQeQgIgCgJgegugugKgvgLfmeQfngMgegKgugugugugugugugNdWgOdWgPgugugugugveQeQeQeQeQeQeQeQeQeQdUdUdUeQeQeQcEelelelelelelcEelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelacelelelacelgzesgQesesfmeQeQeQgCeQeQeQeQeQeQeQgCeQeQeQeQeQeQgRfmeQfngSeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQcEcEcEcEcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelcEelelelcEelgzesgTgUesgVfWfWfWgCfWfWfWfWfWfWfWgCfWfWfWfWfWfWgWfmeQfngXfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWfWeQeQeQeQeQeQeQeQeQeQeQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelacelelelacelgzgYgYgYgYgYgYgZgYhagYgYgYgYgYgYgYhbhcgYhbhcgYgYgYgagagahdhdhehfhghdhdhdhdhdhdhdgCgChhhhhihjhkhldZdZdZdZdZdZdZdZhmhmdZdZdZeQeQeQcEcEcEcEcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEgzelcEcEelcEcEelgzgYhnhnhnhnhnhnhnhohphphphphqhnhrhshshthshshrhugYfmeQfnhdhvhwhwhwhxhdhyhyhyhzhAgCgChhhBhChDhEhlhFhGhHhIhJdZhKhLhMelhNhOdZeQeQeQcEelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEelelelelelelelelelgYhPhnhQhnhRhnhnhShphphphphThnhnhnhnhnhnhnhnhnhUfmeQfnhdhVhwhwhwhWhdhXhXhXhYhdhZiahhibicididhlhFieifififdZighLhMelhNihdZeQeQeQcEelelelelelelelelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEelelelelelelelelelgYhnhnhnhnhnhnhngYhphphphpiihnhnhnhnhnijikililgYfmeQfnhdimhwinhwiohdhdipiqiqiqiqiqhhibicidirhlhFisititiudZdZdZhMelivihdZeQeQeQelelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacEcEcEcEcEcEcEcEcEcEgYhnhnhnhniwiwiwgYhphphphpgYhbhcixgYiyhngYhbhcgYfmeQfnhdiziziziziziAhdiBiCiqiqiCiqiDidididiEhlhFhGiFiGiHiIdZiJhMeliKihdZeQeQeQcEelelelelelelelcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYgYhnhnhngYhbhcgYiLhnhniMiNiOiOiOiPiQiOiOiOiOgYfmeQfnhdiRiSiSiSiSiThdiUiViqiWiXiYhhhhhhhhhhhldZiZjajbiZdZdZdZhMelhNjcdZeQeQeQcEelelelelelelfVcEelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYgZgZgYgYjdjdgYjehnhnjfiNiOiOiOiOiOiOiOiOiOjgfmeQfnhdjhiSiSiSiSjihdhdhdjjiahdhdhdjkjljmjnjodZhMeleleljpjqjrhMjscEcEdZeQeQeQcEcEcEelcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYhphpjthphphpgYgYhbhcgYgYjujvjwjxjyjzjAjBjCgYfmeQfnhdjhiSiSiSiSjiiajDjEiqiqiCjFjGiqiWjHjIiSjJjKeleleleljqdZhMelcPcPdZeQeQeQcEelelelelelelcEelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYhphpjthphphpjLgYjdjdjMgYgYhbhcgYjNgYgYgYgYgYfmeQfnhdjOiSiSiSiSjijPjDiqiqiqiqjQhdhdhdhdhdhddZdZdZjRdZjSfrdZdZjTjTdZdZeQeQeQcEelelelelelelelelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYgYgYgYgYgYgYgYgYhphphphpjUjVjVjVjVjWjXgYgCgCfmeQfnjYjZjYjZjYkajYjYjDkbiUkckdhdhdaaaaaaaaaaaadZkekfkgkhkgkietcPcPcPdZeQeQeQcEelelelelelelcEelelelcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYhphphphpkjiOiOkkiOiOklgYgCgCfmeQfnjYkmknkmkokpkqjYkrhdhdhdhdhdaaaaaaaaaaaaaadZksjqhMktjqkueDcPcPcPdZeQeQeQcEcEcEcEcEcEcEcEcEcEcEcEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagYgYgYgYgYgYgYgYgYkvkvkvkvkwkvfmeQfnjYkxkxkxkykpkzjYkAkBkCkBhdaaaaaaaaaaaaaaaadZksjqhMkDjqkEdZdZdZdZdZeQeQeQeQeQeQeQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkFkGkGkHkIfmeQfnjYkxkxkxkykpkJjYkKkLkMkNhdaaaaaaaaaaaaaaaadZkOkPkgkQkgkRdZeQeQeQeQeQeQeQeQeQeQeQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkSkSkSkTkwfmeQfnjYkmknkmkokpkUjYhdhdhdhdhdaaaaaaaaaaaaaaaadZdZdZdZdZdZdZdZeQeQeQeQeQeQeQeQeQeQeQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkvkSkvkvkveUeUeUkVkVkVkVkVkVkVkVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkWkSkSkSkwfmeQfnkVkXkYkZlalblckVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkWkSkSkSkIfmeQfnkVldldkZlelflfkVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkWkSkSkSkwfmeQfnkVlglhlilaljlkkVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkWkSkSkSkveUeUeUkVlllmkZlnlklkkVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakvkWkSkSkSkwfmeQfnkVldldkZlolklkkVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplplplplplqlqlqlqlqlqfmeQfnkVkVkVkVkVkVkVkVlplplpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplplplplrlrlrlrlplslslslslsltlulvlslslslwlslplrlrlrlrlplplplplplplpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplulululululululululululululululululululululululululululululxlylzlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlAlAlAlAlAlAlplplplplplplplplplplplplplplplplplplplBlBlBlBlBlBlBlBlylClplBlplBlDlBlplBlplElylBlBlBlBlBlBlBlBlplplplplplplpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlFlFlFlFlFlGlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlFlFlFlFlFlGlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlFlFlFlFlFlGlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlFlFlFlFlFlGlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlFlFlFlFlFlGlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalAlAlAlAlAlAlAlplplplplplplplplplplplplplplplplplplplJlKlLlplJlKlLlplJlKlLlplJlKlKlKlLlplJlKlLlplJlKlLlplJlKlLlplplplplplplplplplplplplplplplplplplplAlAlAlAlAlAlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlGlFlFlFlFlFlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlGlFlFlFlFlFlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlHlGlFlFlFlFlFlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlGlFlFlFlFlFlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlHlFlFlGlFlFlFlFlFlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplplplplplplplMlMlMlMlMlMlMlMlylClplMlplMlMlMlplMlplElylMlMlMlMlMlMlMlMlplplplplplplplplplplplplplplplplplplplAlAlAlAlAlAlAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplzlylxlulululululululululululululululululululululululululululululpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplplplplplplplNlNlNlNlplNlNlNlNlNlNlplNlNlNlNlNlNlplNlNlNlNlplplplpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalplplplplplplplplplplplplplplplplplplplplplplplplpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
