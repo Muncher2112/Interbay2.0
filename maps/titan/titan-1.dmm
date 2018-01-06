@@ -1,4 +1,4 @@
-"a" = (/turf/unsimulated/mineral,/area/mine/unexplored)
+"a" = (/turf/simulated/mineral,/area/mine/unexplored)
 "b" = (/turf/simulated/floor/asteroid,/area/mine/unexplored)
 "c" = (/turf/simulated/wall/r_wall,/area/mine/unexplored)
 "d" = (/turf/unsimulated/wall,/area/hallway/secondary/entry/port)
