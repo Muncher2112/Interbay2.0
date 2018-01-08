@@ -107,12 +107,14 @@
 /obj/effect/shuttle_landmark/supply/centcom
 	name = "Centcom"
 	landmark_tag = "nav_cargo_start"
+	base_turf = /turf/simulated/floor/asteroid
 
 /obj/effect/shuttle_landmark/supply/station
 	name = "Dock Station"
 	landmark_tag = "nav_cargo_station"
 	docking_controller = "cargo_bay"
-
+	base_area = /area/maintenance/Sewers
+	base_turf = /turf/simulated/open
 /*
 //Mining shuttle
 /datum/shuttle/autodock/ferry/mining

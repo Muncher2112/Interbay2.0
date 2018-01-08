@@ -452,7 +452,7 @@
 "iJ" = (/obj/machinery/biogenerator,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/acting/backstage)
 "iK" = (/obj/machinery/vending/hydroseeds,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/acting/backstage)
 "iL" = (/turf/simulated/floor/tiled,/area/acting/stage)
-"iM" = (/obj/machinery/light{tag = "icon-tube1 (NORTH)"; icon_state = "tube1"; dir = 1},/turf/simulated/floor/tiled,/area/acting/stage)
+"iM" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/acting/stage)
 "iN" = (/obj/machinery/microwave,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/acting/backstage)
 "iO" = (/obj/machinery/vending/hydronutrients,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/acting/backstage)
 "iP" = (/obj/machinery/vending/medical,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/acting/backstage)

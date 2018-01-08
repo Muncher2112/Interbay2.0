@@ -23,11 +23,47 @@
 	glass_type = "/glass_command"
 	airlock_type = "/command"
 
+/obj/structure/door_assembly/door_assembly_black
+	base_icon_state = "black"
+	base_name = "Black Airlock"
+	glass_type = "/glass_black"
+	airlock_type = "/black"
+
+/obj/structure/door_assembly/door_assembly_hyd
+	base_icon_state = "hyd"
+	base_name = "Hydroponics Airlock"
+	glass_type = "/glass_hydroponics"
+	airlock_type = "/hydroponics"
+
+/obj/structure/door_assembly/door_assembly_chem
+	base_icon_state = "chem"
+	base_name = "Chemistry Airlock"
+	glass_type = "/glass_chemistry"
+	airlock_type = "/chemistry"
+
+/obj/structure/door_assembly/door_assembly_arbiter
+	base_icon_state = "coma"
+	base_name = "Arbiter Airlock"
+	glass_type = "/glass_arbiter"
+	airlock_type = "/arbiter"
+
 /obj/structure/door_assembly/door_assembly_sec
 	base_icon_state = "sec"
 	base_name = "Security Airlock"
 	glass_type = "/glass_security"
 	airlock_type = "/security"
+
+/obj/structure/door_assembly/door_assembly_cone
+	base_icon_state = "cone"
+	base_name = "Cone Airlock"
+	glass_type = "/glass_cone"
+	airlock_type = "/cone"
+
+/obj/structure/door_assembly/door_assembly_weng
+	base_icon_state = "neweng"
+	base_name = "Weng Airlock"
+	glass_type = "/glass_weng"
+	airlock_type = "/weng"
 
 /obj/structure/door_assembly/door_assembly_eng
 	base_icon_state = "eng"
@@ -105,6 +141,12 @@
 	base_icon_state = "mhatch"
 	base_name = "Maintenance Hatch"
 	airlock_type = "/maintenance_hatch"
+	glass = -1
+
+/obj/structure/door_assembly/door_assembly_shatch
+	base_icon_state = "shatch"
+	base_name = "Security Hatch"
+	airlock_type = "/security_hatch"
 	glass = -1
 
 /obj/structure/door_assembly/door_assembly_highsecurity // Borrowing this until WJohnston makes sprites for the assembly

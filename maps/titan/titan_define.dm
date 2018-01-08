@@ -14,7 +14,7 @@
 
 	allowed_spawns = list("Arrivals Shuttle")
 
-	station_name  = "Frontier Citadel Titan"
+	station_name  = "Citadel Titan"
 	station_short = "Titan"
 	dock_name     = "Central Railroad Network"
 	boss_name     = "Colonial Magistrate Council"
@@ -41,3 +41,4 @@
 
 /turf/simulated/floor/asteroid/
 	initial_gas = list("oxygen" = MOLES_O2STANDARD, "nitrogen" = MOLES_N2STANDARD)
+	temperature = 293.15
