@@ -106,6 +106,11 @@
 	icon = 'icons/obj/doors/Doorneweng.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_weng
 
+/obj/machinery/door/airlock/weapon
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorweap.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_weap
+
 /obj/machinery/door/airlock/security
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorsec.dmi'
@@ -285,6 +290,16 @@
 	explosion_resistance = 5
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_weng
+	glass = 1
+
+/obj/machinery/door/airlock/glass_weap
+	name = "Maintenance Hatch"
+	icon = 'icons/obj/doors/Doorweapglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_weap
 	glass = 1
 
 /obj/machinery/door/airlock/glass_external

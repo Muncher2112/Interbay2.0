@@ -65,6 +65,12 @@
 	glass_type = "/glass_weng"
 	airlock_type = "/weng"
 
+/obj/structure/door_assembly/door_assembly_weap
+	base_icon_state = "weap"
+	base_name = "Weapon Airlock"
+	glass_type = "/glass_weap"
+	airlock_type = "/weap"
+
 /obj/structure/door_assembly/door_assembly_eng
 	base_icon_state = "eng"
 	base_name = "Engineering Airlock"
