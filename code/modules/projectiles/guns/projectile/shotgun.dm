@@ -2,7 +2,6 @@
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_instert.ogg'
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	parry_sounds = list('sound/weapons/blunt_parry1.ogg', 'sound/weapons/blunt_parry2.ogg', 'sound/weapons/blunt_parry3.ogg')
-	magazine_based = 0
 
 /obj/item/weapon/gun/projectile/shotgun/pump
 	name = "shotgun"
@@ -12,7 +11,7 @@
 	max_shells = 4
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	flags =  CONDUCT
+	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
@@ -22,7 +21,7 @@
 	one_hand_penalty = 2
 	var/recentpump = 0 // to prevent spammage
 	var/pumpsound = 'sound/weapons/shotgunpump.ogg' //Support for other kinds of pump weapons.
-	var/casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
+	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 
 
@@ -82,13 +81,13 @@
 	max_shells = 2
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	flags =  CONDUCT
+	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	one_hand_penalty = 2
-	wielded_item_state = "rifle-wielded"
+	wielded_item_state = "dshotgun1"
 
 	burst_delay = 0
 	firemodes = list(
@@ -109,7 +108,7 @@
 
 //this is largely hacky and bad :(	-Pete
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/attackby(var/obj/item/A as obj, mob/user as mob)
-	if(w_class > 3 && (istype(A, /obj/item/weapon/circular_saw) || istype(A, /obj/item/weapon/melee/energy) || istype(A, /obj/item/weapon/pickaxe/plasmacutter)))
+	if(w_class > 3 && (istype(A, /obj/item/weapon/circular_saw) || istype(A, /obj/item/weapon/melee/energy) || istype(A, /obj/item/weapon/gun/energy/plasmacutter)))
 		to_chat(user, "<span class='notice'>You begin to shorten the barrel of \the [src].</span>")
 		if(loaded.len)
 			for(var/i in 1 to max_shells)
@@ -124,7 +123,7 @@
 			one_hand_penalty = 0
 			slot_flags &= ~SLOT_BACK	//you can't sling it on your back
 			slot_flags |= (SLOT_BELT|SLOT_HOLSTER) //but you can wear it on your belt (poorly concealed under a trenchcoat, ideally) - or in a holster, why not.
-			name = "sawn-off shotgun"
+			SetName("sawn-off shotgun")
 			desc = "Omar's coming!"
 			to_chat(user, "<span class='warning'>You shorten the barrel of \the [src]!</span>")
 	else

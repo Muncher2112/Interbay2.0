@@ -8,9 +8,10 @@ var/list/mining_floors = list()
 	icon_state = "rock-dark"
 	blocks_air = 1
 	density = 1
+	opacity = 1
 
 /turf/simulated/mineral //wall piece
-	name = "Rock"
+	name = "rock"
 	icon = 'icons/turf/walls.dmi'
 	icon_state = "rock"
 	initial_gas = null
@@ -40,11 +41,10 @@ var/list/mining_floors = list()
 	if (!mining_walls["[src.z]"])
 		mining_walls["[src.z]"] = list()
 	mining_walls["[src.z]"] += src
-// TODO: Fix this retarded shit
-//	spawn(0)
-//		MineralSpread()
-//	spawn(2)
-//		update_icon(1)
+	spawn(0)
+		MineralSpread()
+	spawn(2)
+		update_icon(1)
 
 /turf/simulated/mineral/Destroy()
 	if (mining_walls["[src.z]"])
@@ -59,10 +59,10 @@ var/list/mining_floors = list()
 
 /turf/simulated/mineral/update_icon(var/update_neighbors)
 	if(!mineral)
-		name = "rock"
+		SetName(initial(name))
 		icon_state = "rock"
 	else
-		name = "[mineral.display_name] deposit"
+		SetName("[mineral.display_name] deposit")
 
 	overlays.Cut()
 

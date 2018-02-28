@@ -11,15 +11,6 @@
 	my_hygiene_factor = (rand(HYGIENE_FACTOR_LOWEST*100, HYGIENE_FACTOR_HIGHEST*100))/100
 	..()
 
-/mob/living/carbon/Life()
-	..()
-
-	handle_viruses()
-
-	// Increase germ_level regularly
-	if(germ_level < GERM_LEVEL_AMBIENT && prob(30))	//if you're just standing there, you shouldn't get more germs beyond an ambient level
-		germ_level++
-
 /mob/living/carbon/Destroy()
 	QDEL_NULL(ingested)
 	QDEL_NULL(touching)
@@ -291,55 +282,53 @@
 	if(target.type == /obj/screen) return
 
 	var/atom/movable/item = src.get_active_hand()
-	var/weight_class = ITEM_SIZE_NORMAL
 
 	if(!item) return
 
-	if(istype(item,/obj/item))//If it's an item set the weight_class to the item's w_class
-		var/obj/item/I = item
-		weight_class = I.w_class
-
 	var/throw_range = item.throw_range
-	var/throw_delay = strToSpeedModifier(src.str, weight_class)
-	throw_delay /= (10/get_dist(src, target))
+	var/itemsize
+	if (istype(item, /obj/item/grab))
+		var/obj/item/grab/G = item
+		item = G.throw_held() //throw the person instead of the grab
+		if(ismob(item))
+			var/mob/M = item
 
-	src.visible_message("<span class='warning'>[src] is trying to throw [item].</span>")
-	if(do_after(src, throw_delay))
-		if(istype(item, /obj/item/grab))
-			var/obj/item/grab/G = item
-			item = G.throw_held() //throw the person instead of the grab
-			if(ismob(item))
-				var/mob/M = item
-				weight_class = ITEM_SIZE_HUGE
+			//limit throw range by relative mob size
+			throw_range = round(M.throw_range * min(src.mob_size/M.mob_size, 1))
+			itemsize = round(M.mob_size/4)
+			var/turf/start_T = get_turf(loc) //Get the start and target tile for the descriptors
+			var/turf/end_T = get_turf(target)
+			if(start_T && end_T)
+				var/start_T_descriptor = "<font color='#6b5d00'>[start_T] \[[start_T.x],[start_T.y],[start_T.z]\] ([start_T.loc])</font>"
+				var/end_T_descriptor = "<font color='#6b4400'>[start_T] \[[end_T.x],[end_T.y],[end_T.z]\] ([end_T.loc])</font>"
+				admin_attack_log(usr, M, "Threw the victim from [start_T_descriptor] to [end_T_descriptor].", "Was from [start_T_descriptor] to [end_T_descriptor].", "threw, from [start_T_descriptor] to [end_T_descriptor], ")
 
-				//limit throw range by relative mob size
-				throw_range = round(M.throw_range * min(src.mob_size/M.mob_size, 1))
+	else if (istype(item, /obj/item/))
+		var/obj/item/I = item
+		itemsize = I.w_class
 
-				var/turf/start_T = get_turf(loc) //Get the start and target tile for the descriptors
-				var/turf/end_T = get_turf(target)
-				if(start_T && end_T)
-					var/start_T_descriptor = "<font color='#6b5d00'>[start_T] \[[start_T.x],[start_T.y],[start_T.z]\] ([start_T.loc])</font>"
-					var/end_T_descriptor = "<font color='#6b4400'>[start_T] \[[end_T.x],[end_T.y],[end_T.z]\] ([end_T.loc])</font>"
-					admin_attack_log(usr, M, "Threw the victim from [start_T_descriptor] to [end_T_descriptor].", "Was from [start_T_descriptor] to [end_T_descriptor].", "threw, from [start_T_descriptor] to [end_T_descriptor], ")
-					if(ishuman(usr))//People are heavy. Throwing them is exhausting.
-						var/mob/living/carbon/human/H = usr
-						H.adjustStaminaLoss(rand(10,30))
+	src.drop_from_inventory(item)
+	if(!item || !isturf(item.loc))
+		return
 
-		src.drop_from_inventory(item)
-		if(!item || !isturf(item.loc))
-			return
+	//actually throw it!
+	src.visible_message("<span class='warning'>[src] has thrown [item].</span>", range = min(itemsize*2,world.view))
+	playsound(src, 'sound/effects/throw.ogg', 50, 1)
 
-		//actually throw it!
-		src.visible_message("<span class='warning'>[src] has thrown [item].</span>")
+	if(!src.lastarea)
+		src.lastarea = get_area(src.loc)
+	if((istype(src.loc, /turf/space)) || (src.lastarea.has_gravity == 0))
+		src.inertia_dir = get_dir(target, src)
+		step(src, inertia_dir)
 
-		if(!src.lastarea)
-			src.lastarea = get_area(src.loc)
-		if((istype(src.loc, /turf/space)) || (src.lastarea.has_gravity == 0))
-			src.inertia_dir = get_dir(target, src)
-			step(src, inertia_dir)
+/*
+	if(istype(src.loc, /turf/space) || (src.flags & NOGRAV)) //they're in space, move em one space in the opposite direction
+		src.inertia_dir = get_dir(target, src)
+		step(src, inertia_dir)
+*/
 
-		playsound(src, 'sound/effects/throw.ogg', 50, 1)
-		item.throw_at(target, throw_range, item.throw_speed, src)
+
+	item.throw_at(target, throw_range, item.throw_speed, src)
 
 /mob/living/carbon/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	..()
@@ -460,7 +449,7 @@
 /mob/living/carbon/proc/can_feel_pain(var/check_organ)
 	if(isSynthetic())
 		return 0
-	return !(species && species.flags & NO_PAIN)
+	return !(species && species.species_flags & SPECIES_FLAG_NO_PAIN)
 
 /mob/living/carbon/proc/get_adjusted_metabolism(metabolism)
 	return metabolism
@@ -472,3 +461,31 @@
 		return "ltrails"
 	else
 		return "trails"
+/mob/living/carbon/check_has_mouth()
+	// carbon mobs have mouths by default
+	// behavior of this proc for humans is overridden in human.dm
+	return 1
+
+/mob/living/carbon/proc/check_mouth_coverage()
+	// carbon mobs do not have blocked mouths by default
+	// overridden in human_defense.dm
+	return null
+
+/mob/living/carbon/proc/SetStasis(var/factor, var/source = "misc")
+	if((species && (species.species_flags & SPECIES_FLAG_NO_SCAN)) || isSynthetic())
+		return
+	stasis_sources[source] = factor
+
+/mob/living/carbon/proc/InStasis()
+	if(!stasis_value)
+		return FALSE
+	return life_tick % stasis_value
+
+// call only once per run of life
+/mob/living/carbon/proc/UpdateStasis()
+	stasis_value = 0
+	if((species && (species.species_flags & SPECIES_FLAG_NO_SCAN)) || isSynthetic())
+		return
+	for(var/source in stasis_sources)
+		stasis_value += stasis_sources[source]
+	stasis_sources.Cut()

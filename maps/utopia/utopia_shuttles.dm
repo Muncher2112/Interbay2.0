@@ -113,26 +113,27 @@
 	landmark_tag = "nav_cargo_station"
 	docking_controller = "cargo_bay"
 
-/*
+
 //Mining shuttle
 /datum/shuttle/autodock/ferry/mining
-	name = "Supply"
-	location = 1
+	name = "Mining"
+	location = 0
 	warmup_time = 10
-	shuttle_area = /area/supply/dock
-	dock_target = "supply_shuttle"
-	waypoint_offsite = "nav_cargo_start"
-	waypoint_station = "nav_cargo_station"
+	shuttle_area = /area/shuttle/mining/station
+	dock_target = "mining_shuttle"
+	waypoint_offsite = "nav_mining_start"
+	waypoint_station = "nav_mining_asteroid"
 
 /obj/effect/shuttle_landmark/mining/station
 	name = "Station"
-	landmark_tag = "nav_cargo_start"
+	landmark_tag = "nav_mining_start"
+	docking_controller = "mining_dock_airlock"
 
 /obj/effect/shuttle_landmark/mining/asteroid
-	name = "minig"
-	landmark_tag = "nav_cargo_station"
-	docking_controller = "cargo_bay"
-*/
+	name = "Asteroid"
+	landmark_tag = "nav_mining_asteroid"
+	docking_controller = "mining_outpost_airlock"
+	base_turf = /turf/simulated/floor/asteroid
 
 //Emergency shuttle
 

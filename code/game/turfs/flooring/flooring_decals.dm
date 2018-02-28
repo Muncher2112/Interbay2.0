@@ -180,6 +180,16 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/beige/three_quarters
 	icon_state = "corner_white_three_quarters"
 
+/obj/effect/floor_decal/corner/bar
+	name = "bar corner"
+	color = "#7c443f"
+
+/obj/effect/floor_decal/corner/bar/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/bar/three_quarters
+	icon_state = "corner_white_three_quarters"
+
 /obj/effect/floor_decal/corner/red
 	name = "red corner"
 	color = COLOR_RED_GRAY
@@ -233,6 +243,16 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/orange/three_quarters
 	icon_state = "corner_white_three_quarters"
 
+/obj/effect/floor_decal/corner/neutral
+	name = "neutral corner"
+	color = "#b2b0b0"
+
+/obj/effect/floor_decal/corner/neutral/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/neutral/three_quarters
+	icon_state = "corner_white_three_quarters"
+
 /obj/effect/floor_decal/corner/brown
 	name = "brown corner"
 	color = COLOR_DARK_BROWN
@@ -266,6 +286,52 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/spline/plain
 	name = "spline - plain"
 	icon_state = "spline_plain"
+	alpha = 229
+
+/obj/effect/floor_decal/spline/plain/black
+	color = "#333333"
+
+/obj/effect/floor_decal/spline/plain/blue
+	color = COLOR_BLUE_GRAY
+
+/obj/effect/floor_decal/spline/plain/paleblue
+	color = COLOR_PALE_BLUE_GRAY
+
+/obj/effect/floor_decal/spline/plain/green
+	color = COLOR_GREEN_GRAY
+
+/obj/effect/floor_decal/spline/plain/lime
+	color = COLOR_PALE_GREEN_GRAY
+
+/obj/effect/floor_decal/spline/plain/yellow
+	color = COLOR_BROWN
+
+/obj/effect/floor_decal/spline/plain/beige
+	color = COLOR_BEIGE
+
+/obj/effect/floor_decal/spline/plain/red
+	color = COLOR_RED_GRAY
+
+/obj/effect/floor_decal/spline/plain/pink
+	color = COLOR_PALE_RED_GRAY
+
+/obj/effect/floor_decal/spline/plain/purple
+	color = COLOR_PURPLE_GRAY
+
+/obj/effect/floor_decal/spline/plain/mauve
+	color = COLOR_PALE_PURPLE_GRAY
+
+/obj/effect/floor_decal/spline/plain/orange
+	color = COLOR_DARK_ORANGE
+
+/obj/effect/floor_decal/spline/plain/brown
+	color = COLOR_DARK_BROWN
+
+/obj/effect/floor_decal/spline/plain/white
+	color = COLOR_WHITE
+
+/obj/effect/floor_decal/spline/plain/grey
+	color = "#8d8c8c"
 
 /obj/effect/floor_decal/spline/fancy
 	name = "spline - fancy"
@@ -476,6 +542,32 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/snow
 	icon = 'icons/turf/overlays.dmi'
 	icon_state = "snowfloor"
+
+/obj/effect/floor_decal/floordetail
+	plane = TURF_PLANE
+	layer = TURF_DETAIL_LAYER
+	color = COLOR_GUNMETAL
+	icon_state = "manydot"
+	appearance_flags = 0
+
+/obj/effect/floor_decal/floordetail/New(var/newloc, var/newdir, var/newcolour)
+	color = null //color is here just for map preview, if left it applies both our and tile colors.
+	..()
+
+/obj/effect/floor_decal/floordetail/tiled
+	icon_state = "manydot_tiled"
+
+/obj/effect/floor_decal/floordetail/pryhole
+	icon_state = "pryhole"
+
+/obj/effect/floor_decal/floordetail/edgedrain
+	icon_state = "edge"
+
+/obj/effect/floor_decal/floordetail/traction
+	icon_state = "traction"
+
+/obj/effect/floor_decal/ntlogo
+	icon_state = "ntlogo"
 
 /obj/effect/floor_decal/newcorner
 	icon = 'icons/turf/flooring/misc.dmi'
@@ -696,29 +788,3 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/turf/plating
 	icon_state = "platingfull"
-
-/obj/effect/floor_decal/floordetail
-	plane = TURF_PLANE
-	layer = TURF_DETAIL_LAYER
-	color = COLOR_GUNMETAL
-	icon_state = "manydot"
-	appearance_flags = 0
-
-/obj/effect/floor_decal/floordetail/New(var/newloc, var/newdir, var/newcolour)
-	color = null //color is here just for map preview, if left it applies both our and tile colors.
-	..()
-
-/obj/effect/floor_decal/floordetail/tiled
-	icon_state = "manydot_tiled"
-
-/obj/effect/floor_decal/floordetail/pryhole
-	icon_state = "pryhole"
-
-/obj/effect/floor_decal/floordetail/edgedrain
-	icon_state = "edge"
-
-/obj/effect/floor_decal/floordetail/traction
-	icon_state = "traction"
-
-/obj/effect/floor_decal/ntlogo
-	icon_state = "ntlogo"

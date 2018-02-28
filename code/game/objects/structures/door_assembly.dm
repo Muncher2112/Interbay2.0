@@ -47,29 +47,23 @@
 	glass_type = "/glass_arbiter"
 	airlock_type = "/arbiter"
 
-/obj/structure/door_assembly/door_assembly_sec
-	base_icon_state = "sec"
-	base_name = "Security Airlock"
-	glass_type = "/glass_security"
-	airlock_type = "/security"
-
 /obj/structure/door_assembly/door_assembly_cone
 	base_icon_state = "cone"
 	base_name = "Cone Airlock"
 	glass_type = "/glass_cone"
 	airlock_type = "/cone"
 
-/obj/structure/door_assembly/door_assembly_weng
-	base_icon_state = "neweng"
-	base_name = "Weng Airlock"
-	glass_type = "/glass_weng"
-	airlock_type = "/weng"
-
 /obj/structure/door_assembly/door_assembly_weap
 	base_icon_state = "weap"
 	base_name = "Weapon Airlock"
 	glass_type = "/glass_weap"
 	airlock_type = "/weap"
+
+/obj/structure/door_assembly/door_assembly_sec
+	base_icon_state = "sec"
+	base_name = "Security Airlock"
+	glass_type = "/glass_security"
+	airlock_type = "/security"
 
 /obj/structure/door_assembly/door_assembly_eng
 	base_icon_state = "eng"
@@ -275,7 +269,7 @@
 			W.loc = src
 			to_chat(user, "<span class='notice'>You installed the airlock electronics!</span>")
 			src.state = 2
-			src.name = "Near finished Airlock Assembly"
+			src.SetName("Near finished Airlock Assembly")
 			src.electronics = W
 
 	else if(isCrowbar(W) && state == 2 )
@@ -292,7 +286,7 @@
 			if(!src) return
 			to_chat(user, "<span class='notice'>You removed the airlock electronics!</span>")
 			src.state = 1
-			src.name = "Wired Airlock Assembly"
+			src.SetName("Wired Airlock Assembly")
 			electronics.loc = src.loc
 			electronics = null
 
@@ -344,13 +338,14 @@
 
 /obj/structure/door_assembly/proc/update_state()
 	icon_state = "door_as_[glass == 1 ? "g" : ""][istext(glass) ? glass : base_icon_state][state]"
-	name = ""
+	var/final_name = ""
 	switch (state)
 		if(0)
 			if (anchored)
-				name = "Secured "
+				final_name = "Secured "
 		if(1)
-			name = "Wired "
+			final_name = "Wired "
 		if(2)
-			name = "Near Finished "
-	name += "[glass == 1 ? "Window " : ""][istext(glass) ? "[glass] Airlock" : base_name] Assembly"
+			final_name = "Near Finished "
+	final_name += "[glass == 1 ? "Window " : ""][istext(glass) ? "[glass] Airlock" : base_name] Assembly"
+	SetName(final_name)

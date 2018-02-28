@@ -23,7 +23,7 @@
 
 	if(species)
 		real_name = species.get_random_name(gender)
-		name = real_name
+		SetName(real_name)
 		if(mind)
 			mind.name = real_name
 
@@ -48,6 +48,7 @@
 	if(dna)
 		dna.ready_dna(src)
 		dna.real_name = real_name
+		dna.s_base = s_base
 		sync_organ_dna()
 	make_blood()
 
@@ -181,9 +182,16 @@
 /mob/living/carbon/human/restrained()
 	if (handcuffed)
 		return 1
+	if(grab_restrained())
+		return 1
 	if (istype(wear_suit, /obj/item/clothing/suit/straight_jacket))
 		return 1
 	return 0
+
+/mob/living/carbon/human/proc/grab_restrained()
+	for (var/obj/item/grab/G in grabbed_by)
+		if(G.restrains())
+			return TRUE
 
 /mob/living/carbon/human/var/co2overloadtime = null
 /mob/living/carbon/human/var/temperature_resistance = T0C+75
@@ -647,7 +655,8 @@
 	return
 
 /mob/living/proc/check_has_mouth()
-	return 1
+	// mobs do not have mouths by default
+	return 0
 
 /mob/living/carbon/human/check_has_mouth()
 	// Todo, check stomach organ when implemented.
@@ -1200,7 +1209,7 @@
 
 	. = CAN_INJECT
 	for(var/obj/item/clothing/C in list(head, wear_mask, wear_suit, w_uniform, gloves, shoes))
-		if(C && (C.body_parts_covered & affecting.body_part) && (C.item_flags & THICKMATERIAL))
+		if(C && (C.body_parts_covered & affecting.body_part) && (C.item_flags & ITEM_FLAG_THICKMATERIAL))
 			if(istype(C, /obj/item/clothing/suit/space))
 				. = INJECTION_PORT //it was going to block us, but it's a space suit so it doesn't because it has some kind of port
 			else
@@ -1249,14 +1258,14 @@
 		return ..()
 
 /mob/living/carbon/human/getDNA()
-	if(species.flags & NO_SCAN)
+	if(species.species_flags & SPECIES_FLAG_NO_SCAN)
 		return null
 	if(isSynthetic())
 		return
 	..()
 
 /mob/living/carbon/human/setDNA()
-	if(species.flags & NO_SCAN)
+	if(species.species_flags & SPECIES_FLAG_NO_SCAN)
 		return
 	if(isSynthetic())
 		return
@@ -1277,13 +1286,13 @@
 	return 0
 
 /mob/living/carbon/human/slip(var/slipped_on, stun_duration=8)
-	if((species.flags & NO_SLIP) || (shoes && (shoes.item_flags & NOSLIP)))
+	if((species.species_flags & SPECIES_FLAG_NO_SLIP) || (shoes && (shoes.item_flags & ITEM_FLAG_NOSLIP)))
 		return 0
 	return !!(..(slipped_on,stun_duration))
 
 /mob/living/carbon/human/check_slipmove()
 	if(h_style)
-		var/datum/sprite_accessory/hair/S = hair_styles_list[h_style]
+		var/datum/sprite_accessory/hair/S = GLOB.hair_styles_list[h_style]
 		if(S && S.flags & HAIR_TRIPPABLE && prob(0.4))
 			slip(S, 4)
 			return TRUE
@@ -1366,7 +1375,7 @@
 	set desc = "Try not to hurt them."
 	set category = "IC"
 
-	if(stat || species.flags & CAN_NAB) return
+	if(incapacitated() || species.species_flags & SPECIES_FLAG_CAN_NAB) return
 	pulling_punches = !pulling_punches
 	to_chat(src, "<span class='notice'>You are now [pulling_punches ? "pulling your punches" : "not pulling your punches"].</span>")
 	return
@@ -1456,7 +1465,7 @@
 		if(!istype(check_organ))
 			return 0
 		return check_organ.can_feel_pain()
-	return !(species.flags & NO_PAIN)
+	return !(species.species_flags & SPECIES_FLAG_NO_PAIN)
 
 /mob/living/carbon/human/need_breathe()
 	if(species.breathing_organ && should_have_organ(species.breathing_organ))
@@ -1596,7 +1605,7 @@
 	if(status_flags & FAKEDEATH)
 		return "[Floor(120+rand(-5,5))*0.25]/[Floor(80+rand(-5,5)*0.25)]"
 	var/blood_result = get_blood_circulation()
-	return "[Floor((120+rand(-5,5))*(blood_result/100))]/[Floor(80+rand(-5,5)*(blood_result/100))]"
+	return "[Floor((120+rand(-5,5))*(blood_result/100))]/[Floor((80+rand(-5,5))*(blood_result/100))]"
 
 //Point at which you dun breathe no more. Separate from asystole crit, which is heart-related.
 /mob/living/carbon/human/proc/nervous_system_failure()

@@ -24,7 +24,6 @@
 	berets["home guard beret"] = /obj/item/clothing/head/beret/solgov/homeguard
 	berets["gateway administration beret"] = /obj/item/clothing/head/beret/solgov/gateway
 	berets["customs and trade beret"] = /obj/item/clothing/head/beret/solgov/customs
-	berets["orbital assault beret"] = /obj/item/clothing/head/beret/solgov/orbital
 	berets["government research beret"] = /obj/item/clothing/head/beret/solgov/research
 	berets["health service beret"] = /obj/item/clothing/head/beret/solgov/health
 	berets["diplomatic security beret"] = /obj/item/clothing/head/beret/solgov/diplomatic
@@ -41,18 +40,14 @@
 	path = /obj/item/clothing/head/soft/solgov/veteranhat
 	allowed_roles = NON_MILITARY_ROLES
 
-/datum/gear/head/bandana
+/datum/gear/mask/bandana
 	display_name = "bandana selection"
-	path = /obj/item/clothing/head
+	path = /obj/item/clothing
 	allowed_roles = NON_MILITARY_ROLES
 
-/datum/gear/head/bandana/New()
+/datum/gear/mask/bandana/New()
 	..()
-	var/bandanas = list()
-	bandanas["green bandana"] = /obj/item/clothing/head/greenbandana
-	bandanas["orange bandana"] = /obj/item/clothing/head/orangebandana
-	bandanas["pirate bandana"] = /obj/item/clothing/head/bandana
-	gear_tweaks += new/datum/gear_tweak/path(bandanas)
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(typesof(/obj/item/clothing/mask/bandana) + typesof(/obj/item/clothing/head/bandana))
 
 /datum/gear/head/bow
 	display_name = "hair bow, colour select"
@@ -179,12 +174,6 @@
 	cost = 0
 	allowed_roles = SOLGOV_ROLES
 
-/datum/gear/head/marinehat
-	display_name = "marine cap"
-	path = /obj/item/clothing/head/solgov/utility/marine
-	cost = 0
-	allowed_roles = SOLGOV_ROLES
-
 /datum/gear/head/echat
 	display_name = "EC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
@@ -214,4 +203,8 @@
 	welding_masks += /obj/item/clothing/head/welding/fancy
 	welding_masks += /obj/item/clothing/head/welding/knight
 	welding_masks += /obj/item/clothing/head/welding/carp
-	gear_tweaks += new/datum/gear_tweak/path(assoc_by_proc(welding_masks, /proc/get_initial_name))
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(welding_masks)
+
+/datum/gear/head/tankccap
+	display_name = "padded cap"
+	path = /obj/item/clothing/head/tank

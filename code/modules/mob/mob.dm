@@ -18,7 +18,7 @@
 		spellremove(src)
 	ghostize()
 	..()
-	return QDEL_HINT_HARDDEL_NOW
+	return QDEL_HINT_HARDDEL
 
 /mob/proc/remove_screen_obj_references()
 	hands = null
@@ -701,6 +701,10 @@
 	else
 		lying = incapacitated(INCAPACITATION_KNOCKDOWN)
 		canmove = !incapacitated(INCAPACITATION_DISABLED)
+		//playsound(src, "pratfall", 50)
+
+	if(lying && lying != lying_prev)
+		playsound(src, "pratfall", 50)
 
 	if(lying)
 		set_density(0)
@@ -721,7 +725,7 @@
 	if( update_icon )	//forces a full overlay update
 		update_icon = 0
 		regenerate_icons()
-	else if( lying != lying_prev )
+	else if(lying != lying_prev)
 		update_icons()
 	update_vision_cone()
 

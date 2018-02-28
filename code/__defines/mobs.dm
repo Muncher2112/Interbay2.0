@@ -22,6 +22,7 @@
 
 // Grab levels.
 #define NORM_PASSIVE    "normal passive"
+#define NORM_STRUGGLE   "normal struggle"
 #define NORM_AGGRESSIVE "normal aggressive"
 #define NORM_NECK       "normal neck"
 #define NORM_KILL       "normal kill"
@@ -110,11 +111,6 @@
 #define COMPANY_NEUTRAL 		"Neutral"
 #define COMPANY_SKEPTICAL		"Skeptical"
 #define COMPANY_OPPOSED			"Opposed"
-
-//RELIGIONS
-#define LEGAL_RELIGION 			"Deo Machina"
-#define ILLEGAL_RELIGION 		"Old Gods"
-#define NARSIE_RELIGION			"Narsie"
 
 #define COMPANY_ALIGNMENTS		list(COMPANY_LOYAL,COMPANY_SUPPORTATIVE,COMPANY_NEUTRAL,COMPANY_SKEPTICAL,COMPANY_OPPOSED)
 
@@ -274,19 +270,12 @@
 #define SPECIES_BOGANI "Bogani"
 #define SPECIES_EGYNO "Egyno"
 
-#define SOCIAL_CLASS_MIN 1
-#define SOCIAL_CLASS_MED 2
-#define SOCIAL_CLASS_HIGH 3
-#define SOCIAL_CLASS_MAX 4
-
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
 #define SURGERY_RETRACTED 2
 #define SURGERY_ENCASED 3
 
 #define STAMINA_EXHAUST 200
-
-
 
 //Moods levels for humans
 #define MOOD_LEVEL_HAPPY4 20
@@ -343,7 +332,16 @@
 #define STARVATION_OXY_HEAL_RATE 1 //While starving, THIS much oxygen damage is restored per life tick (instead of the default 5)
 
 //Temperature stuff
-//BODYTEMP_COLD_DAMAGE_LIMIT 			 -13°C Below which freezing damage occurs.						(defined in items_clothing.dm)
-#define TEMPERATURE_REFRESHING 	278.15	//5°C  Below which drinks and foods are considered refreshing.
-#define TEMPERATURE_WARM 		323.15	//50°C Above which drinks and foods are considered warm.
-//BODYTEMP_HEAT_DAMAGE_LIMIT 			  87°C Above which burn damage occurs.							(defined in items_clothing.dm)
+//BODYTEMP_COLD_DAMAGE_LIMIT 			 -13ï¿½C Below which freezing damage occurs.						(defined in items_clothing.dm)
+#define TEMPERATURE_REFRESHING 	278.15	//5ï¿½C  Below which drinks and foods are considered refreshing.
+#define TEMPERATURE_WARM 		323.15	//50ï¿½C Above which drinks and foods are considered warm.
+//BODYTEMP_HEAT_DAMAGE_LIMIT 			  87ï¿½C Above which burn damage occurs.							(defined in items_clothing.dm)#define STASIS_MISC "misc"
+#define STASIS_CRYOBAG "cryobag"
+#define STASIS_COLD "cold"
+
+#define AURA_CANCEL 1
+#define AURA_FALSE  2
+#define AURA_TYPE_BULLET "Bullet"
+#define AURA_TYPE_WEAPON "Weapon"
+#define AURA_TYPE_THROWN "Thrown"
+#define AURA_TYPE_LIFE   "Life"

@@ -31,8 +31,6 @@ datum/preferences
 	var/datum/category_collection/player_setup_collection/player_setup
 	var/datum/browser/panel
 
-
-
 /datum/preferences/New(client/C)
 	player_setup = new(src)
 	gender = pick(MALE, FEMALE)
@@ -219,6 +217,7 @@ datum/preferences
 	character.b_skin = b_skin
 
 	character.s_tone = s_tone
+	character.s_base = s_base
 
 	character.h_style = h_style
 	character.f_style = f_style
@@ -255,7 +254,7 @@ datum/preferences
 				O.robotize()
 		else //normal organ
 			O.force_icon = null
-			O.name = initial(O.name)
+			O.SetName(initial(O.name))
 			O.desc = initial(O.desc)
 	//For species that don't care about your silly prefs
 	character.species.handle_limbs_setup(character)

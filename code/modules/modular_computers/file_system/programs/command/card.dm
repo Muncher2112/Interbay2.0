@@ -3,6 +3,7 @@
 	filedesc = "ID card modification program"
 	nanomodule_path = /datum/nano_module/program/card_mod
 	program_icon_state = "id"
+	program_key_state = "id_key"
 	program_menu_icon = "key"
 	extended_desc = "Program for programming crew ID cards."
 	required_access = access_change_ids
@@ -221,7 +222,7 @@
 					if(!access_allowed)
 						id_card.access += access_type
 	if(id_card)
-		id_card.name = text("[id_card.registered_name]'s ID Card ([id_card.assignment])")
+		id_card.SetName(text("[id_card.registered_name]'s ID Card ([id_card.assignment])"))
 
 	GLOB.nanomanager.update_uis(NM)
 	return 1

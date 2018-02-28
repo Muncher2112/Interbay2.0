@@ -204,11 +204,3 @@
 	allowed = list(/obj/item/stack/medical, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/hypospray, /obj/item/weapon/reagent_containers/syringe, \
 	/obj/item/device/healthanalyzer, /obj/item/device/flashlight, /obj/item/device/radio, /obj/item/weapon/tank/emergency,/obj/item/weapon/scalpel,/obj/item/weapon/retractor,/obj/item/weapon/hemostat, \
 	/obj/item/weapon/cautery,/obj/item/weapon/bonegel,/obj/item/weapon/FixOVein)
-
-
-/obj/item/clothing/suit/robes
-	name = "magistrate's robes"
-	desc = "Fit for a king... or a uh... magistrate."
-	icon_state = "robes"
-	item_state = "robes"
-	body_parts_covered = UPPER_TORSO|ARMS

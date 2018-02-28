@@ -23,9 +23,6 @@
 	company_short = "CMA"
 	system_name = "somewhere in space"
 
-	id_hud_icons = 'maps/dreyfus/icons/assignment_hud.dmi'
-
-
 	map_admin_faxes = list("Colonial Magistrate Authority")
 
 	shuttle_docked_message = "The shuttle has docked."
@@ -41,10 +38,10 @@
 
 
 /datum/map/utopia/perform_map_generation()
-	new /datum/random_map/automata/cave_system(null,1,1,3,255, 255) // Create the mining Z-level.
+	new /datum/random_map/automata/cave_system(null,1,1,3,200, 200) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null,1,1,3,64, 64)
-	new /datum/random_map/automata/cave_system(null,1,1,2,255, 255) // Create the mining Z-level.
+	new /datum/random_map/automata/cave_system(null,1,1,2,200, 200) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null,1,1,4,64, 64)
-	new /datum/random_map/automata/cave_system(null,1,1,1,255, 255) // Create the mining Z-level.
+	new /datum/random_map/automata/cave_system(null,1,1,1,200, 200) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null,1,1,2,64, 64)
 	return 1

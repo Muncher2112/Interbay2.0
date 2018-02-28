@@ -114,13 +114,6 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_med
 
-/obj/item/device/radio/headset/inquision
-	name = "inquisition's headset"
-	desc = "The headset of religious intolorence."
-	icon_state = "rob_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_inquisition
-
 /obj/item/device/radio/headset/headset_sci
 	name = "science radio headset"
 	desc = "A sciency headset. Like usual."
@@ -349,7 +342,7 @@
 		if(!radio_controller)
 			sleep(30) // Waiting for the radio_controller to be created.
 		if(!radio_controller)
-			src.name = "broken radio headset"
+			src.SetName("broken radio headset")
 			return
 
 		secure_radio_connections[ch_name] = radio_controller.add_object(src, radiochannels[ch_name],  RADIO_CHAT)

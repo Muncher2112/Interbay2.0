@@ -113,6 +113,7 @@ var/list/flooring_types
 	desc = "Scuffed from the passage of countless greyshirts."
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "steel"
+	color = null
 	has_damage_range = 4
 	damage_temperature = T0C+1400
 	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
@@ -125,6 +126,7 @@ var/list/flooring_types
 /decl/flooring/tiling/white
 	desc = "How sterile."
 	icon_base = "white"
+	color = null
 	build_type = /obj/item/stack/tile/floor_white
 
 /decl/flooring/tiling/white/mono
@@ -133,6 +135,7 @@ var/list/flooring_types
 /decl/flooring/tiling/dark
 	desc = "How ominous."
 	icon_base = "dark"
+	color = null
 	build_type = /obj/item/stack/tile/floor_dark
 
 /decl/flooring/tiling/dark/mono
@@ -145,86 +148,6 @@ var/list/flooring_types
 	has_damage_range = null
 	flags = TURF_REMOVE_CROWBAR
 	build_type = /obj/item/stack/tile/floor_freezer
-
-/decl/flooring/tiling/bunker/
-	name = "floor"
-	desc = "Don't slip."
-	icon = 'icons/turf/bunk.dmi'
-	icon_base = "plating"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/bunker
-
-/decl/flooring/tiling/bunker/hydro
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "hydro"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/floor_hydro
-
-/decl/flooring/tiling/bunker/showroom
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "hydro"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/floor_showroom
-
-/decl/flooring/tiling/bunker/cafe
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "cafe"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/floor_cafe
-
-/decl/flooring/tiling/bunker/yellow
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "old_tile_cargo"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/yellow
-
-/decl/flooring/tiling/bunker/black
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "old_tile_black"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/black
-
-/decl/flooring/tiling/bunker/red
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "old_tile_red"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/red
-
-/decl/flooring/tiling/bunker/polar
-	name = "floor"
-	desc = "Don't slip."
-	icon_base = "polar"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/polar
-
-/decl/flooring/tiling/bar
-	name = "floor"
-	desc = "Don't slip."
-	icon = 'icons/turf/flooring/tiles.dmi'
-	icon_base = "bar"
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/bar
-
-/decl/flooring/tiling/misc
-	icon = 'icons/turf/flooring/misc.dmi'
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	can_paint = 0
 
 /decl/flooring/wood
 	name = "wooden floor"
@@ -306,6 +229,13 @@ var/list/flooring_types
 
 /decl/flooring/reinforced/shuttle/black
 	icon_base = "floor7"
+
+/decl/flooring/diona
+	name = "biomass"
+	desc = "a mass of small intertwined aliens forming a floor... Creepy."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "diona"
+	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
 
 /decl/flooring/reinforced/ramp
 	name = "foot ramp"

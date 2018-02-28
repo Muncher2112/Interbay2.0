@@ -5,12 +5,6 @@ GLOBAL_LIST_INIT(robot_module_types, list(
 	"Research"
 )) // This shouldn't be a static list. Am I the only one who cares about extendability around here?
 
-//Uplink spawn loc
-#define UPLINK_PDA   "PDA"
-#define UPLINK_RADIO "Headset"
-#define UPLINK_NONE  "None"
-GLOBAL_LIST_INIT(uplink_locations, list(UPLINK_PDA, UPLINK_RADIO, UPLINK_NONE))
-
 // Noises made when hit while typing.
 GLOBAL_LIST_INIT(hit_appends, list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF"))
 
@@ -30,7 +24,7 @@ GLOBAL_LIST_INIT(scarySounds, list(
 	'sound/effects/Glassbr3.ogg',
 	'sound/items/Welder.ogg',
 	'sound/items/Welder2.ogg',
-	'sound/machines/airlock.ogg',
+	'sound/machines/airlock_open.ogg',
 	'sound/effects/clownstep1.ogg',
 	'sound/effects/clownstep2.ogg'
 ))

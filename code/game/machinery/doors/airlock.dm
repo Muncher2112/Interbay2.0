@@ -35,12 +35,12 @@
 	var/secured_wires = 0
 	var/datum/wires/airlock/wires = null
 
-	var/open_sound_powered = 'sound/machines/airlock.ogg'
-	var/open_sound_unpowered = 'sound/machines/airlock_creaking.ogg'
+	var/open_sound_powered = 'sound/machines/airlock_open.ogg'
+	var/open_sound_unpowered = 'sound/machines/airlock_open_force.ogg'
 	var/open_failure_access_denied = 'sound/machines/buzz-two.ogg'
 
 	var/close_sound_powered = 'sound/machines/AirlockClose.ogg'
-	var/close_sound_unpowered = 'sound/machines/airlock_creaking.ogg'
+	var/close_sound_unpowered = 'sound/machines/airlock_close_force.ogg'
 	var/close_failure_blocked = 'sound/machines/triple_beep.ogg'
 
 	var/bolts_dropping = 'sound/machines/BoltsDown.ogg'
@@ -91,25 +91,15 @@
 	icon = 'icons/obj/doors/doorchem.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_chem
 
-/obj/machinery/door/airlock/arbiter
-	name = "Airlock"
-	icon = 'icons/obj/doors/Doorcomalt.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_arbiter
-
 /obj/machinery/door/airlock/cone
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doormetalone.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
 
-/obj/machinery/door/airlock/weng
+/obj/machinery/door/airlock/arbiter
 	name = "Airlock"
-	icon = 'icons/obj/doors/Doorneweng.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_weng
-
-/obj/machinery/door/airlock/weapon
-	name = "Airlock"
-	icon = 'icons/obj/doors/Doorweap.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_weap
+	icon = 'icons/obj/doors/Doorcomalt.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_arbiter
 
 /obj/machinery/door/airlock/security
 	name = "Airlock"
@@ -141,6 +131,11 @@
 	icon = 'icons/obj/doors/Doorext.dmi'
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_ext
+
+/obj/machinery/door/airlock/weapon
+	name = "Airlock"
+	icon = 'icons/obj/doors/Doorweap.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_weap
 
 /obj/machinery/door/airlock/external/bolted
 	icon_state = "door_locked"
@@ -211,16 +206,16 @@
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_mhatch
 
+/obj/machinery/door/airlock/maintenance_hatch/bolted
+	locked = 1
+	icon_state = "door_locked"
+
 /obj/machinery/door/airlock/security_hatch
 	name = "Maintenance Hatch"
 	icon = 'icons/obj/doors/Doorhatcharmoury.dmi'
 	explosion_resistance = 20
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_shatch
-
-/obj/machinery/door/airlock/maintenance_hatch/bolted
-	locked = 1
-	icon_state = "door_locked"
 
 /obj/machinery/door/airlock/glass_command
 	name = "Maintenance Hatch"
@@ -280,16 +275,6 @@
 	explosion_resistance = 5
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
-	glass = 1
-
-/obj/machinery/door/airlock/glass_weng
-	name = "Maintenance Hatch"
-	icon = 'icons/obj/doors/Doornewengglass.dmi'
-	hitsound = 'sound/effects/Glasshit.ogg'
-	maxhealth = 300
-	explosion_resistance = 5
-	opacity = 0
-	assembly_type = /obj/structure/door_assembly/door_assembly_weng
 	glass = 1
 
 /obj/machinery/door/airlock/glass_weap
@@ -363,6 +348,16 @@
 	explosion_resistance = 5
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
+	glass = 1
+
+/obj/machinery/door/airlock/glass_weap
+	name = "Maintenance Hatch"
+	icon = 'icons/obj/doors/Doorweapglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_weap
 	glass = 1
 
 /obj/machinery/door/airlock/glass_sol
@@ -950,7 +945,7 @@ About the new airlock wires panel:
 			return 0
 		cut_verb = "cutting"
 		cut_sound = 'sound/items/Welder.ogg'
-	else if(istype(item,/obj/item/weapon/pickaxe/plasmacutter))
+	else if(istype(item,/obj/item/weapon/gun/energy/plasmacutter)) //They could probably just shoot them out, but who cares!
 		cut_verb = "cutting"
 		cut_sound = 'sound/items/Welder.ogg'
 		cut_delay *= 0.66
@@ -1041,8 +1036,6 @@ About the new airlock wires panel:
 				return
 	if(istype(C, /obj/item/taperoll))
 		return
-
-	src.add_fingerprint(user)
 
 	if (!repairing && (stat & BROKEN) && src.locked) //bolted and broken
 		if (!cut_bolts(C,user))
@@ -1305,9 +1298,9 @@ About the new airlock wires panel:
 
 		//get the name from the assembly
 		if(assembly.created_name)
-			name = assembly.created_name
+			SetName(assembly.created_name)
 		else
-			name = "[istext(assembly.glass) ? "[assembly.glass] airlock" : assembly.base_name]"
+			SetName("[istext(assembly.glass) ? "[assembly.glass] airlock" : assembly.base_name]")
 
 		//get the dir from the assembly
 		set_dir(assembly.dir)
