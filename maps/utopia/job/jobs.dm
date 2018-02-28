@@ -187,8 +187,96 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(8,14), rand(8,14), rand(5,11))
+		H.add_stats(rand(8,14), rand(8,12), rand(5,11))
 		H.add_skills(rand(30, 60), rand(30,60))
+
+/datum/job/mining
+	title = "Shaft Miner"
+	department = "Supply"
+	department_flag = SUP
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the quartermaster and the head of personnel"
+	selection_color = "#515151"
+	economic_modifier = 5
+	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
+	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
+	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(8,15), rand(8,11), rand(5,10))
+		H.add_skills(rand(40, 70), rand(30,60))
+
+/datum/job/chef
+	title = "Chef"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#515151"
+	access = list(access_hydroponics, access_bar, access_kitchen)
+	minimal_access = list(access_kitchen)
+	alt_titles = list("Cook")
+	outfit_type = /decl/hierarchy/outfit/job/service/chef
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(7,12), rand(6,12), rand(5,11))
+		H.add_skills(rand(25, 75), rand(5,40))
+
+/datum/job/chaplain
+	title = "Chaplain"
+	department = "Civilian"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#515151"
+	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
+	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
+	outfit_type = /decl/hierarchy/outfit/job/chaplain
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(3,10), rand(3,12), rand(8,15))
+		H.add_skills(rand(5, 50), rand(5,50))
+
+/datum/job/janitor
+	title = "Janitor"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#515151"
+	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(3,10), rand(8,15), rand(8,12))
+
+/datum/job/Paramedic
+	title = "Paramedic"
+	department = "Medical"
+	department_flag = MED
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief medical officer"
+	selection_color = "#013d3b"
+	economic_modifier = 4
+	minimal_player_age = 7
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
+	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(8,13), rand(8,13), rand(8,15))
+		H.add_skills(rand(20, 60), rand(20,60), 50, 80)
 
 /datum/job/bartender
 	title = "Bartender"
@@ -201,3 +289,7 @@
 	minimal_access = list(access_bar, access_kitchen, access_hydroponics)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
 
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(7,12), rand(6,12), rand(5,11))
+		H.add_skills(rand(5, 40), rand(25,70))
