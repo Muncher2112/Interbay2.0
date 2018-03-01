@@ -27,6 +27,14 @@
 
 	return filtered
 
+/obj/item/clothing/mask/gas/security
+	name = "military grade gas mask"
+	icon_state = "sgmask"
+	item_state = "sgmask"
+	siemens_coefficient = 0.7
+	body_parts_covered = FACE|EYES
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
+
 /obj/item/clothing/mask/gas/half
 	name = "face mask"
 	desc = "A compact, durable gas mask that can be connected to an air supply."

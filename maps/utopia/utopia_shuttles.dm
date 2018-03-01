@@ -160,6 +160,7 @@
 	name = "Station"
 	landmark_tag = "nav_escape_dock"
 	docking_controller = "escape_dock"
+	base_turf = /turf/simulated/floor/reinforced/airless
 
 //Commented out till I map these in.
 //Merc
