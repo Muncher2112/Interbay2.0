@@ -562,3 +562,7 @@ var/list/mining_floors = list()
 				attackby(R.module_state_3,R)
 			else
 				return
+
+/turf/simulated/floor/asteroid/air
+	initial_gas = list("oxygen" = 21.8366, "nitrogen" = 82.1472)
+	temperature = 293.15
