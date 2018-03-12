@@ -137,6 +137,16 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/paleblue/three_quarters
 	icon_state = "corner_white_three_quarters"
 
+/obj/effect/floor_decal/corner/cyan
+	name = "cyan corner"
+	color = "#469085"
+
+/obj/effect/floor_decal/corner/cyan/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/cyan/three_quarters
+	icon_state = "corner_white_three_quarters"
+
 /obj/effect/floor_decal/corner/green
 	name = "green corner"
 	color = COLOR_GREEN_GRAY
@@ -245,7 +255,7 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/corner/orange
 	name = "orange corner"
-	color = COLOR_DARK_ORANGE
+	color = "#d27428"
 
 /obj/effect/floor_decal/corner/orange/diagonal
 	icon_state = "corner_white_diagonal"
