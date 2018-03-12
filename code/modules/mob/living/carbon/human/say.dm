@@ -1,8 +1,12 @@
 /mob/living/carbon/human/say(var/message, var/datum/language/speaking = null, whispering)
 	var/alt_name = ""
 	if(name != GetVoice())
-		if(get_id_name("Unknown") != GetVoice())
+		if(get_id_name("Unknown") != GetVoice() && get_id_name("Unknown") != "Unknown")
 			alt_name = "(as [get_id_name("Unknown")])"
+		
+		else if(get_id_name("Unknown") == "Unknown")
+			SetName(get_id_name("Unknown"))
+
 		else
 			SetName(get_id_name("Unknown"))
 

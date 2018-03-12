@@ -180,6 +180,11 @@ meteor_act
 		to_chat(user, "<span class='danger'>They are missing that limb!</span>")
 		return null
 
+	
+	if(user.skillcheck(user.melee_skill, 60, 0) == CRIT_FAILURE)
+		user.resolve_critical_miss(I)
+		return null
+
 	var/blocked = run_armor_check(hit_zone, "melee", I.armor_penetration, "Your armor has protected your [affecting.name].", "Your armor has softened the blow to your [affecting.name].")
 
 
