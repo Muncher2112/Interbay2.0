@@ -10,8 +10,8 @@
 //////////////////////////////////////////////////////////////////////////
 
 //defines
-#define CRIT_SUCCESS_NORM 5
-#define CRIT_FAILURE_NORM 5
+#define CRIT_SUCCESS_NORM 1
+#define CRIT_FAILURE_NORM 1
 #define CRIT_SUCCESS 2
 #define CRIT_FAILURE 3
 
@@ -79,7 +79,7 @@
 		return 1
 
 //having a bad mood fucks your shit up fam.
-/mob/proc/mood_affect(var/stat = null, var/skill = null)
+/mob/proc/mood_affect(var/stat, var/skill)
 	if(iscarbon(src))
 		var/mob/living/carbon/C = src
 		if(C.happiness <= MOOD_LEVEL_SAD3)
