@@ -671,7 +671,7 @@ meteor_act
 
 		if(3)
 			visible_message("<span class='danger'><big>CRITICAL HIT! [src] is knocked unconcious by the blow!</big></span>")
-			apply_effect(20, PARALYZE)
+			apply_effect(10, PARALYZE)
 			return
 
 /*
