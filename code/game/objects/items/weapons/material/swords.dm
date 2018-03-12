@@ -134,9 +134,3 @@
 	weapon_speed_delay = 10
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
-
-/obj/item/weapon/material/sword/combat_knife/attack_self(mob/user)
-	if(atk_mode == SLASH)
-		switch_intent(STAB)
-	else
-		switch_intent(SLASH)
