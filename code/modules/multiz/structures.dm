@@ -161,8 +161,8 @@
 
 /obj/structure/stairs
 	name = "Stairs"
-	desc = "Stairs leading to another deck.  Not too useful if the gravity goes out."
-	icon = 'icons/obj/stairs.dmi'
+	desc = "Stairs leading to another deck. this one is steep."
+	icon = 'icons/obj/sstairs.dmi'
 	density = 0
 	opacity = 0
 	anchored = 1
@@ -205,20 +205,38 @@
 // type paths to make mapping easier.
 /obj/structure/stairs/north
 	dir = NORTH
+
+/obj/structure/stairs/south
+	dir = SOUTH
+
+/obj/structure/stairs/east
+	dir = EAST
+
+/obj/structure/stairs/west
+	dir = WEST
+
+//2-Tiled stairs
+/obj/structure/stairs/zlong
+	name = "Stairs"
+	desc = "Not too useful if the gravity goes out."
+	icon = 'icons/obj/stairs.dmi'
+
+/obj/structure/stairs/zlong/north
+	dir = NORTH
 	bound_height = 64
 	bound_y = -32
 	pixel_y = -32
 
-/obj/structure/stairs/south
+/obj/structure/stairs/zlong/south
 	dir = SOUTH
 	bound_height = 64
 
-/obj/structure/stairs/east
+/obj/structure/stairs/zlong/east
 	dir = EAST
 	bound_width = 64
 	bound_x = -32
 	pixel_x = -32
 
-/obj/structure/stairs/west
+/obj/structure/stairs/zlong/west
 	dir = WEST
 	bound_width = 64
