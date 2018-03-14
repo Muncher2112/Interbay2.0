@@ -559,7 +559,7 @@ default behaviour is:
 										blood_exists = 1
 									if(ishuman(M))//Ok so they're a human, so they have blood and shit.
 										var/mob/living/carbon/human/H = M
-										var/blood_volume = round(H.vessel.get_reagent_amount("blood"))//Getting their blood.
+										var/blood_volume = round(H.vessel.get_reagent_amount(/datum/reagent/blood))//Getting their blood.
 
 										if(blood_volume > 50)//Do they have blood?
 											H.vessel.remove_reagent(/datum/reagent/blood, 1)//If so take some away.
