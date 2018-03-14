@@ -137,6 +137,16 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/paleblue/three_quarters
 	icon_state = "corner_white_three_quarters"
 
+/obj/effect/floor_decal/corner/cyan
+	name = "cyan corner"
+	color = "#469085"
+
+/obj/effect/floor_decal/corner/cyan/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/cyan/three_quarters
+	icon_state = "corner_white_three_quarters"
+
 /obj/effect/floor_decal/corner/green
 	name = "green corner"
 	color = COLOR_GREEN_GRAY
@@ -145,6 +155,16 @@ var/list/floor_decals = list()
 	icon_state = "corner_white_diagonal"
 
 /obj/effect/floor_decal/corner/green/three_quarters
+	icon_state = "corner_white_three_quarters"
+
+/obj/effect/floor_decal/corner/dgreen
+	name = "dgreen corner"
+	color = "#6e8766"
+
+/obj/effect/floor_decal/corner/dgreen/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/dgreen/three_quarters
 	icon_state = "corner_white_three_quarters"
 
 /obj/effect/floor_decal/corner/lime
@@ -235,7 +255,7 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/corner/orange
 	name = "orange corner"
-	color = COLOR_DARK_ORANGE
+	color = "#d27428"
 
 /obj/effect/floor_decal/corner/orange/diagonal
 	icon_state = "corner_white_diagonal"
@@ -733,6 +753,11 @@ var/list/floor_decals = list()
 	icon_state = "plating-corner"
 /obj/effect/floor_decal/newcorner/plating/diagonal
 	icon_state = "plating-diagonal"
+
+/obj/effect/floor_decal/newcorner/reinforced
+	icon_state = "reinforced"
+/obj/effect/floor_decal/newcorner/reinforced/corner
+	icon_state = "rcorner"
 
 /obj/effect/floor_decal/industrial/direction
 	icon_state = "dir_white"
