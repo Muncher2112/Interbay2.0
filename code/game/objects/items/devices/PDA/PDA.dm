@@ -971,7 +971,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	if(tap)
 		U.visible_message("<span class='notice'>\The [U] taps on \his PDA's screen.</span>")
 	var/t = input(U, "Please enter message", P.name, tempmessage[P]) as text
-	t = sanitize(t)
+	t = sanitizeSafe(t, extra = 0)
 	//t = readd_quotes(t)
 	t = replace_characters(t, list("&#34;" = "\""))
 	if (!t)
@@ -991,7 +991,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	last_text = world.time
 	tempmessage.Remove(P)
 	var/datum/reception/reception = get_reception(src, P, t)
-	t = cp1251_to_utf8(rhtml_decode(reception.message))
+	t = cp1251_to_utf8(reception.message)
 	if(!get_message_server(z))
 		to_chat(U, "<span class='notice'>ERROR: Messaging server is not responding.</span>")
 		tempmessage[P] = t
@@ -1010,9 +1010,9 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			to_chat(U, "ERROR: Messaging server rejected your message. Reason: contains '[send_result]'.")
 			tempmessage[P] = t
 			return
-
-		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[t]", "timestamp" = stationtime2text(), "target" = "\ref[P]")))
-		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[t]", "timestamp" = stationtime2text(), "target" = "\ref[src]")))
+		var/utf_convert = rustoutf(html_decode(t))
+		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[utf_convert]", "timestamp" = stationtime2text(), "target" = "\ref[P]")))
+		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[utf_convert]", "timestamp" = stationtime2text(), "target" = "\ref[src]")))
 		for(var/mob/M in GLOB.player_list)
 			if(M.stat == DEAD && M.get_preference_value(/datum/client_preference/ghost_ears) == GLOB.PREF_ALL_SPEECH) // src.client is so that ghosts don't have to listen to mice
 				if(istype(M, /mob/new_player))
@@ -1069,7 +1069,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	new_message(sending_device, sending_device.owner, sending_device.ownjob, message)
 
 /obj/item/device/pda/proc/new_message(var/sending_unit, var/sender, var/sender_job, var/message)
-	var/reception_message = "\icon[src] <b>Message from [sender] ([sender_job]), </b>\"[utf8_to_cp1251(message)]\" (<a href='byond://?src=\ref[src];choice=Message;skiprefresh=1;target=\ref[sending_unit]'>Reply</a>)"
+	var/reception_message = "\icon[src] <b>Message from [sender] ([sender_job]), </b>\"[message]\" (<a href='byond://?src=\ref[src];choice=Message;skiprefresh=1;target=\ref[sending_unit]'>Reply</a>)"
 	new_info(message_silent, ttone, reception_message)
 
 	log_pda("[usr] (PDA: [sending_unit]) sent \"[message]\" to [name]")
