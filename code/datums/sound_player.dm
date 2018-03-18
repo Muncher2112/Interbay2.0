@@ -28,11 +28,10 @@ var/decl/sound_player/sound_player = new()
 	source_id_uses = list()
 
 /decl/sound_player/proc/PlayLoopingSound(var/atom/source, var/sound_id, var/sound, var/volume, var/range, var/falloff, var/prefer_mute, var/ignore_vis = FALSE)
-	var/channel = rand(1337,1488)    //PrivGetChannel(sound_id)
-	/*if(!channel)
+	var/channel = PrivGetChannel(sound_id)
+	if(!channel)
 		log_warning("All available sound channels are in active use.")
 		return
-	*/
 	return new/datum/sound_token(source, sound_id, sound, volume, channel, range, falloff, prefer_mute, ignore_vis)
 
 /decl/sound_player/proc/PrivStopSound(var/datum/sound_token/sound_token)

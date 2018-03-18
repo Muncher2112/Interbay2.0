@@ -8,6 +8,10 @@
 	var/sound_id
 	w_class = ITEM_SIZE_LARGE
 
+/obj/item/device/boombox/New()
+	..()
+	sound_id = "[type]_[sequential_id(type)]"
+
 
 /obj/item/device/boombox/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/device/cassete))
@@ -18,10 +22,7 @@
 			return
 		I.forceMove(src)
 		casseta = I
-		visible_message(
-		"<span class='notice'>You insert cassete into [src].</span>",
-		"<span class='notice'>[user] insert cassete into [src].</span>"
-		)
+		visible_message("<span class='notice'>[user] insert cassete into [src].</span>")
 		playsound(get_turf(src), 'sound/machines/bominside.ogg', 50, 1)
 		return
 	..()
@@ -40,13 +41,7 @@
 		if("l_hand")
 			eject()
 
-/*/obj/item/device/boombox/attack_hand(mob/user)
-	if(user.get_inactive_hand() == src)
-		if(casseta)
-			eject()
-			return
-	..()
-*/
+
 
 
 /obj/item/device/boombox/proc/eject()
@@ -58,10 +53,7 @@
 
 	if(playing)
 		StopPlaying()
-	visible_message(
-	"<span class='notice'>You eject cassete from [src].</span>",
-	"<span class='notice'>[usr] ejects cassete from [src].</span>"
-	)
+	visible_message("<span class='notice'>[usr] ejects cassete from [src].</span>")
 	playsound(get_turf(src), 'sound/machines/bominside.ogg', 50, 1)
 	usr.put_in_hands(casseta)
 	casseta = null
