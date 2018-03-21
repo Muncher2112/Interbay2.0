@@ -53,6 +53,11 @@
 		Weaken(5)
 		visible_message("<b>[src] surrenders!</b>")
 		playsound(src, 'sound/effects/surrender.ogg', 50, 1)
+		var/atom/movable/overlay/animation = new /atom/movable/overlay( loc )
+		animation.icon_state = "blank"
+		animation.icon = 'icons/mob/screen1.dmi'
+		animation.master = src
+		flick("attention", animation)
 
 /mob/proc/mob_rest()
 	if(resting && !stunned && !weakened)//The incapacitated proc includes resting for whatever fucking stupid reason I hate SS13 code so fucking much.
