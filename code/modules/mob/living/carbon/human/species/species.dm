@@ -472,8 +472,8 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 	return
 
 /datum/species/proc/disarm_attackhand(var/mob/living/carbon/human/attacker, var/mob/living/carbon/human/target)
-	attacker.do_attack_animation(target)
-
+	//attacker.do_attack_animation(target)
+	attacker.adjustStaminaLoss(rand(2,3))//No more spamming disarm without consequences.
 	if(target.w_uniform)
 		target.w_uniform.add_fingerprint(attacker)
 	var/obj/item/organ/external/affecting = target.get_organ(ran_zone(attacker.zone_sel.selecting))

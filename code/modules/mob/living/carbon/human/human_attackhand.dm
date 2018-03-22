@@ -118,7 +118,7 @@
 			return H.make_grab(H, src)
 
 		if(I_HURT)
-
+			M.adjustStaminaLoss(rand(2,5))//No more spamming disarm without consequences.
 			if(!istype(H))
 				attack_generic(H,rand(1,3),"punched")
 				return
@@ -193,17 +193,28 @@
 					hit_zone = ran_zone(hit_zone)
 				if(prob(15) && hit_zone != BP_CHEST) // Missed!
 					if(!src.lying)
-						attack_message = "[H] attempted to strike [src], but missed!"
+						if(H.skillcheck(H.melee_skill, 60, 0) == CRIT_FAILURE)
+							H.resolve_critical_miss()
+							attack_message = null
+						else
+							attack_message = "[H] attempted to strike [src], but missed!"
 					else
 						attack_message = "[H] attempted to strike [src], but \he rolled out of the way!"
 						src.set_dir(pick(GLOB.cardinal))
 					miss_type = 1
 
+			var/hitcheck = rand(0, 9)
+			if(!istype(src, /mob/living/carbon/human/machine) && istype(affecting, /obj/item/organ/external/head) && prob(hitcheck * (hit_zone == BP_MOUTH ? 5 : 1))) //MUCH higher chance to knock out teeth if you aim for mouth
+				var/obj/item/organ/external/head/U = affecting
+				if(U.knock_out_teeth(get_dir(H, src), round(rand(28, 38) * ((hitcheck*2)/100))))
+					src.visible_message("<span class='danger'>[src]'s teeth sail off in an arc!</span>", \
+										"<span class='userdanger'>[src]'s teeth sail off in an arc!</span>")
+
 			if(!miss_type && block)
 				attack_message = "[H] went for [src]'s [affecting.name] but was blocked!"
 				miss_type = 2
 
-			H.do_attack_animation(src)
+			//H.do_attack_animation(src)
 			if(!attack_message)
 				attack.show_attack(H, src, hit_zone, rand_damage)
 			else
@@ -234,6 +245,7 @@
 
 			// Finally, apply damage to target
 			apply_damage(real_damage, (attack.deal_halloss ? PAIN : BRUTE), hit_zone, armour, damage_flags=attack.damage_flags())
+			receive_damage()
 
 		if(I_DISARM)
 			if(H.species)

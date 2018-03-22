@@ -10,7 +10,7 @@ var/global/list/sparring_attack_cache = list()
 	var/shredding = 0 // Calls the old attack_alien() behavior on objects/mobs when on harm intent.
 	var/sharp = 0
 	var/edge = 0
-	var/delay = 0
+	var/delay = 10 //Used to be 0. Slightly faster than hitting with a weapon.
 
 	var/deal_halloss
 	var/sparring_variant_type = /datum/unarmed_attack/light_strike
@@ -30,11 +30,11 @@ var/global/list/sparring_attack_cache = list()
 
 	// Check if they have a functioning hand.
 	var/obj/item/organ/external/E = user.organs_by_name[BP_L_HAND]
-	if(E && !E.is_stump())
+	if(E && !E.is_broken() && !E.is_stump())
 		return 1
 
 	E = user.organs_by_name[BP_R_HAND]
-	if(E && !E.is_stump())
+	if(E && !E.is_broken() && !E.is_stump())
 		return 1
 
 	return 0
