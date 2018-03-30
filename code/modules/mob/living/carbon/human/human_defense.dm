@@ -239,6 +239,9 @@ meteor_act
 	if(!affecting)
 		return 0
 
+	if(user.str)//If they have strength then add it.
+		effective_force *= strToDamageModifier(user.str)
+
 	// Handle striking to cripple.
 	if(user.a_intent == I_DISARM)
 		effective_force *= 0.66 //reduced effective force...

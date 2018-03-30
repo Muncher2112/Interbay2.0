@@ -95,16 +95,16 @@ proc/strToDamageModifier(var/strength)
 			return 0.5
 
 		if(6 to 11)
-			return 1
+			return 1.15
 
 		if(12 to 15)
 			return 1.5
 
 		if(16 to 18)
-			return  1.75
+			return  2
 
 		if(18 to INFINITY)
-			return 2
+			return 2.5
 
 proc/strToSpeedModifier(var/strength, var/w_class)//Looks messy. Is messy. Is also only used once. But I don't give a fuuuuuuuuck.
 	switch(strength)

@@ -32,7 +32,6 @@ var/decl/sound_player/sound_player = new()
 	if(!channel)
 		log_warning("All available sound channels are in active use.")
 		return
-
 	return new/datum/sound_token(source, sound_id, sound, volume, channel, range, falloff, prefer_mute, ignore_vis)
 
 /decl/sound_player/proc/PrivStopSound(var/datum/sound_token/sound_token)
