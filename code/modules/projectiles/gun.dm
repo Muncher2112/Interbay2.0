@@ -67,6 +67,9 @@
 	var/one_hand_penalty
 	var/wielded_item_state
 	var/combustion	//whether it creates hotspot when fired
+	var/is_jammed = 0	//Whether this gun is jammed
+	var/jam_chance = 0  //Chance it jams on fire
+	var/safety = 1		//Whether or not the safety is on.
 
 	var/next_fire_time = 0
 
@@ -81,12 +84,7 @@
 	var/tmp/mob/living/last_moved_mob //Used to fire faster at more than one person.
 	var/tmp/told_cant_shoot = 0 //So that it doesn't spam them with the fact they cannot hit them.
 	var/tmp/lock_time = -100
-	var/is_jammed = 0           //Whether this gun is jammed
-	var/jam_chance = 0          //Chance it jams on fire
 
-
-
-	var/safety = 0
 
 /obj/item/weapon/gun/New()
 	..()

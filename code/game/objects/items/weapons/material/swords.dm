@@ -37,7 +37,7 @@
 	//Ok this if looks like a bit of a mess, and it is. Basically you need to have the sword in your active hand, and pass the default parry check
 	//and also pass the prob which is your melee skill divided by two + the swords block chance. Complicated, I know, but hopefully it'll balance out.
 
-	if(default_parry_check(user, attacker, damage_source) && prob((block_chance + (user.melee_skill / 2))) && (user.get_active_hand() == src))//You gotta be holding onto that sheesh bro.
+	if(default_parry_check(user, attacker, damage_source) && prob((block_chance + (user.melee_skill))) && (user.get_active_hand() == src))//You gotta be holding onto that sheesh bro.
 		user.visible_message("<span class='danger'>\The [user] parries [attack_text] with \the [src]!</span>")
 		if(parry_sounds)
 			playsound(user.loc, pick(parry_sounds), 50, 1)

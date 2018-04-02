@@ -103,12 +103,12 @@ obj/item/device/cassete/New()
 obj/item/cassetka_console/attack_hand(mob/user) //later do file size check %_%
 	var/N = input("Music name") as text|null
 	if(N)
-		var/sound/S = input("Приколы длЯ мобилы") as sound|null
+		var/sound/S = input("Pick a song") as sound|null
 		if(S)
 			var/obj/item/device/cassete/casseta = new()
 			casseta.sound_inside = S
 			casseta.name = "[N]"
 			casseta.loc = src.loc
-			to_chat(user, "Загрузились...")
+			to_chat(user, "Tape completed.")
 
 

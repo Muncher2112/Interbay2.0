@@ -205,11 +205,24 @@
 	else
 		unload_ammo(user)
 
-/obj/item/weapon/gun/projectile/attack_hand(mob/user as mob)
-	if(user.get_inactive_hand() == src)
-		unload_ammo(user, allow_dump=0)
-	else
-		return ..()
+/obj/item/weapon/gun/projectile/MouseDrop(var/obj/over_object)
+	if (!over_object || !(ishuman(usr) || issmall(usr)))
+		return
+
+	if (!(src.loc == usr))
+		return
+
+	switch(over_object.name)
+		if("r_hand")
+			unload_ammo(usr, allow_dump=0)
+		if("l_hand")
+			unload_ammo(usr, allow_dump=0)
+
+///obj/item/weapon/gun/projectile/attack_hand(mob/user as mob)
+//	if(user.get_inactive_hand() == src)
+//		unload_ammo(user, allow_dump=0)
+//	else
+//		return ..()
 
 /obj/item/weapon/gun/projectile/afterattack(atom/A, mob/living/user)
 	..()

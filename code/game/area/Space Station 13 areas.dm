@@ -99,7 +99,7 @@ area/space/atmosalert()
 	name = "\improper Centcom"
 	icon_state = "centcom"
 	requires_power = 0
-	dynamic_lighting = 0
+	dynamic_lighting = 1
 
 /area/centcom/holding
 	name = "\improper Holding Facility"

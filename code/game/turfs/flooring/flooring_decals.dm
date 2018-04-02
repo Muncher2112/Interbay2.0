@@ -235,7 +235,7 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/corner/purple
 	name = "purple corner"
-	color = COLOR_PURPLE_GRAY
+	color = "#7C507f"
 
 /obj/effect/floor_decal/corner/purple/diagonal
 	icon_state = "corner_white_diagonal"

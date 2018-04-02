@@ -28,8 +28,8 @@
 	if(user.defense_intent != I_PARRY)//If you're not on parry intent, you won't parry.
 		return 0
 
-	if(!user.skillcheck(user.melee_skill, 60, 0))//Need at least 60 skill to be able to parry effectively.
-		return 0
+	//if(!user.skillcheck(user.melee_skill, 60, 0))//Need at least 60 skill to be able to parry effectively.
+	//	return 0
 
 	//block as long as they are not directly behind us
 	var/bad_arc = reverse_direction(user.dir) //arc of directions from which we cannot block
@@ -55,7 +55,7 @@
 	return 0
 
 /obj/item/weapon/shield/proc/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
-	return base_block_chance
+	return base_block_chance + user.melee_skill
 
 /obj/item/weapon/shield/riot
 	name = "riot shield"

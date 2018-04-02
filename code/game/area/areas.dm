@@ -258,8 +258,8 @@ var/list/mob/living/forced_ambiance_list = new
 	var/area/newarea = get_area(L.loc)
 	var/area/oldarea = L.lastarea
 	if(oldarea.has_gravity != newarea.has_gravity)
-		if(newarea.has_gravity == 1 && L.m_intent == "run") // Being ready when you change areas allows you to avoid falling.
-			thunk(L)
+		//if(newarea.has_gravity == 1 && L.m_intent == "run") // Being ready when you change areas allows you to avoid falling.
+		//	thunk(L)
 		L.update_floating()
 
 	L.lastarea = newarea
@@ -310,8 +310,8 @@ var/list/mob/living/forced_ambiance_list = new
 	has_gravity = gravitystate
 
 	for(var/mob/M in src)
-		if(has_gravity)
-			thunk(M)
+		//if(has_gravity)
+		//	thunk(M)
 		M.update_floating()
 
 /area/proc/thunk(mob)
