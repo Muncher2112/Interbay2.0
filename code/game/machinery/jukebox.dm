@@ -29,12 +29,19 @@ datum/track/New(var/title_name, var/audio)
 
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
-		new/datum/track("Song 1", 'sound/jukebox/barsong1.ogg'),
-		new/datum/track("Song 2", 'sound/jukebox/barsong2.ogg'),
-		new/datum/track("Song 3", 'sound/jukebox/barsong3.ogg'),
-		new/datum/track("Song 4", 'sound/jukebox/barsong4.ogg'),
-		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
-		new/datum/track("Song 6", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Fire", 'sound/jukebox/barsong1.ogg'),
+		new/datum/track("Suffer", 'sound/jukebox/barsong2.ogg'),
+		new/datum/track("Cherry", 'sound/jukebox/barsong3.ogg'),
+		new/datum/track("Rain", 'sound/jukebox/barsong4.ogg'),
+		new/datum/track("Sour", 'sound/jukebox/barsong5.ogg'),
+		new/datum/track("Rust", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Fuck", 'sound/jukebox/barsong7.ogg'),
+		new/datum/track("Spiral", 'sound/jukebox/barsong8.ogg'),
+		new/datum/track("Blizzard", 'sound/jukebox/barsong9.ogg'),
+		new/datum/track("Evolution", 'sound/jukebox/barsong10.ogg'),
+		new/datum/track("Sweet", 'sound/jukebox/barsong11.ogg'),
+		new/datum/track("Fight", 'sound/jukebox/barsong12.ogg'),
+		new/datum/track("Death", 'sound/jukebox/barsong13.ogg')
 	)
 
 /obj/machinery/media/jukebox/New()

@@ -25,7 +25,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
 /datum/job/hydro
-	title = "Gardener"
+	title = "Botanic"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2

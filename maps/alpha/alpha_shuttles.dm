@@ -53,45 +53,93 @@
 	number = 1
 /obj/effect/shuttle_landmark/escape_pod/transit/pod1
 	number = 1
-
+*/
 //Rescue shuttle
-
+/*
 /datum/shuttle/autodock/multi/antag/rescue
 	name = "Rescue"
 	warmup_time = 0
-	destinations = list(
-		"nav_lavalette_coupole",
-		"nav_lavalette_xenoarch",
-		"nav_lavalette_residen",
-		"nav_lavalette_start",
+	destination_tags = list(
+		"nav_ert_deck1",
+		"nav_ert_deck2",
+		"nav_ert_deck3",
+		"nav_ert_deck4",
+		"nav_ert_deck5",
+		"nav_away_4",
+		"nav_derelict_4",
+		"nav_cluster_4",
+		"nav_ert_dock",
+		"nav_ert_start",
+		"nav_lost_supply_base_antag",
+		"nav_marooned_antag",
+		"nav_smugglers_antag",
+		"nav_magshield_antag",
+		"nav_casino_antag",
+		"nav_yacht_antag",
+		"nav_slavers_base_antag",
 		)
-	shuttle_area = /area/shuttle/specops/centcomm
-	current_location = "nav_specops_start"
-	landmark_transition = "nav_specops_transition"
-	home_waypoint = "nav_specops_start"
-	announcer = "CMA"
-	arrival_message = "You guys fucked it all up. CMA units are on the way to fix you're mistake."
-	departure_message = "The units."
+	shuttle_area = /area/rescue_base/start
+	dock_target = "rescue_shuttle"
+	current_location = "nav_ert_start"
+	landmark_transition = "nav_ert_transition"
+	home_waypoint = "nav_ert_start"
+	announcer = "SEV Torch Sensor Array"
+	arrival_message = "Attention, vessel detected entering vessel proximity."
+	departure_message = "Attention, vessel detected leaving vessel proximity."
+
+/obj/effect/shuttle_landmark/ert/start
+	name = "Response Team Base"
+	landmark_tag = "nav_ert_start"
+	docking_controller = "rescue_base"
+
+/obj/effect/shuttle_landmark/ert/internim
+	name = "In transit"
+	landmark_tag = "nav_ert_transition"
+
+/obj/effect/shuttle_landmark/ert/dock
+	name = "Docking Port"
+	landmark_tag = "nav_ert_dock"
+	docking_controller = "rescue_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/ert/deck1
+	name =  "Southwest of Fourth deck"
+	landmark_tag = "nav_ert_deck1"
+
+/obj/effect/shuttle_landmark/ert/deck2
+	name = "Northwest of Third deck"
+	landmark_tag = "nav_ert_deck2"
+
+/obj/effect/shuttle_landmark/ert/deck3
+	name = "Northwest of Second deck"
+	landmark_tag = "nav_ert_deck3"
+
+/obj/effect/shuttle_landmark/ert/deck4
+	name = "Southwest of First Deck"
+	landmark_tag = "nav_ert_deck4"
+
+/obj/effect/shuttle_landmark/ert/deck5
+	name = "West of Bridge"
+	landmark_tag = "nav_ert_deck5"
+
+//SCGMC Assault Pod
+
+/datum/shuttle/autodock/ferry/specops/ert
+	name = "Special Operations"
+	warmup_time = 10
+	shuttle_area = /area/shuttle/specops/centcom
+	dock_target = "specops_shuttle_fore"
+	waypoint_station = "nav_specops_start"
+	waypoint_offsite = "nav_specops_out"
 
 /obj/effect/shuttle_landmark/specops/start
-	name = "Patrol Area"
+	name = "Centcom"
 	landmark_tag = "nav_specops_start"
+	docking_controller = "specops_shuttle_port"
 
-/obj/effect/shuttle_landmark/specops/internim
-	name = "In transit"
-	landmark_tag = "nav_specops_transition"
-
-/obj/effect/shuttle_landmark/specops/xenoarch
-	name = "To the Xenoarcheology Airlock"
-	landmark_tag = "nav_specops_xenoarch"
-
-/obj/effect/shuttle_landmark/specops/coupole
-	name =  "Near the Dome"
-	landmark_tag = "nav_specops_coupole"
-
-/obj/effect/shuttle_landmark/specops/residentiel
-	name = "Near the Residential Access"
-	landmark_tag = "nav_specops_residen"
+/obj/effect/shuttle_landmark/specops/out
+	name = "Docking Bay"
+	landmark_tag = "nav_specops_out"
+	docking_controller = "specops_dock_airlock"
 */
 //Cargo shuttle
 
@@ -163,133 +211,170 @@
 
 //Commented out till I map these in.
 //Merc
-/*
+
 /datum/shuttle/autodock/multi/antag/mercenary
 	name = "Mercenary"
 	warmup_time = 0
-	destinations = list(
-		"nav_merc_start",
+	destination_tags = list(
 		"nav_merc_dock",
-		"nav_merc_coupole",
-		"nav_merc_minage",
-		"nav_merc_residentiel",
+		"nav_merc_north",
+		"nav_merc_south",
+		"nav_merc_east",
+		"nav_merc_west"
 		)
-	shuttle_area = /area/shuttle/merc/start
-	dock_target = "ship_merc"
+	shuttle_area = /area/syndicate_station/start
+	dock_target = "merc_shuttle"
 	current_location = "nav_merc_start"
 	landmark_transition = "nav_merc_transition"
-	announcer = "Chasseur Huon"
+	announcer = "Alpha Sensor Array"
 	home_waypoint = "nav_merc_start"
-	arrival_message = "Attention, you have a large signature approaching the station - looks unarmed to surface scans. We're too far out to intercept - brace for visitors."
-	departure_message = "Your visitors are on their way out of the system, burning delta-v like it's nothing. Good riddance."
+	arrival_message = "Attention, vessel detected entering station proximity."
+	departure_message = "Attention, vessel detected leaving station proximity."
 
 /obj/effect/shuttle_landmark/merc/start
 	name = "Mercenary Base"
 	landmark_tag = "nav_merc_start"
-	docking_controller = "dock_merc"
+	docking_controller = "merc_base"
+	base_area = /area/syndicate_mothership
+	base_turf = /turf/simulated/floor/snow
 
 /obj/effect/shuttle_landmark/merc/internim
 	name = "In transit"
 	landmark_tag = "nav_merc_transition"
 
 /obj/effect/shuttle_landmark/merc/dock
-	name = "Docking Port"
+	name = "Arrival Port"
 	landmark_tag = "nav_merc_dock"
-	docking_controller = "dock2"
+	docking_controller = "specops_dock_airlock"
 
-/obj/effect/shuttle_landmark/merc/coupole
-	name = "Near the Dome"
-	landmark_tag = "nav_merc_coupole"
+/obj/effect/shuttle_landmark/merc/north
+	name = "North of the Station"
+	landmark_tag = "nav_merc_north"
 
-/obj/effect/shuttle_landmark/merc/minage
-	name = "At the mining airlock"
-	landmark_tag = "nav_merc_minage"
+/obj/effect/shuttle_landmark/merc/south
+	name = "South of the Station"
+	landmark_tag = "nav_merc_south"
 
-/obj/effect/shuttle_landmark/merc/residentiel
-	name = "Near the Residential Access"
-	landmark_tag = "nav_merc_residentiel"
-*/
+/obj/effect/shuttle_landmark/merc/east
+	name = "East of the Station"
+	landmark_tag = "nav_merc_east"
+
+/obj/effect/shuttle_landmark/merc/west
+	name = "West of the Station"
+	landmark_tag = "nav_merc_west"
+
 //Ninja
-/*
+
 //Ninja Shuttle.
+
 /datum/shuttle/autodock/multi/antag/ninja
 	name = "Ninja"
 	warmup_time = 0
-	destinations = list(
-		"nav_ninja_adm",
-		"nav_ninja_eng",
-		"nav_ninja_asteroid",
-		"nav_ninja_start"
+	destination_tags = list(
+		"nav_ninja_north",
+		"nav_ninja_south",
+		"nav_ninja_east",
+		"nav_ninja_west"
 		)
-	shuttle_area = /area/syndicate_mothership/ninja
+	shuttle_area = /area/ninja_dojo/start
 	current_location = "nav_ninja_start"
 	landmark_transition = "nav_ninja_transition"
-	announcer = "Colonial Magistrate Authority"
-	arrival_message = "Attention, anomalous sensor reading detected entering station proximity."
-	departure_message = "Attention, anomalous sensor reading detected leaving station proximity."
+	announcer = "SEV Torch Sensor Array"
+	arrival_message = "Attention, anomalous sensor reading detected entering vessel proximity."
+	departure_message = "Attention, anomalous sensor reading detected leaving vessel proximity."
 
 /obj/effect/shuttle_landmark/ninja/start
-	name = "Away Asteroid Belt"
+	name = "Clan Dojo"
 	landmark_tag = "nav_ninja_start"
 
 /obj/effect/shuttle_landmark/ninja/internim
 	name = "In transit"
 	landmark_tag = "nav_ninja_transition"
 
-/obj/effect/shuttle_landmark/ninja/civ
-	name = "North of Administrative Deck"
-	landmark_tag = "nav_ninja_adm"
+/obj/effect/shuttle_landmark/ninja/north
+	name = "North of the Station"
+	landmark_tag = "nav_ninja_north"
 
-/obj/effect/shuttle_landmark/ninja/eng
-	name = "Southwest of Engineering"
-	landmark_tag = "nav_ninja_eng"
+/obj/effect/shuttle_landmark/ninja/south
+	name = "South of the Station"
+	landmark_tag = "nav_ninja_south"
 
-/obj/effect/shuttle_landmark/ninja/asteroid
-	name = "Asteroids on Industrial Deck"
-	landmark_tag = "nav_ninja_asteroid"
+/obj/effect/shuttle_landmark/ninja/east
+	name = "East of the Station"
+	landmark_tag = "nav_ninja_east"
+
+/obj/effect/shuttle_landmark/ninja/west
+	name = "West of the Station"
+	landmark_tag = "nav_ninja_west"
 
 //Skipjack
-
+/*
 /datum/shuttle/autodock/multi/antag/skipjack
-    name = "Skipjack"
-    warmup_time = 0
-    destinations = list(
-        "nav_skipjack_ai",
-        "nav_skipjack_civ",
-        "nav_skipjack_ind",
-        "nav_skipjack_start"
-        )
-    shuttle_area =  /area/skipjack_station/start
-    dock_target = "skipjack_shuttle"
-    current_location = "nav_skipjack_start"
-    landmark_transition = "nav_skipjack_transition"
-    announcer = "ESIN Dreyfus Sensor Array"
-    home_waypoint = "nav_skipjack_start"
-    arrival_message = "Attention, vessel detected entering station proximity."
-    departure_message = "Attention, vessel detected leaving station proximity."
+	name = "Skipjack"
+	warmup_time = 0
+	destination_tags = list(
+		"nav_skipjack_deck1",
+		"nav_skipjack_deck2",
+		"nav_skipjack_deck3",
+		"nav_skipjack_deck4",
+		"nav_skipjack_deck5",
+		"nav_away_7",
+		"nav_derelict_7",
+		"nav_cluster_7",
+		"nav_skipjack_dock",
+		"nav_skipjack_start",
+		"nav_lost_supply_base_antag",
+		"nav_marooned_antag",
+		"nav_smugglers_antag",
+		"nav_magshield_antag",
+		"nav_casino_antag",
+		"nav_yacht_antag",
+		"nav_slavers_base_antag",
+		)
+	shuttle_area =  /area/skipjack_station/start
+	dock_target = "skipjack_shuttle"
+	current_location = "nav_skipjack_start"
+	landmark_transition = "nav_skipjack_transition"
+	announcer = "SEV Torch Sensor Array"
+	home_waypoint = "nav_skipjack_start"
+	arrival_message = "Attention, vessel detected entering vessel proximity."
+	departure_message = "Attention, vessel detected leaving vessel proximity."
 
 /obj/effect/shuttle_landmark/skipjack/start
-    name = "Raider Outpost"
-    landmark_tag = "nav_skipjack_start"
-    docking_controller = "skipjack_base"
+	name = "Raider Outpost"
+	landmark_tag = "nav_skipjack_start"
+	docking_controller = "skipjack_base"
 
 /obj/effect/shuttle_landmark/skipjack/internim
-    name = "In transit"
-    landmark_tag = "nav_skipjack_transition"
+	name = "In transit"
+	landmark_tag = "nav_skipjack_transition"
 
-/obj/effect/shuttle_landmark/skipjack/ai
-    name = "Silicon Deck"
-    landmark_tag = "nav_skipjack_ai"
+/obj/effect/shuttle_landmark/skipjack/dock
+	name = "Docking Port"
+	landmark_tag = "nav_skipjack_dock"
+	docking_controller = "skipjack_shuttle_dock_airlock"
 
-/obj/effect/shuttle_landmark/skipjack/civ
-    name = "West of Civilian Deck"
-    landmark_tag = "nav_skipjack_civ"
+/obj/effect/shuttle_landmark/skipjack/deck1
+	name = "Northwest of First Deck"
+	landmark_tag = "nav_skipjack_deck1"
 
-/obj/effect/shuttle_landmark/skipjack/ind
-    name = "Mining Airlock"
-    landmark_tag = "nav_skipjack_ind"
-   */
+/obj/effect/shuttle_landmark/skipjack/deck2
+	name = "Southwest of the Second deck"
+	landmark_tag = "nav_skipjack_deck2"
 
+/obj/effect/shuttle_landmark/skipjack/deck3
+	name = "Southeast of Third deck"
+	landmark_tag = "nav_skipjack_deck3"
+
+/obj/effect/shuttle_landmark/skipjack/deck4
+	name = "Northwest of Fourth Deck"
+	landmark_tag = "nav_skipjack_deck4"
+
+/obj/effect/shuttle_landmark/skipjack/deck5
+	name = "South of Bridge"
+	landmark_tag = "nav_skipjack_deck5"
+*/
+ //////////////////////////////////////////////////
 /area/shuttle/lift
   name = "Cargo Lift"
   icon_state = "shuttle3"
