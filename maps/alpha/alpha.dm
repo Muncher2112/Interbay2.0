@@ -14,9 +14,11 @@
 	#include "alpha-3.dmm"
 	#include "alpha-4.dmm"
 	#include "alpha-5.dmm"
-	#include "alpha-6.dmm"
 
-	#include "job/jobs.dm"
+	//#include "job/jobs.dm"
+	#include "../shared/job/jobs.dm"
+	
+	#include "../../code/modules/lobby_music/generic_songs.dm"
 
 	#define using_map_DATUM /datum/map/alpha
 

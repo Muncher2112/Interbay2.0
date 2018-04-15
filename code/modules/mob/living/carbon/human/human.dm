@@ -1610,3 +1610,26 @@
 //Point at which you dun breathe no more. Separate from asystole crit, which is heart-related.
 /mob/living/carbon/human/proc/nervous_system_failure()
 	return getBrainLoss() >= maxHealth * 0.75
+
+/mob/living/carbon/proc/get_social_class()
+	var/socclass = social_class
+	switch(socclass)
+		if(SOCIAL_CLASS_MIN)
+			return "<b>filth</b>"
+		if(SOCIAL_CLASS_MED)
+			return "<b>a commoner</b>"
+		if(SOCIAL_CLASS_HIGH)
+			return "<b>a lesser noble</b>"
+		if(SOCIAL_CLASS_MAX)
+			return "<b>a noble</b>"
+
+
+/mob/living/carbon/human/proc/get_social_description(var/mob/living/carbon/human/H)
+	var/socclass = social_class
+	if(ishuman(H))
+		if(socclass < H.social_class)
+			return "They are of a <b>lesser</b> social class than me."
+		else if(socclass > H.social_class)
+			return "They are of a <b>higher</b> social class than me."
+		else
+			return "They are of the same social class as me."

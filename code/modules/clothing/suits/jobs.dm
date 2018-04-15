@@ -12,6 +12,14 @@
 	body_parts_covered = 0
 	allowed = list (/obj/item/weapon/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/weapon/material/minihoe)
 
+//Magistrate
+/obj/item/clothing/suit/robes
+	name = "magistrate's robes"
+	desc = "Fit for a king... or a uh... magistrate."
+	icon_state = "robes"
+	item_state = "robes"
+	body_parts_covered = UPPER_TORSO|ARMS
+
 //Captain
 /obj/item/clothing/suit/captunic
 	name = "captain's parade tunic"

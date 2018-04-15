@@ -35,6 +35,13 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Song 4", 'sound/jukebox/barsong4.ogg'),
 		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
 		new/datum/track("Song 6", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Song 7", 'sound/jukebox/barsong7.ogg'),
+		new/datum/track("Song 8", 'sound/jukebox/barsong8.ogg'),
+		new/datum/track("Song 9", 'sound/jukebox/barsong9.ogg'),
+		new/datum/track("Song 10", 'sound/jukebox/barsong10.ogg'),
+		new/datum/track("Song 11", 'sound/jukebox/barsong11.ogg'),
+		new/datum/track("Song 12", 'sound/jukebox/barsong12.ogg'),
+		new/datum/track("Song 13", 'sound/jukebox/barsong13.ogg'),
 	)
 
 /obj/machinery/media/jukebox/New()

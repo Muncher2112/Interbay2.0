@@ -37,6 +37,8 @@
 
 	var/hud_icon						  //icon used for Sec HUD overlay
 
+	var/social_class = SOCIAL_CLASS_MED	  //Job's social standing.
+
 /datum/job/New()
 	..()
 	if(prob(100-availablity_chance))	//Close positions, blah blah.
@@ -52,6 +54,7 @@
 		hud_icon = "hud[ckey(title)]"
 
 /datum/job/proc/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
+	H.social_class = social_class
 	var/decl/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(!outfit)
 		return FALSE

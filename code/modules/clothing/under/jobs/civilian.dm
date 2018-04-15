@@ -7,6 +7,13 @@
 	item_state = "ba_suit"
 	worn_state = "ba_suit"
 
+//Magistrates uniform. //Not in alphabetical order
+/obj/item/clothing/under/rank/magistrate
+	name = "magistrate's uniform"
+	desc = "Regal as you can afford."
+	icon_state = "magistrate"
+	item_state = "magistrate"
+	worn_state = "magistrate"
 
 /obj/item/clothing/under/rank/captain //Alright, technically not a 'civilian' but its better then giving a .dm file for a single define.
 	desc = "It's a blue jumpsuit with some gold markings denoting the rank of \"Captain\"."

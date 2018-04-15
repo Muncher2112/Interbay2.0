@@ -15,7 +15,7 @@ var/const/NETWORK_COMMAND 			  = "Command"
 var/const/NETWORK_ENGINE  			  = "Engine"
 var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 
-/datum/map/utopia/get_network_access(var/network)
+/datum/map/alpha/get_network_access(var/network)
 	switch(network)
 		if(NETWORK_CIVILIAN_WEST)
 			return access_mailsorting
@@ -25,10 +25,8 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 			return access_heads
 	return get_shared_network_access(network) || ..()
 
-/datum/map/utopia
+/datum/map/alpha
 	station_networks = list(
-		NETWORK_CIVILIAN_EAST,
-		NETWORK_CIVILIAN_WEST,
 		NETWORK_COMMAND,
 		NETWORK_ENGINE,
 		NETWORK_ENGINEERING,
@@ -47,13 +45,14 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		NETWORK_ALARM_FIRE,
 		NETWORK_ALARM_MOTION,
 		NETWORK_ALARM_POWER,
-		NETWORK_THUNDER,
 		NETWORK_TELECOM
 	)
 
 //
 // Cameras
 //
+
+//Code that makes cameras autoname their c_tags, no clue why baystation12 have got rid off it.
 
 // Networks
 /obj/machinery/camera/network/civilian_east

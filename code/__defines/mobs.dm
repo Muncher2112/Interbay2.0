@@ -345,3 +345,9 @@
 #define AURA_TYPE_WEAPON "Weapon"
 #define AURA_TYPE_THROWN "Thrown"
 #define AURA_TYPE_LIFE   "Life"
+
+//Social classes
+#define SOCIAL_CLASS_MIN 1
+#define SOCIAL_CLASS_MED 2
+#define SOCIAL_CLASS_HIGH 3
+#define SOCIAL_CLASS_MAX 4

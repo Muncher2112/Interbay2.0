@@ -1,6 +1,6 @@
 # Interbay
 
-[Website](https://discord.gg/qEtV7VA/) - [Code](https://github.com/SosakiDevelopmentTeam/Interbay/)
+[Website](https://discord.gg/sRfRyXF/) - [Code](https://github.com/SosakiDevelopmentTeam/Interbay/)
 ---
 
 ### LICENSE

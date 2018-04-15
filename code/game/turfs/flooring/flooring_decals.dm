@@ -754,6 +754,13 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/newcorner/plating/diagonal
 	icon_state = "plating-diagonal"
 
+/obj/effect/floor_decal/newcorner/polar
+	icon_state = "polar"
+/obj/effect/floor_decal/newcorner/polar/quarter
+	icon_state = "polar-quarter"
+/obj/effect/floor_decal/newcorner/polar/corner
+	icon_state = "polar-corner"
+
 /obj/effect/floor_decal/newcorner/reinforced
 	icon_state = "reinforced"
 /obj/effect/floor_decal/newcorner/reinforced/corner
