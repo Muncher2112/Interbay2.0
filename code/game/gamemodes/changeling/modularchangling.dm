@@ -60,7 +60,6 @@ var/list/datum/power/changeling/powerinstances = list()
 	desc = "We debase ourselves and become lesser.  We become a monkey."
 	genomecost = 4
 	verbpath = /mob/proc/changeling_lesser_form
-	spellpath = /spell/targeted/sting/lesser_form
 	icon = "ling_monkey"
 
 /datum/power/changeling/deaf_sting
@@ -78,7 +77,6 @@ var/list/datum/power/changeling/powerinstances = list()
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_blind_sting
 	icon = "ling_blind"
-	spellpath = /spell/targeted/sting/blind_sting
 
 /datum/power/changeling/silence_sting
 	name = "Silence Sting"
@@ -88,7 +86,6 @@ var/list/datum/power/changeling/powerinstances = list()
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_silence_sting
 	icon = "ling_mute"
-	spellpath = /spell/targeted/sting/silence_sting
 
 /datum/power/changeling/mimicvoice
 	name = "Mimic Voice"
@@ -120,7 +117,6 @@ var/list/datum/power/changeling/powerinstances = list()
 	desc = "We silently sting a human, paralyzing them for a short time."
 	genomecost = 8
 	verbpath = /mob/proc/changeling_paralysis_sting
-	spellpath = /spell/targeted/sting/paralysis_sting
 	icon = "ling_para"
 
 /datum/power/changeling/LSDSting
@@ -154,7 +150,6 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Gives the ability to instantly recover from stuns.  High chemical cost."
 	genomecost = 3
 	verbpath = /mob/proc/changeling_unstun
-	spellpath = /spell/targeted/sting/epinephrine
 	icon = "ling_nostun"
 
 /datum/power/changeling/ChemicalSynth

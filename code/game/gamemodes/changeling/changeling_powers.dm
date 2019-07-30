@@ -1,4 +1,5 @@
 var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","Epsilon","Zeta","Eta","Theta","Iota","Kappa","Lambda","Mu","Nu","Xi","Omicron","Pi","Rho","Sigma","Tau","Upsilon","Phi","Chi","Psi","Omega")
+/mob/var/used_changeling_buff_stats = FALSE
 
 /datum/changeling //stores changeling powers, changeling recharge thingie, changeling absorbed DNA and changeling ID (for changeling hivemind)
 	var/list/datum/absorbed_dna/absorbed_dna = list()
@@ -772,6 +773,51 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 	T.sdisabilities |= DEAF
 	spawn(300)	T.sdisabilities &= ~DEAF
 	feedback_add_details("changeling_powers","DS")
+	return 1
+
+
+/mob/proc/changeling_paralysis_sting()
+	set category = "Changeling"
+	set name = "Paralysis sting (30)"
+	set desc="Sting target"
+
+	var/mob/living/carbon/human/T = changeling_sting(30,/mob/proc/changeling_paralysis_sting)
+	if(!T)	return 0
+	to_chat(T, "<span class='danger'>Your muscles begin to painfully tighten.</span>")
+	T.Weaken(20)
+	feedback_add_details("changeling_powers","PS")
+	return 1
+
+/mob/proc/changeling_transformation_sting()
+	set category = "Changeling"
+	set name = "Transformation sting (40)"
+	set desc="Sting target"
+
+	var/datum/changeling/changeling = changeling_power(40)
+	if(!changeling)	return 0
+
+
+
+	var/list/names = list()
+	for(var/datum/absorbed_dna/DNA in changeling.absorbed_dna)
+		names += "[DNA.name]"
+
+	var/S = input("Select the target DNA: ", "Target DNA", null) as null|anything in names
+	if(!S)	return
+
+	var/datum/absorbed_dna/chosen_dna = changeling.GetDNA(S)
+	if(!chosen_dna)
+		return
+
+	var/mob/living/carbon/human/T = changeling_sting(40,/mob/proc/changeling_transformation_sting)
+	if(!T)	return 0
+	if((HUSK in T.mutations))
+		to_chat(src, "<span class='warning'>Our sting appears ineffective against this creature.</span>")
+		return 0
+
+	T.handle_changeling_transform(chosen_dna)
+
+	feedback_add_details("changeling_powers","TS")
 	return 1
 
 /mob/proc/changeling_DEATHsting()
