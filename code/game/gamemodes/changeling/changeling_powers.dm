@@ -136,6 +136,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 	return
 
+//TODO: Decide if we want this to be a spell or stay a verb.
 //Absorbs the victim's DNA making them uncloneable. Requires a strong grip on the victim.
 //Doesn't cost anything as it's the most basic ability.
 /mob/proc/changeling_absorb_dna()
@@ -333,6 +334,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 	changeling.chem_charges--
 	H.visible_message("<span class='warning'>[H] transforms!</span>")
+	//Not sure about this check, depending on how difficult genetic damage is to heal
 	changeling.geneticdamage = 30
 	to_chat(H, "<span class='warning'>Our genes cry out!</span>")
 	H = H.monkeyize()
@@ -812,3 +814,29 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 
 	feedback_add_details("changeling_powers","ED")
 	return 1
+
+/mob/proc/changeling_buff_stats()
+	set category = "Changeling"
+	set name = "Buff Stats (30)"
+	set desc="Give yourself increased stats. One use only!"
+
+	var/datum/changeling/changeling = null
+	if(src.mind && src.mind.changeling)
+		changeling = src.mind.changeling
+	if(!changeling)
+		return 0
+
+	if (used_changeling_buff_stats)
+		verbs -= /mob/proc/changeling_buff_stats
+		return
+
+	used_changeling_buff_stats = TRUE
+
+	var/mob/living/carbon/human/C = src
+	C.adjustStrength(5)
+
+	C.adjustDexterity(5)
+
+	C.adjustInteligence(5)
+
+	verbs -= /mob/proc/changeling_buff_stats

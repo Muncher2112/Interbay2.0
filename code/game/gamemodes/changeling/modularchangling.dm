@@ -6,6 +6,7 @@ var/list/datum/power/changeling/powerinstances = list()
 /datum/power			//Could be used by other antags too
 	var/name = "Power"
 	var/desc = "Placeholder"
+	var/icon = "genetics_closed"
 	var/helptext = ""
 	var/isVerb = 1 	// Is it an active power, or passive?
 	var/verbpath // Path to a verb that contains the effects.
@@ -25,6 +26,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	desc = "We take on the apperance and voice of one we have absorbed."
 	genomecost = 0
 	verbpath = /mob/proc/changeling_transform
+	icon = "ling_transform"  //I'm not re-naming these
 
 /datum/power/changeling/fakedeath
 	name = "Regenerative Stasis"
@@ -33,6 +35,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 0
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_fakedeath
+	icon = "ling_fake"
 
 // Hivemind
 
@@ -42,6 +45,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Allows other changelings to absorb the DNA you channel from the airwaves. Will not help them towards their absorb objectives."
 	genomecost = 0
 	verbpath = /mob/proc/changeling_hiveupload
+	icon = "wiz_mindswap"
 
 /datum/power/changeling/hive_download
 	name = "Hive Absorb"
@@ -49,12 +53,15 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Allows you to absorb a single DNA and use it. Does not count towards your absorb objective."
 	genomecost = 0
 	verbpath = /mob/proc/changeling_hivedownload
+	icon = "wiz_mindswap"
 
 /datum/power/changeling/lesser_form
 	name = "Lesser Form"
 	desc = "We debase ourselves and become lesser.  We become a monkey."
 	genomecost = 4
 	verbpath = /mob/proc/changeling_lesser_form
+	spellpath = /spell/targeted/sting/lesser_form
+	icon = "ling_monkey"
 
 /datum/power/changeling/deaf_sting
 	name = "Deaf Sting"
@@ -62,6 +69,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 1
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_deaf_sting
+	icon = "ling_deaf"
 
 /datum/power/changeling/blind_sting
 	name = "Blind Sting"
@@ -69,6 +77,8 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 2
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_blind_sting
+	icon = "ling_blind"
+	spellpath = /spell/targeted/sting/blind_sting
 
 /datum/power/changeling/silence_sting
 	name = "Silence Sting"
@@ -77,6 +87,8 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 3
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_silence_sting
+	icon = "ling_mute"
+	spellpath = /spell/targeted/sting/silence_sting
 
 /datum/power/changeling/mimicvoice
 	name = "Mimic Voice"
@@ -84,6 +96,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Will turn your voice into the name that you enter. We must constantly expend chemicals to maintain our form like this"
 	genomecost = 1
 	verbpath = /mob/proc/changeling_mimicvoice
+	icon = "mimic_voice"
 
 /datum/power/changeling/extractdna
 	name = "Extract DNA"
@@ -91,7 +104,24 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Will give you the DNA of your target, allowing you to transform into them. Does not count towards absorb objectives."
 	genomecost = 2
 	allowduringlesserform = 1
+	icon = "sting_extract"
 	verbpath = /mob/proc/changeling_extract_dna_sting
+
+/datum/power/changeling/transformation_sting
+	name = "Transformation Sting"
+	desc = "We silently sting a human, injecting a retrovirus that forces them to transform into another."
+	helptext = "Does not provide a warning to others. The victim will transform much like a changeling would."
+	genomecost = 3
+	verbpath = /mob/proc/changeling_transformation_sting
+	icon = "sting_transform"
+
+/datum/power/changeling/paralysis_sting
+	name = "Paralysis Sting"
+	desc = "We silently sting a human, paralyzing them for a short time."
+	genomecost = 8
+	verbpath = /mob/proc/changeling_paralysis_sting
+	spellpath = /spell/targeted/sting/paralysis_sting
+	icon = "ling_para"
 
 /datum/power/changeling/LSDSting
 	name = "Hallucination Sting"
@@ -99,7 +129,9 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "The target does not notice they have been stung.  The effect occurs after 30 to 60 seconds."
 	genomecost = 3
 	verbpath = /mob/proc/changeling_lsdsting
+	icon = "ling_lsd"
 
+/* I want to replace death sting with horror form
 /datum/power/changeling/DeathSting
 	name = "Death Sting"
 	desc = "We sting a human, filling them with potent chemicals. Their rapid death is all but assured, but our crime will be obvious."
@@ -107,13 +139,14 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 10
 	verbpath = /mob/proc/changeling_DEATHsting
 
-
+//This ability is lame.
 /datum/power/changeling/boost_range
 	name = "Boost Range"
 	desc = "We evolve the ability to shoot our stingers at humans, with some preperation."
 	genomecost = 2
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_boost_range
+*/
 
 /datum/power/changeling/Epinephrine
 	name = "Epinephrine sacs"
@@ -121,6 +154,8 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Gives the ability to instantly recover from stuns.  High chemical cost."
 	genomecost = 3
 	verbpath = /mob/proc/changeling_unstun
+	spellpath = /spell/targeted/sting/epinephrine
+	icon = "ling_nostun"
 
 /datum/power/changeling/ChemicalSynth
 	name = "Rapid Chemical-Synthesis"
@@ -129,6 +164,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 4
 	isVerb = 0
 	verbpath = /mob/proc/changeling_fastchemical
+
 /*
 /datum/power/changeling/AdvChemicalSynth
 	name = "Advanced Chemical-Synthesis"
@@ -153,6 +189,7 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 1
 	allowduringlesserform = 1
 	verbpath = /mob/proc/changeling_digitalcamo
+	icon = "digital_camo"
 
 /datum/power/changeling/rapidregeneration
 	name = "Rapid Regeneration"
@@ -160,7 +197,16 @@ var/list/datum/power/changeling/powerinstances = list()
 	helptext = "Heals a moderate amount of damage every tick."
 	genomecost = 7
 	verbpath = /mob/proc/changeling_rapidregen
+	icon = "regenerate"
 
+//TODO: Make sure this works
+/datum/power/changeling/buffstats
+	name = "Buff Stats"
+	desc = "We evolve our dna makeup to give us increased strength, dexterity, and intenlligence."
+	helptext = "ST, DX and IT are all buffed by 5. Is one use only."
+	genomecost = 4
+	isVerb = 0
+	verbpath = /mob/proc/changeling_buff_stats
 
 
 // Modularchangling, totally stolen from the new player panel.  YAYY
@@ -476,9 +522,25 @@ var/list/datum/power/changeling/powerinstances = list()
 	geneticpoints -= Thepower.genomecost
 
 	purchasedpowers += Thepower
+	//Trying to use the old ling ability manager code
 
+	if(!M.current.ability_master)
+		M.current.ability_master = new()
+	//If it's a verb, add it.  If it's not, just call it once
+	if(Thepower.isVerb)
+		M.current.ability_master.add_ling_ability(M.current,Thepower.verbpath,Thepower.name,Thepower.icon,null)
+	else
+		to_world("Calling verbpath")
+		call(M.current, Thepower.verbpath)()
+	/*
+	//What if we just... use ability manager
+	//TODO: Completely replace the add verb part, and move completely to spells
+	if(Thepower.spellpath)
+		var/spell/new_sting = new Thepower.spellpath
+		M.current.add_spell(new_sting)
 	if(!Thepower.isVerb && Thepower.verbpath)
 		call(M.current, Thepower.verbpath)()
 	else if(remake_verbs)
 		M.current.make_changeling()
+	*/
 
