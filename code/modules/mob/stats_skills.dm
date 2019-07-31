@@ -20,7 +20,8 @@
 /mob
 	var/str = 10    //strength - used for hitting and lifting.
 	var/dex = 10    //dexterity - used for dodging and parrying.
-	var/int = 10
+	var/int = 10    //intelligence - use for reading, engineering and crafting
+	var/con = 10    //consitution - used for healing, blood regen, and poison effectivness
 
     //skills
 	var/melee_skill = 50

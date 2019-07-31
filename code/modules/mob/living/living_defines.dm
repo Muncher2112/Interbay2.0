@@ -54,3 +54,6 @@
 
 	var/obj/screen/cells = null
 	var/list/in_vision_cones = list()
+
+	var/religion = LEGAL_RELIGION
+	var/doing_something = 0	//Like pulling teeth?

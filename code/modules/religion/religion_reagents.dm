@@ -1,8 +1,7 @@
 //REAGENTS
-//The revelator toxin
+//The revelator toxin this is probably going away
 /datum/reagent/toxin/revelator
 	name = "Revelator"
-	id = "revelator"
 	description = "For proving heretics."
 	strength = 25//Yep, it's poisonous. To discourage random checking.
 
@@ -15,7 +14,6 @@
 
 /datum/reagent/toxin/unrevelator
 	name = "Unrevelator"
-	id = "unrevelator"
 	description = "For tricking church members."
 	strength = 25//Yep, it's poisonous. To discourage taking it all the time.
 

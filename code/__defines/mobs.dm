@@ -112,6 +112,10 @@
 #define COMPANY_SKEPTICAL		"Skeptical"
 #define COMPANY_OPPOSED			"Opposed"
 
+#define LEGAL_RELIGION 			"Deo Machina"
+#define ILLEGAL_RELIGION 		"Old Gods"
+#define NARSIE_RELIGION			"Narsie"
+
 #define COMPANY_ALIGNMENTS		list(COMPANY_LOYAL,COMPANY_SUPPORTATIVE,COMPANY_NEUTRAL,COMPANY_SKEPTICAL,COMPANY_OPPOSED)
 
 // Defines mob sizes, used by lockers and to determine what is considered a small sized mob, etc.
