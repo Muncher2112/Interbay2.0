@@ -18,10 +18,14 @@
 
 //I am aware this is probably the worst possible way of doing it but I'm using this method till I get a better one. - Matt
 /mob
+/*
 	var/str = 10    //strength - used for hitting and lifting.
 	var/dex = 10    //dexterity - used for dodging and parrying.
 	var/int = 10    //intelligence - use for reading, engineering and crafting
 	var/con = 10    //consitution - used for healing, blood regen, and poison effectivness
+*/
+	//Stats are now going into a list.  It may use more space in mem,  but having them as freefloating variables makes them a pain to access as a whole
+	var/stats = list(str = 10, dex = 10, int = 10, con = 10)
 
     //skills
 	var/melee_skill = 50
@@ -99,31 +103,19 @@
 
 //having a bad mood fucks your shit up fam.
 /mob/proc/mood_affect(var/stat, var/skill)
-	if(iscarbon(src))
-		var/mob/living/carbon/C = src
-		if(C.happiness <= MOOD_LEVEL_SAD3)
-			if(stat)
-				return 5
-			if(skill)
-				return -15
-
+	//Just check this first
+	if(!iscarbon(src))
+		return 0
+	var/mob/living/carbon/C = src
+	// We return the mood, based on MOOD_LEVEL_NEUTRAL or whatever
+	if(stat)
+		return C.happiness * -0.2 /* 1/5th of our happiness This will be SUBTRACTED from the stat roll.  Goes from +4 to -4 */
+	if(skill)
+		return C.happiness //This will be ADDED to the skill roll.  Goes from +20 - -20  *PENDING REWORK&*
+	return 0
 
 proc/strToDamageModifier(var/strength)
-	switch(strength)
-		if(1 to 5)
-			return 0.5
-
-		if(6 to 11)
-			return 1.15
-
-		if(12 to 15)
-			return 1.5
-
-		if(16 to 18)
-			return  2
-
-		if(18 to INFINITY)
-			return 2.5
+	return strength * 0.05  //This is better then division
 
 proc/strToSpeedModifier(var/strength, var/w_class)//Looks messy. Is messy. Is also only used once. But I don't give a fuuuuuuuuck.
 	switch(strength)
@@ -144,30 +136,54 @@ proc/strToSpeedModifier(var/strength, var/w_class)//Looks messy. Is messy. Is al
 				return 5
 
 //Stats helpers.
-/mob/proc/add_stats(var/stre, var/dexe, var/inti)//To make adding stats quicker.
-	if(stre)
-		str = stre
-	if(dexe)
-		dex = dexe
-	if(inti)
-		int = inti
 
+/mob/proc/add_stats(var/stre, var/dexe, var/inti, var/cons)//To make adding stats quicker.
+	if(stre)
+		stats["str"] = stre
+	if(dexe)
+		stats["dex"] = dexe
+	if(inti)
+		stats["int"] = inti
+	if(cons)
+		stats["con"] = cons
+
+//Different way of generating stats.  Takes a "main_stat" argument.
+// Totals top 3/4 D6 for statss.  Then puts the top stat in the "main_stat" and the rest randomly
+/mob/proc/generate_stats(var/main_stat)
+	var/list/rand_stats = list()
+	var/top_stat = 0
+	//Roll a new random roll for each stat
+	for(var/stat in stats)
+		var/roll1 = rand(1,6)
+		var/roll2 = rand(1,6)
+		var/roll3 = rand(1,6)
+		rand_stats += (roll1+roll2+roll3)
+	rand_stats = sortList(rand_stats)
+	top_stat = rand_stats[1]
+	rand_stats.Remove(top_stat)
+	for(var/stat in stats)
+		if(main_stat == stat)
+			stats[stat] = top_stat
+			rand_stats.Remove(main_stat)
+		else
+			stats[stat] = pick(rand_stats)
+			rand_stats.Remove(stats[stat])
 
 /mob/proc/adjustStrength(var/num)
-	str += num
+	stats["str"] += num
 
 /mob/proc/adjustDexterity(var/num)
-	dex += num
+	stats["dex"] += num
 
 /mob/proc/adjustInteligence(var/num)
-	int += num
+	stats["int"] += num
 
 
 /mob/proc/temporary_stat_adjust(var/stat, var/modifier, var/time)
-	if(stat && modifier && time)//In case you somehow call this without using all three vars.
-		stat += modifier
+	if(stats[stat] && modifier && time)//In case you somehow call this without using all three vars.
+		stats[stat] += modifier
 		spawn(time)
-			stat -= modifier
+			stats[stat] -= modifier
 
 
 

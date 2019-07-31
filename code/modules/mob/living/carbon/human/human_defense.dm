@@ -239,8 +239,8 @@ meteor_act
 	if(!affecting)
 		return 0
 
-	if(user.str)//If they have strength then add it.
-		effective_force *= strToDamageModifier(user.str)
+	if(user.stats["str"])//If they have strength then add it.
+		effective_force *= strToDamageModifier(user.stats["str"])
 
 	// Handle striking to cripple.
 	if(user.a_intent == I_DISARM)
@@ -273,8 +273,8 @@ meteor_act
 
 	//Finally if we pass all that, we cut the limb off. This should reduce the number of one hit sword kills.
 	else if(I.sharp && I.edge)
-		if(prob(I.sharpness * strToDamageModifier(user.str)))
-			to_world("Sharpness: [I.sharpness].  StrMod: [strToDamageModifier(user.str)])") //Debugging
+		if(prob(I.sharpness * strToDamageModifier(user.stats["str"])))
+			to_world("Sharpness: [I.sharpness].  StrMod: [strToDamageModifier(user.stats["str"])])") //Debugging
 			affecting.droplimb(0, DROPLIMB_EDGE)
 
 	var/obj/item/organ/external/head/O = locate(/obj/item/organ/external/head) in src.organs
