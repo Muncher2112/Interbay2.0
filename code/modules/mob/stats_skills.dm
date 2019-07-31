@@ -148,7 +148,7 @@ proc/strToSpeedModifier(var/strength, var/w_class)//Looks messy. Is messy. Is al
 		stats["con"] = cons
 
 //Different way of generating stats.  Takes a "main_stat" argument.
-// Totals top 3/4 D6 for statss.  Then puts the top stat in the "main_stat" and the rest randomly
+// Totals top 3 D6 for stats.  Then puts the top stat in the "main_stat" and the rest randomly
 /mob/proc/generate_stats(var/main_stat)
 	var/list/rand_stats = list()
 	var/top_stat = 0
