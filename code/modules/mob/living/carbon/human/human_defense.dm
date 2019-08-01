@@ -626,8 +626,9 @@ meteor_act
 				to_chat(user, too_high_message)
 				return
 
-	var/kickdam = rand(0,15)
-	user.adjustStaminaLoss(rand(10,15))//Kicking someone is a big deal.
+	//STR makes you hit harder, DEX makes it less tiring
+	var/kickdam = rand(0,15) + stat_to_modifier(user.stats["str"])
+	user.adjustStaminaLoss(rand(10,15) - stat_to_modifier(user.stats["dex"]))//Kicking someone is a big deal.
 	if(kickdam)
 		playsound(user.loc, 'sound/weapons/kick.ogg', 50, 0)
 		apply_damage(kickdam, BRUTE, hit_zone, armour)

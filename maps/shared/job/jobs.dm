@@ -479,7 +479,7 @@
 		..()
 		if(!H.religion_is_legal())//Heretical priests would be weird.
 			H.religion = LEGAL_RELIGION
-		H.add_stats(rand(5,10), rand(9,12), rand(10,14))
+		H.generate_stats("int")
 
 /datum/job/janitor
 	title = "Janitor"
