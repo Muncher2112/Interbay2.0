@@ -1,3 +1,5 @@
+//TODO: Move this to a better location
+
 /obj/item/bola
 	name = "Bola"
 	icon = 'icons/obj/crafting.dmi'
@@ -18,6 +20,7 @@
 	result = list(/obj/item/bola = 1)
 	time = 30
 	base_chance = 100
+	int_required = 8
 
 /datum/crafting_recipe/light_tube
 	name = "Light tube"
@@ -26,3 +29,4 @@
 	result = list(/obj/item/weapon/light/tube	 = 1)
 	time = 30
 	base_chance = 100
+	int_required = 10
