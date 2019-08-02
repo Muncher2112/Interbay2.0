@@ -90,7 +90,7 @@
 			return
 		to_chat(usr, "<span class='notice'>Assembling grille...</span>")
 		in_use = 1
-		if (!do_after(usr, 10))
+		if (!do_after(usr, 10) && !user.skillcheck(user.skills["engineering"], 65, 1, "I have failed to fix the door."))//Skill cehck.
 			in_use = 0
 			return
 		var/obj/structure/grille/F = new /obj/structure/grille/ ( usr.loc )

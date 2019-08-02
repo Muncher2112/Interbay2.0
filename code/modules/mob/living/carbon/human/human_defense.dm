@@ -172,6 +172,15 @@ meteor_act
 		visible_message("<span class='danger'>\The [user] misses [src] with \the [I]!</span>")
 		return null
 
+	if(user.skillcheck(user.skills["melee"], 60, 0) == CRIT_FAILURE)
+		user.resolve_critical_miss(I)
+		return null
+
+	//if(!user.skillcheck(user.melee_skill, 60, 0) || !user.combat_mode)
+	//	visible_message("<span class='danger'>[user] botches the attack on [src]!</span>")
+	//	return null
+
+
 	if(check_shields(I.force, I, user, target_zone, "the [I.name]"))
 		return null
 
@@ -298,8 +307,8 @@ meteor_act
 					apply_effect(6, WEAKEN, blocked)
 		//Apply blood
 		attack_bloody(I, user, effective_force, hit_zone)
-	//if(user.skillcheck(user.melee_skill,0,0) == CRIT_SUCCESS)
-	//	resolve_critical_hit()
+	if(user.skillcheck(user.skills["melee"],0,0) == CRIT_SUCCESS)
+		resolve_critical_hit()
 
 	return 1
 
