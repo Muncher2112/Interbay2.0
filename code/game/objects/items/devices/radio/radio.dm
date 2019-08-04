@@ -230,7 +230,6 @@
 	if(channels && channels.len > 0)
 		if (message_mode == "department") // Department radio shortcut
 			message_mode = channels[1]
-
 		if (channels[message_mode]) // only broadcast if the channel is set on
 			return secure_radio_connections[message_mode]
 
@@ -374,7 +373,6 @@
 
 
   /* ###### Intercoms and station-bounced radios ###### */
-
 	var/filter_type = 2
 
 	/* --- Intercoms can only broadcast to other intercoms, but bounced radios can broadcast to bounced radios and intercoms --- */
@@ -727,7 +725,7 @@
 	canhear_range = 0
 	anchored = 1
 	simulated = 0
-	channels=list("Engineering" = 1, "Security" = 1, "Medical" = 1, "Command" = 1, "Common" = 1, "Science" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
+	channels=list("Engineering" = 1, "Security" = 1, "Medical" = 1, "Command" = 1, "Common" = 1, "Science" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1, "Inquisition" = 1)
 
 /obj/item/device/radio/announcer/Destroy()
 	crash_with("attempt to delete a [src.type] detected, and prevented.")
