@@ -104,6 +104,13 @@
 		s.start()
 		visible_message("<span class='warning'>BZZzZZzZZzZT</span>")
 		return
+/obj/machinery/offering_pad
+	name = "Deo Machina offering pad"
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "broadcaster_off"
+	density = 1
+	anchored = 1
+
 // ILLEGAL RELIGION
 
 /obj/machinery/old_god_shrine

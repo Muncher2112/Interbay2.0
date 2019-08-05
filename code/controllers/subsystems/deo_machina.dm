@@ -9,7 +9,7 @@ var/datum/controller/subsystem/verina_controller/SSverina
 	var/obj/request_item = null
 	var/request_amount = -1
 	var/visible_shrines = list()
-	var/list/requestable_items = list(/obj/item/metal_bar,/obj/item/weapon/screwdriver)
+	var/list/requestable_items = list(/obj/item/stack/material/phoron)
 	var/list/bannable_items = list()
 
 
@@ -20,7 +20,6 @@ var/datum/controller/subsystem/verina_controller/SSverina
 /datum/controller/subsystem/verina_controller/fire()
 	//enqueue()
 	if(state == SS_RUNNING)
-		to_world("Verina subsystem is running!")
 		generate_request()
 
 /datum/controller/subsystem/verina_controller/Initialize(time = null)
@@ -36,7 +35,6 @@ var/datum/controller/subsystem/verina_controller/SSverina
 /datum/controller/subsystem/verina_controller/proc/get_shrine_locations()
 	var/shrine_locations = list()
 	for(var/obj/machinery/old_god_shrine/S in visible_shrines)
-		to_world("[get_area(S)]")
 		shrine_locations += get_area(S)
 	return shrine_locations
 
