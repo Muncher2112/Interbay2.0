@@ -12,13 +12,15 @@ SUBSYSTEM_DEF(verina)
 	var/visible_shrines = list()
 	var/list/requestable_items = list(/obj/item/stack/material/phoron)
 	var/list/bannable_items = list()
-
+	var/list/rewards = list()
 
 /datum/controller/subsystem/verina/New()
 	NEW_SS_GLOBAL(SSverina)
+	rewards = typesof(/datum/reward) - /datum/reward
 
 /datum/controller/subsystem/verina/fire()
-	//enqueue()
+	if(!rewards)  //I hope this doesn't happen every time
+		rewards = typesof(/datum/reward) - /datum/reward
 	if(state == SS_RUNNING)
 		if(request_item)
 			request_time -= 30
@@ -57,8 +59,30 @@ SUBSYSTEM_DEF(verina)
 	request_time = rand(180,600)
 
 /datum/controller/subsystem/verina/proc/reward()
+	rewards = typesof(/datum/reward) - /datum/reward
+	var/datum/reward/reward = pick(rewards)
+	reward = new reward
+	reward.do_reward()
+
+/*	Rewards get defined individually with thier own special verb
+	All reward code should be self contained.  All the actual "reward" function will do is
+	pick a reward and run it's verb
+*/
+/datum/reward/
+	var/name = null
+	var/value = null //Having these gated by value might be useful at some point, doing it out of 100 right now because I don't know cargo values
+
+/datum/reward/proc/do_reward()
+	to_world("You should not be seeing this!")
+	
+/datum/reward/random_crate
+	name = "Random Crate"
+	value = 50
+
+/datum/reward/random_crate/do_reward()
 	var/datum/supply_order/supply_reward = pick(supply_controller.master_supply_list)
 	var/datum/supply_order/O = new /datum/supply_order()
+	//I pulled this out of supply stuff, but it should be a seperate function, like god damn
 	supply_controller.ordernum++
 	O.ordernum = supply_controller.ordernum
 	O.object = supply_reward
