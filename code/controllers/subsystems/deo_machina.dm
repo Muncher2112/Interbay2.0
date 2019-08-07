@@ -71,6 +71,7 @@ SUBSYSTEM_DEF(verina)
 /datum/reward/
 	var/name = null
 	var/value = null //Having these gated by value might be useful at some point, doing it out of 100 right now because I don't know cargo values
+	var/message = null
 
 /datum/reward/proc/do_reward()
 	to_world("You should not be seeing this!")
@@ -78,6 +79,7 @@ SUBSYSTEM_DEF(verina)
 /datum/reward/money
 	name = "Money" //LOADSA EMONE
 	value = 10
+	message="has been gracedwith a bonus!  Praise be Verina!"
 
 /datum/reward/money/do_reward()
 	for(var/datum/money_account/account in all_money_accounts)
@@ -86,6 +88,7 @@ SUBSYSTEM_DEF(verina)
 /datum/reward/happiness/
 	name = "Happiness"
 	value = 25
+	message="will received a burst of soothing psychic energy that will effect all true believers."
 
 /datum/reward/happiness/do_reward()
 	for(var/mob/living/carbon/human/H in GLOB.living_mob_list_)
@@ -95,6 +98,7 @@ SUBSYSTEM_DEF(verina)
 /datum/reward/random_crate
 	name = "Random Crate"
 	value = 50
+	message="has been graced with a suprise shipment!"
 
 /datum/reward/random_crate/do_reward()
 	var/datum/supply_order/supply_reward = pick(supply_controller.master_supply_list)
