@@ -31,7 +31,7 @@ SUBSYSTEM_DEF(verina)
 				punish()
 				generate_request()
 			else
-				to_world("Request for [request_amount] [request_item]s in [round(request_time/60)] minutes")
+				log_debug("Request for [request_amount] [request_item]s in [round(request_time/60)] minutes")
 
 		if(!request_item) //Only generate if a request isn't set
 			generate_request()
@@ -75,6 +75,23 @@ SUBSYSTEM_DEF(verina)
 /datum/reward/proc/do_reward()
 	to_world("You should not be seeing this!")
 	
+/datum/reward/money
+	name = "Money" //LOADSA EMONE
+	value = 10
+
+/datum/reward/money/do_reward()
+	for(var/datum/money_account/account in all_money_accounts)
+		account.money += 10
+
+/datum/reward/happiness/
+	name = "Happiness"
+	value = 25
+
+/datum/reward/happiness/do_reward()
+	for(var/mob/living/carbon/human/H in GLOB.living_mob_list_)
+		if(H.religion == LEGAL_RELIGION)
+			H.add_event("fulfilledrequest", /datum/happiness_event/request_fulfilled)
+
 /datum/reward/random_crate
 	name = "Random Crate"
 	value = 50
