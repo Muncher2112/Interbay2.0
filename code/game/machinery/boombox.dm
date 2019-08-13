@@ -68,7 +68,7 @@
 		playsound(get_turf(src), 'sound/machines/bomclick.ogg', 50, 1)
 
 
-/obj/item/device/boombox/proc/StopPlaying() //TODO запилить аптейдус иконс
+/obj/item/device/boombox/proc/StopPlaying() //TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	playing = 0
 	QDEL_NULL(sound_token)
 
@@ -78,9 +78,9 @@
 		return
 	if(!casseta.sound_inside)
 		return
-
-	sound_token = sound_player.PlayLoopingSound(src, sound_id, casseta.sound_inside, volume = 50, range = 14, falloff = 3, prefer_mute = TRUE, ignore_vis = TRUE)
-	playing = 1
+	to_world("This is broken, cry to muncher")
+	//sound_token = sound_player.PlayLoopingSound(src, sound_id, casseta.sound_inside, volume = 50, range = 14, falloff = 3, prefer_mute = TRUE, ignore_vis = TRUE)
+	//playing = 1
 
 /obj/item/device/cassete
 	name = "cassetka ebat"
