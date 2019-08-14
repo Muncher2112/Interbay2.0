@@ -532,6 +532,10 @@
 			var/mob/living/carbon/C = usr
 			C.print_happiness(C)
 
+		if("stamina")
+			var/mob/living/M = usr
+			M.report_stamina()
+
 		if("module")
 			if(isrobot(usr))
 				var/mob/living/silicon/robot/R = usr

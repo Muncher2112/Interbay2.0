@@ -639,13 +639,27 @@ default behaviour is:
 			adjustStaminaLoss(-5)
 		else
 			adjustStaminaLoss(-1)
-
+	
+	if(m_intent == "run" && staminaloss < 50)
+		adjustStaminaLoss(1)
+	
 	if(staminaloss >= STAMINA_EXHAUST && !stat)//Oh shit we've lost too much stamina and now we're tired!
 		Exhaust()
 		return
 
 /mob/living/proc/Exhaust()//Called when you run out of stamina.
-	Weaken(5)
+	var/gaspsound = null
+	if(gender == MALE)
+		gaspsound = "sound/voice/gasp_male[rand(1,7)].ogg"
+
+	if(gender == FEMALE)
+		gaspsound = "sound/voice/gasp_female[rand(1,7)].ogg"
+
+	if(gaspsound)
+		playsound(src, gaspsound, 25, 0, 1)
+	if(!statcheck(stats["con"],15,"I'm too tried to keep going...","con"))
+		Weaken(5)
+	setStaminaLoss(185)  //Give them a bit of stamina back to avoid calling this multiple times
 
 
 /mob/living/verb/resist()
