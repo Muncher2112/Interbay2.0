@@ -31,8 +31,7 @@ SUBSYSTEM_DEF(verina)
 				punish()
 				generate_request()
 			else
-				log_debug("Request for [request_amount] [request_item]s in [round(request_time/60)] minutes")
-
+				log_debug("Request for [request_amount] [request_item.name]s in [round(request_time/60)] minutes")
 		if(!request_item) //Only generate if a request isn't set
 			generate_request()
 
@@ -44,7 +43,7 @@ SUBSYSTEM_DEF(verina)
 	..("Verina is here")
 
 /datum/controller/subsystem/verina/Recover()
-	to_world("Verina is recovering!")
+	log_debug("Verina is recovering!")
 
 /datum/controller/subsystem/verina/proc/get_shrine_locations()
 	var/shrine_locations = list()
