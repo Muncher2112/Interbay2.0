@@ -642,6 +642,8 @@ default behaviour is:
 	
 	if(m_intent == "run" && staminaloss < 50)
 		adjustStaminaLoss(1)
+	else
+		adjustStaminaLoss(-2)
 	
 	if(staminaloss >= STAMINA_EXHAUST && !stat)//Oh shit we've lost too much stamina and now we're tired!
 		Exhaust()
