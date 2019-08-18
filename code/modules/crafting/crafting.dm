@@ -138,8 +138,10 @@
 
 /datum/crafting_recipe/proc/get_description(pass_steps)
 	. = list()
-	var/atom/A = result[1]
+	var/new_result = result[1]
+	var/atom/A = new new_result
 	if(A.desc)
 		.+="[initial(A.desc)]<br>"
 		return jointext(., "<br>")
+	qdel(A)
 	return
