@@ -9,6 +9,7 @@
  * 		Wirecutters
  * 		Welding Tool
  * 		Crowbar
+*		Saw
  */
 
 /*
@@ -32,6 +33,13 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
 	center_of_mass = "x=17;y=16"
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
+
+/obj/item/weapon/wrench/improvised
+	name = "sheet spanner"
+	desc = "A flat bit of metal with some usefully shaped holes cut into it."
+	icon_state = "impro_wrench"
+	//degradation = 4
+	//tool_qualities = list(QUALITY_BOLT_TURNING = 15) 
 
 /obj/item/weapon/wrench/Initialize()
 	icon_state = "wrench[pick("","_red","_black")]"
@@ -59,6 +67,13 @@
 	center_of_mass = "x=16;y=7"
 	attack_verb = list("stabbed")
 	lock_picking_level = 5
+
+/obj/item/weapon/screwdriver/improvised
+	name = "screwpusher"
+	desc = "A little metal rod wrapped in tape, barely qualifies as a tool."
+	icon_state = "impro_screwdriver"
+	//tool_qualities = list(QUALITY_SCREW_DRIVING = 15)
+	//degradation = 2
 
 /obj/item/weapon/screwdriver/Initialize()
 	switch(pick("red","blue","purple","brown","green","cyan","yellow"))
@@ -121,6 +136,14 @@
 	sharp = 1
 	edge = 1
 
+/obj/item/weapon/wirecutters/improvised
+	name = "wiremanglers"
+	desc = "An improvised monstrosity made of bent rods which can sometimes be used to snip things."
+	icon_state = "impro_cutter"
+	w_class = ITEM_SIZE_NORMAL
+	//tool_qualities = list(QUALITY_WIRE_CUTTING = 20, QUALITY_RETRACTING = 10, QUALITY_BONE_SETTING = 10)
+	//degradation = 1.5
+
 /obj/item/weapon/wirecutters/Initialize()
 	if(prob(50))
 		icon_state = "cutters-y"
@@ -174,6 +197,16 @@
 	var/status = 1 		//Whether the welder is secured or unsecured (able to attach rods to it to make a flamethrower)
 
 	var/obj/item/weapon/welder_tank/tank = /obj/item/weapon/welder_tank // where the fuel is stored
+
+/obj/item/weapon/weldingtool/improvised
+	name = "jury-rigged torch"
+	desc = "An assembly of pipes attached to a little gas tank. Serves capably as a welder, though a bit risky."
+	icon_state = "welder"
+	item_state = "welder"
+	//switched_on_force = WEAPON_FORCE_PAINFUL * 0.8
+	//max_fuel = 15
+	//switched_on_qualities = list(QUALITY_WELDING = 15, QUALITY_CAUTERIZING = 10, QUALITY_WIRE_CUTTING = 10)
+	//degradation = 1.5
 
 /obj/item/weapon/weldingtool/Initialize()
 	if(ispath(tank))
@@ -605,6 +638,14 @@
 	center_of_mass = "x=16;y=20"
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
+/obj/item/weapon/crowbar/improvised
+	name = "rebar"
+	desc = "A pair of metal rods laboriously twisted into a useful shape"
+	icon_state = "impro_crowbar"
+	item_state = "crowbar"
+	//tool_qualities = list(QUALITY_PRYING = 10, QUALITY_DIGGING = 10)
+	//degradation = 5 //This one breaks REALLY fast
+
 /obj/item/weapon/crowbar/red
 	icon_state = "red_crowbar"
 	item_state = "crowbar_red"
@@ -617,17 +658,41 @@
 	force = 4.0
 	throwforce = 6.0
 	throw_range = 5
-	w_class = ITEM_SIZE_SMALL
-	matter = list(DEFAULT_WALL_MATERIAL = 80)
 
 /obj/item/weapon/crowbar/prybar/Initialize()
 	icon_state = "prybar[pick("","_red","_green","_aubergine","_blue")]"
 	. = ..()
 
 /*
+Saws
+*/
+/obj/item/weapon/saw
+	name = "metal saw"
+	desc = "For cutting wood and other objects to pieces. Or sawing bones, in case of emergency."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "metal_saw"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	force = 12.0
+	throwforce = 5.0
+	throw_range = 3
+	w_class = ITEM_SIZE_LARGE
+	matter = list(MATERIAL_STEEL_TYPE = 10, MATERIAL_PLASTIC_TYPE = 5)
+	attack_verb = list("attacked", "slashed", "sawed", "cut")
+	sharp = TRUE
+	edge = TRUE
+	//tool_qualities = list(QUALITY_SAWING = 30, QUALITY_CUTTING = 20, QUALITY_WIRE_CUTTING = 20)
+	//embed_mult = 1 //Serrated blades catch on bone more easily
+
+/obj/item/weapon/saw/improvised
+	name = "choppa"
+	desc = "A wicked serrated blade made of whatever nasty sharp things you could find. It would make a pretty decent weapon"
+	icon_state = "impro_saw"
+	//tool_qualities = list(QUALITY_SAWING = 15, QUALITY_CUTTING = 10, QUALITY_WIRE_CUTTING = 10)
+	//degradation = 1 
+/*
  * Combitool
  */
-
 
 /*/obj/item/weapon/combitool
 	name = "combi-tool"
@@ -635,7 +700,6 @@
 	icon = 'icons/obj/items.dmi'
 	icon_state = "combitool"
 	w_class = ITEM_SIZE_SMALL
-
 	var/list/spawn_tools = list(
 		/obj/item/weapon/screwdriver,
 		/obj/item/weapon/wrench,
@@ -646,19 +710,16 @@
 		)
 	var/list/tools = list()
 	var/current_tool = 1
-
 /obj/item/weapon/combitool/examine()
 	..()
 	if(loc == usr && tools.len)
 		to_chat(usr, "It has the following fittings:")
 		for(var/obj/item/tool in tools)
 			to_chat(usr, "\icon[tool] - [tool.name][tools[current_tool]==tool?" (selected)":""]")
-
 /obj/item/weapon/combitool/New()
 	..()
 	for(var/type in spawn_tools)
 		tools |= new type(src)
-
 /obj/item/weapon/combitool/attack_self(mob/user as mob)
 	if(++current_tool > tools.len) current_tool = 1
 	var/obj/item/tool = tools[current_tool]
@@ -667,14 +728,12 @@
 	else
 		to_chat(user, "You switch \the [src] to the [tool.name] fitting.")
 	return 1
-
 /obj/item/weapon/combitool/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
 	if(!M.Adjacent(user))
 		return 0
 	var/obj/item/tool = tools[current_tool]
 	if(!tool) return 0
 	return (tool ? tool.attack(M,user) : 0)
-
 /obj/item/weapon/combitool/afterattack(var/atom/target, var/mob/living/user, proximity, params)
 	if(!proximity)
 		return 0

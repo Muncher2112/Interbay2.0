@@ -153,6 +153,14 @@
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/weapon/shovel/improvised
+	name = "junk shovel"
+	desc = "A large but fragile tool for moving dirt and rock."
+	icon_state = "impro_shovel"
+	force = 5.0
+	throwforce = 7.0
+	//degradation = 1.5
+	//tool_qualities = list(QUALITY_SHOVELING = 25, QUALITY_DIGGING = 25, QUALITY_EXCAVATION = 10) 
 
 /**********************Mining car (Crate like thing, not the rail car)**************************/
 
