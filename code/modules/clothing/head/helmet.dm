@@ -172,3 +172,9 @@
 	name = "bundeforz tactical helmet"
 	desc = "A light grey helmet made from advanced ceramic. Comfortable and robust."
 	icon_state = "m_helmet"
+
+/obj/item/clothing/head/helmet/handmade
+	name = "handmade combat helmet"
+	desc = "It looks like it was made from a bucket and some steel. Uncomfortable and heavy but better than nothing."
+	icon_state = "hm_helmet"
+	armor = list(melee = 35, bullet = 30, energy = 30, bomb = 0, bio = 0, rad = 0)

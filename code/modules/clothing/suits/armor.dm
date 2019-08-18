@@ -435,3 +435,9 @@
 	desc = "A heavy armored vest in a light grey urban camo. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "m_vest"
 	item_state = "m_vest"
+
+/obj/item/clothing/suit/armor/vest/handmade
+	name = "handmade armor vest"
+	desc = "An armored vest of uncertain quality. Provides a good protection against physical damage, for piece of crap."
+	icon_state = "hm_armorvest"
+	armor = list(melee = 30, bullet = 30, energy = 15, bomb = 15, bio = 0, rad = 0)
