@@ -57,10 +57,7 @@
 			"desc" = user.stats["int"] >= 8 ? CR.get_description() : "I'm not even sure what this does... <br>",
 			"ingredients" = user.stats["int"] >= 10 ?  CR.get_ingredients() : "I'm not sure what this would be made out of... <br>",
 			"tool" = user.stats["int"] >= 10 ? CR.get_tools() : "What tool would do I even need? <br>",
-		)
-	if(user.stats["int"] >= 14)
-		data["cur_item"]["tool"] = CR.get_tools()
-	
+		)	
 	var/list/items = list()
 	for(var/datum/crafting_recipe/recipe in SScraft.categories[curr_category])
 		if(recipe.result)
