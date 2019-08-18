@@ -1,43 +1,3 @@
-/mob/living/carbon/human/verb/craft()
-	set name = "Craft Items"
-	set category = "IC"
-
-	if(stat) //zombie ghosts pls go
-		return
-
-	if(!crafting_recipes)
-		return
-
-	var/dat = ""
-	var/turf/spot = get_step(src, dir)
-	if(!spot.Adjacent(src))
-		src << "<span class='warning'>You need more space to work.</span>"
-		return
-	for(var/name in crafting_recipes)
-		var/datum/crafting_recipe/R = crafting_recipes[name]
-		if(R.can_see(src, spot))
-			dat += "<A href='?src=\ref[src];craft=[name]'>[R.name]</A> "
-			dat += "Parts: "
-			var/list/parts = list()
-			for(var/T in R.parts)
-				var/atom/A = T
-				parts += "[initial(A.name)] x[R.parts[T]]"
-			dat += english_list(parts)
-			if(R.tools)
-				dat+= ". Tools needed: "
-				var/list/tools = list()
-				for(var/T in R.tools)
-					var/atom/A = T
-					tools += "[initial(A.name)]"
-				dat += english_list(tools)
-			dat += ".<br>"
-	if(!dat)
-		src << "<span class='notice'>You can't think of anything you can make with what you have in here.</span>"
-		return
-	var/datum/browser/popup = new(src, "craft", "Craft", 300, 300)
-	popup.set_content(dat)
-	popup.open()
-
 /datum/crafting_recipe
 	var/name = "" 			//in-game display name
 	var/list/parts 			//type paths of items consumed associated with how many are needed
@@ -47,11 +7,12 @@
 	var/time = 0 			//time in 1/10th of second
 	var/base_chance = 100 	//base chance to get it right without skills
 	var/int_required = 0    //Anyone can learn this
+	var/related_skill = SKILL_CRAFT
 	var/category = "Misc"
 
 /datum/crafting_recipe/proc/check_parts(var/list/things)
 	if(!parts)
-		return 1
+		return TRUE
 	var/list/needs = parts.Copy()
 	for(var/atom/movable/A in things)
 		for(var/T in needs)
@@ -64,14 +25,14 @@
 				if(needs[T] <= 0) //don't need any more of this type
 					needs -= T
 		if(!needs.len)
-			return 1
-	return 0
+			return TRUE
+	return FALSE
 
 /datum/crafting_recipe/proc/check_tools(var/list/things)
 	for(var/T in tools)
 		if(!(locate(T) in things))
-			return 0
-	return 1
+			return FALSE
+	return TRUE
 
 /datum/crafting_recipe/proc/use_ingridients(var/list/things)
 	var/list/needs = parts.Copy()
@@ -106,11 +67,11 @@
 
 /datum/crafting_recipe/proc/can_make(var/mob/user, var/turf/spot)
 	var/list/things = spot.contents + user.contents
-	if (check_tools(things))
+	if (!check_tools(things))
 		to_chat(user, "You are missing the tools required.")
 		return 0
-	if (check_parts(things))
-		to_chat(user, "You are missing the partss required.")
+	if (!check_parts(things))
+		to_chat(user, "You are missing the parts required.")
 		return 0
 	return 1
 
