@@ -80,6 +80,12 @@
 
 		if(!client && !mind)
 			species.handle_npc(src)
+		
+		//Handle sleeping
+		if(sleeping)
+			to_world("[src] is sleeping")
+			src.adjustBruteLoss(-0.5)
+			src.adjustFireLoss(-0.5)
 
 
 	if(!handle_some_updates())
