@@ -82,7 +82,7 @@
 					if(chest)
 						chest.fracture()
 				if(stat != DEAD)
-					if(prob(15))
+					if(prob(H.skills[SKILL_MED]))
 						resuscitate()
 
 					if(!H.check_has_mouth())

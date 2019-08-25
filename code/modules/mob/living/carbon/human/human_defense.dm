@@ -283,7 +283,7 @@ meteor_act
 	//Finally if we pass all that, we cut the limb off. This should reduce the number of one hit sword kills.
 	else if(I.sharp && I.edge)
 		if(prob(I.sharpness * strToDamageModifier(user.stats["str"])))
-			to_world("Sharpness: [I.sharpness].  StrMod: [strToDamageModifier(user.stats["str"])])") //Debugging
+			log_debug("Sharpness: [I.sharpness].  StrMod: [strToDamageModifier(user.stats["str"])])") //Debugging
 			affecting.droplimb(0, DROPLIMB_EDGE)
 
 	var/obj/item/organ/external/head/O = locate(/obj/item/organ/external/head) in src.organs
@@ -297,7 +297,7 @@ meteor_act
 		if(!stat)
 			if(headcheck(hit_zone))
 				//Harder to score a stun but if you do it lasts a bit longer
-				if(prob(effective_force))
+				if(prob(effective_force - stat_to_modifier(user.stats["con"])))
 					visible_message("<span class='danger'>[src] [species.knockout_message]</span>")
 					apply_effect(20, PARALYZE, blocked)
 			else
