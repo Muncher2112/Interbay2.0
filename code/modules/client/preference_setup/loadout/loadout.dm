@@ -2,11 +2,12 @@ var/list/loadout_categories = list()
 var/list/gear_datums = list()
 
 /datum/preferences
-	var/list/gear_list //Custom/fluff item loadouts.
+	var/list/gear_list = list() //Custom/fluff item loadouts.
 	var/gear_slot = 1  //The current gear save slot
 
 /datum/preferences/proc/Gear()
-	return gear_list[gear_slot]
+	if(gear_list.len)
+		return gear_list[gear_slot]
 
 /datum/loadout_category
 	var/category = ""

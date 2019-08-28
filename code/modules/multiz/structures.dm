@@ -240,3 +240,23 @@
 /obj/structure/stairs/zlong/west
 	dir = WEST
 	bound_width = 64
+
+/obj/structure/stairs/CheckExit(atom/movable/mover as mob|obj, turf/target as turf)
+	if(get_dir(loc, target) == dir && upperStep(mover.loc))
+		return FALSE
+	return ..()
+
+/obj/structure/stairs/Bumped(atom/movable/A)
+	var/turf/target = get_step(GetAbove(A), dir)
+	var/turf/source = A.loc
+	var/turf/above = GetAbove(A)
+	playsound(source, 'sound/effects/footsteps/footsteps.ogg', 75)
+	if(above.CanZPass(source, UP) && target.Enter(A, src))
+		A.forceMove(target)
+		if(isliving(A))
+			var/mob/living/L = A
+			if(L.pulling)
+				L.pulling.forceMove(target)
+
+	else
+		to_chat(A, "<span class='warning'>Something blocks the path.</span>")
