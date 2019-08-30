@@ -116,7 +116,7 @@
 		var/list/objs = list()
 		get_mobs_and_objs_in_view_fast(loc,0,mobs,objs)
 		for (var/object in objs)
-			if (istype(object,SSverina.request_item.type))
+			if (istype(object,SSverina.request_type))
 				SSverina.request_amount -= 1
 				playsound(get_turf(src), 'sound/misc/interference.ogg', 25, 1, extrarange = 3, falloff = 5)
 				qdel(object)

@@ -1,11 +1,11 @@
-var/datum/controller/subsystem/verina_controller/SSverina
 
 //The main controller of verina.  Will manage a few small subsystems, and manage what they are doing based on crew input
-/datum/controller/subsystem/verina_controller
+SUBSYSTEM_DEF(verina)
 	name = "Verina"
 	wait = 300  //30 seconds
 	priority = 20
 	flags = SS_BACKGROUND
+	var/request_type = /obj/item/stack/material/phoron
 	var/obj/request_item = null
 	var/request_amount = -1
 	var/request_time = -1
@@ -14,10 +14,10 @@ var/datum/controller/subsystem/verina_controller/SSverina
 	var/list/bannable_items = list()
 
 
-/datum/controller/subsystem/verina_controller/New()
+/datum/controller/subsystem/verina/New()
 	NEW_SS_GLOBAL(SSverina)
 
-/datum/controller/subsystem/verina_controller/fire()
+/datum/controller/subsystem/verina/fire()
 	//enqueue()
 	if(state == SS_RUNNING)
 		if(request_item)
@@ -29,33 +29,34 @@ var/datum/controller/subsystem/verina_controller/SSverina
 				punish()
 				generate_request()
 			else
-				to_world("Request for [request_amount] [request_item.name]s in [round(request_time/60)] minutes")
+				to_world("Request for [request_amount] [request_item]s in [round(request_time/60)] minutes")
 
 		if(!request_item) //Only generate if a request isn't set
 			generate_request()
 
-/datum/controller/subsystem/verina_controller/Initialize(time = null)
+/datum/controller/subsystem/verina/Initialize(time = null)
 	to_world("Good morning!  Your station's Deo Machina sactioned AI is starting up!  The time is [time]")
 	..()
 
-/datum/controller/subsystem/verina_controller/stat_entry(msg)
+/datum/controller/subsystem/verina/stat_entry(msg)
 	..("Verina is here")
 
-/datum/controller/subsystem/verina_controller/Recover()
+/datum/controller/subsystem/verina/Recover()
 	to_world("Verina is recovering!")
 
-/datum/controller/subsystem/verina_controller/proc/get_shrine_locations()
+/datum/controller/subsystem/verina/proc/get_shrine_locations()
 	var/shrine_locations = list()
 	for(var/obj/machinery/old_god_shrine/S in visible_shrines)
 		shrine_locations += get_area(S)
 	return shrine_locations
 
-/datum/controller/subsystem/verina_controller/proc/generate_request()
-	request_item = new request_item
-	request_amount = rand(1,50)
-	request_time = rand(300,600)
+/datum/controller/subsystem/verina/proc/generate_request()
+	request_type = pick(requestable_items)
+	request_item = new request_type
+	request_amount = rand(5,30)
+	request_time = rand(180,600)
 
-/datum/controller/subsystem/verina_controller/proc/reward()
+/datum/controller/subsystem/verina/proc/reward()
 	var/datum/supply_order/supply_reward = pick(supply_controller.master_supply_list)
 	var/datum/supply_order/O = new /datum/supply_order()
 	supply_controller.ordernum++
@@ -67,5 +68,5 @@ var/datum/controller/subsystem/verina_controller/SSverina
 	O.comment = "#[O.ordernum] Well done servant of Verina." // crates will be labeled with this.
 	supply_controller.shoppinglist += O
 
-/datum/controller/subsystem/verina_controller/proc/punish()
-	to_world("Picking Punishment")
+/datum/controller/subsystem/verina/proc/punish()
+	log_debug("Punihsments do nothing")
