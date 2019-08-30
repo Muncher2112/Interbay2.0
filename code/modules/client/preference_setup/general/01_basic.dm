@@ -17,6 +17,7 @@ datum/preferences
 	S["age"]					>> pref.age
 	S["spawnpoint"]				>> pref.spawnpoint
 	S["OOC_Notes"]				>> pref.metadata
+	S["religion"]				>> pref.religion
 
 /datum/category_item/player_setup_item/general/basic/save_character(var/savefile/S)
 	S["real_name"]				<< pref.real_name
@@ -25,6 +26,7 @@ datum/preferences
 	S["age"]					<< pref.age
 	S["spawnpoint"]				<< pref.spawnpoint
 	S["OOC_Notes"]				<< pref.metadata
+	S["religion"]				<< pref.religion
 
 /datum/category_item/player_setup_item/general/basic/sanitize_character()
 	var/datum/species/S = all_species[pref.species ? pref.species : SPECIES_HUMAN]
@@ -36,6 +38,7 @@ datum/preferences
 		pref.real_name      = random_name(pref.gender, pref.species)
 	pref.spawnpoint         = sanitize_inlist(pref.spawnpoint, spawntypes(), initial(pref.spawnpoint))
 	pref.be_random_name     = sanitize_integer(pref.be_random_name, 0, 1, initial(pref.be_random_name))
+	if(!pref.religion)    pref.religion =  LEGAL_RELIGION
 
 /datum/category_item/player_setup_item/general/basic/content()
 	. = list()
@@ -47,6 +50,8 @@ datum/preferences
 	. += "<b>Gender:</b> <a href='?src=\ref[src];gender=1'><b>[gender2text(pref.gender)]</b></a><br>"
 	. += "<b>Age:</b> <a href='?src=\ref[src];age=1'>[pref.age]</a><br>"
 	. += "<b>Spawn Point</b>: <a href='?src=\ref[src];spawnpoint=1'>[pref.spawnpoint]</a><br>"
+	. += "<b>RELIGION</b> "
+	. += "<a href='?src=\ref[src];religion=1'>[pref.religion]</a><br/>"
 	if(config.allow_Metadata)
 		. += "<b>OOC Notes:</b> <a href='?src=\ref[src];metadata=1'> Edit </a><br>"
 	. = jointext(.,null)
@@ -95,7 +100,14 @@ datum/preferences
 		if(!choice || !spawntypes()[choice] || !CanUseTopic(user))	return TOPIC_NOACTION
 		pref.spawnpoint = choice
 		return TOPIC_REFRESH
+	else if(href_list["religion"])
 
+		if(pref.religion == LEGAL_RELIGION)
+			pref.religion = ILLEGAL_RELIGION
+		else
+			pref.religion = LEGAL_RELIGION
+		return TOPIC_REFRESH
+	
 	else if(href_list["metadata"])
 		var/new_metadata = sanitize(input(user, "Enter any information you'd like others to see, such as Roleplay-preferences:", "Game Preference" , pref.metadata)) as message|null
 		if(new_metadata && CanUseTopic(user))

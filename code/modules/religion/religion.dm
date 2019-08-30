@@ -70,11 +70,18 @@ proc/generate_random_prayer()//This generates a new one.
 	prayer += "Amen."
 	return prayer
 
+/mob/living/proc/recite_prayer()
+	set category = "Deo Machina"
+	set name = "Recite the prayer"
+	say(mind.prayer)
+
+
 /obj/item/weapon/pen/crayon/chalk
 	name = "consecrated chalk"
+	icon = 'icons/effects/religion.dmi'
 	//TODO: Make this arbitar only
 	desc = "Heretical chalk used by Old God worshipers."
-	icon_state = "crayongrey"
+	icon_state = "chalk"
 	colour = "#FFFFF"
 	shadeColour = "#454545"
 	colourName = "grey"

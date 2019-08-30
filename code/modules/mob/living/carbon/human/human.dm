@@ -98,6 +98,10 @@
 			if(mind.changeling)
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
+	
+		if (!religion_is_legal())
+			stat("Old God favor:",GLOB.all_religions[ILLEGAL_RELIGION].favor)
+
 
 /mob/living/carbon/human/ex_act(severity)
 	if(!blinded)
