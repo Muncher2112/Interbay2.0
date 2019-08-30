@@ -281,8 +281,6 @@ datum/preferences
 	character.personal_faction = faction
 	character.religion = religion
 
-	character.used_skillpoints = used_skillpoints
-
 	if(!character.isSynthetic())
 		character.nutrition = rand(140,360)
 

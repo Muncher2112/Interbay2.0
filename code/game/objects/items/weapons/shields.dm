@@ -55,7 +55,7 @@
 	return 0
 
 /obj/item/weapon/shield/proc/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
-	return base_block_chance + user.melee_skill
+	return base_block_chance + user.skills["melee"]
 
 /obj/item/weapon/shield/riot
 	name = "riot shield"

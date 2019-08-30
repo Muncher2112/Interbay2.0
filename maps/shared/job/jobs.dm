@@ -238,7 +238,11 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads, access_tox,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
-
+	equip(var/mob/living/carbon/human/H)
+		H.generate_stats("int")
+		H.generate_skills("medical")
+	
+	
 /datum/job/hos
 	title = "Head Peacekeeper"
 	supervisors = "the Magistrate"
@@ -317,6 +321,7 @@
 		..()
 		//H.add_stats(rand(10,15), rand(7,10), rand(9,14))
 		H.generate_stats("int")
+		H.generate_skills("engineering")
 
 /datum/job/mining
 	selection_color = "#7c6a2e"
@@ -360,6 +365,7 @@
 		..()
 		//H.add_stats(rand(10,15), rand(7,10), rand(9,14))
 		H.generate_stats("int")
+		H.generate_skills("crafting")
 
 //kid roles
 /datum/job/ouvrier
@@ -494,6 +500,7 @@
 		..()
 		//H.add_stats(rand(9,12), rand(9,12), rand(5,9))
 		H.generate_stats("con")
+		H.generate_skills("cleaning")
 
 /datum/job/hydro
 	title = "Botanic"
@@ -509,8 +516,8 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,11), rand(6,15), rand(5,11))
-		H.add_skills(rand(20, 60), rand(0,40), rand(0, 50), rand(0, 50))
+		H.generate_stats("con")
+		H.generate_skills("gardening")
 
 
 //CHURCH JOBS

@@ -1243,8 +1243,6 @@ var/global/floorIsLava = 0
 	var/mob/living/carbon/human/M = input("Select mob.", "Select mob.") as null|anything in GLOB.human_mob_list
 	if(!M) return
 
-	show_skill_window(usr, M)
-
 	return
 
 /client/proc/update_mob_sprite(mob/living/carbon/human/H as mob)

@@ -190,7 +190,7 @@ meteor_act
 		return null
 
 	
-	if(user.skillcheck(user.melee_skill, 60, 0) == CRIT_FAILURE)
+	if(user.skillcheck(user.skills["melee"], 60, 0) == CRIT_FAILURE)
 		user.resolve_critical_miss(I)
 		return null
 
