@@ -35,6 +35,10 @@
 		if(istype(E)) E.internal_organs -= src
 	return ..()
 
+/obj/item/organ/Process()
+	if(src.damage <= 0 && src in owner.bad_internal_organs)
+		owner.bad_internal_organs -= src
+	..()
 //disconnected the organ from it's owner but does not remove it, instead it becomes an implant that can be removed with implant surgery
 //TODO move this to organ/internal once the FPB port comes through
 /obj/item/organ/proc/cut_away(var/mob/living/user)
@@ -116,6 +120,8 @@
 	return damage >= min_bruised_damage
 
 /obj/item/organ/internal/take_damage(amount, var/silent=0)
+	if(!(src in owner.bad_internal_organs))
+		owner.bad_internal_organs += src
 	if(isrobotic())
 		damage = between(0, src.damage + (amount * 0.8), max_damage)
 	else
