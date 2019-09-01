@@ -29,19 +29,16 @@ datum/track/New(var/title_name, var/audio)
 
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
-		new/datum/track("Song 1", 'sound/jukebox/barsong1.ogg'),
-		new/datum/track("Song 2", 'sound/jukebox/barsong2.ogg'),
-		new/datum/track("Song 3", 'sound/jukebox/barsong3.ogg'),
-		new/datum/track("Song 4", 'sound/jukebox/barsong4.ogg'),
-		new/datum/track("Song 5", 'sound/jukebox/barsong5.ogg'),
-		new/datum/track("Song 6", 'sound/jukebox/barsong6.ogg'),
-		new/datum/track("Song 7", 'sound/jukebox/barsong7.ogg'),
-		new/datum/track("Song 8", 'sound/jukebox/barsong8.ogg'),
-		new/datum/track("Song 9", 'sound/jukebox/barsong9.ogg'),
-		new/datum/track("Song 10", 'sound/jukebox/barsong10.ogg'),
-		new/datum/track("Song 11", 'sound/jukebox/barsong11.ogg'),
-		new/datum/track("Song 12", 'sound/jukebox/barsong12.ogg'),
-		new/datum/track("Song 13", 'sound/jukebox/barsong13.ogg'),
+		new/datum/track("Starter", 'sound/jukebox/barsong1.ogg'),
+		new/datum/track("Pupper", 'sound/jukebox/barsong2.ogg'),
+		new/datum/track("Hellfire", 'sound/jukebox/barsong3.ogg'),
+		new/datum/track("Chop", 'sound/jukebox/barsong4.ogg'),
+		new/datum/track("Cosmic", 'sound/jukebox/barsong5.ogg'),
+		new/datum/track("Streak", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Drive", 'sound/jukebox/barsong7.ogg'),
+		new/datum/track("Jammed", 'sound/jukebox/barsong8.ogg'),
+		new/datum/track("Pixies", 'sound/jukebox/barsong9.ogg'),
+		new/datum/track("Chery Bomb", 'sound/jukebox/barsong10.ogg'),
 	)
 
 /obj/machinery/media/jukebox/New()
