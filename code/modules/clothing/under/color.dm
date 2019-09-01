@@ -36,43 +36,61 @@
 
 /obj/item/clothing/under/color/white
 	name = "white jumpsuit"
-	color = "#ffffff"
+	icon_state = "white"
+	item_state = "w_suit"
 
 /obj/item/clothing/under/color/black
 	name = "black jumpsuit"
-	color = "#3d3d3d"
+	icon_state = "black"
+	item_state = "bl_suit"
 
 /obj/item/clothing/under/color/grey
 	name = "grey jumpsuit"
-	color = "#c4c4c4"
+	desc = "A tasteful grey jumpsuit that reminds you of the good old days."
+	icon_state = "grey"
+	item_state = "gy_suit"
 
 /obj/item/clothing/under/color/blue
 	name = "blue jumpsuit"
-	color = "#0066ff"
+	icon_state = "blue"
+	item_state = "b_suit"
+
+/obj/item/clothing/under/color/orange
+	name = "orange jumpsuit"
+	desc = "Don't wear this near paranoid security officers."
+	icon_state = "orange"
+	item_state = "o_suit"
 
 /obj/item/clothing/under/color/pink
 	name = "pink jumpsuit"
-	color = "#df20a6"
+	icon_state = "pink"
+	desc = "Just looking at this makes you feel <i>fabulous</i>."
+	item_state = "p_suit"
 
 /obj/item/clothing/under/color/red
 	name = "red jumpsuit"
-	color = "#ee1511"
-
-/obj/item/clothing/under/color/green
-	name = "green jumpsuit"
-	color = "#42a345"
+	icon_state = "red"
+	item_state = "r_suit"
 
 /obj/item/clothing/under/color/yellow
 	name = "yellow jumpsuit"
-	color = "#ffee00"
+	icon_state = "yellow"
+	item_state = "y_suit"
+
+/obj/item/clothing/under/color/green
+	name = "green jumpsuit"
+	icon_state = "green"
+	item_state = "g_suit"
 
 /obj/item/clothing/under/color/lightpurple
-	name = "light purple jumpsuit"
-	color = "#c600fc"
+	name = "purple jumpsuit"
+	icon_state = "lightpurple"
+	item_state = "p_suit"
 
 /obj/item/clothing/under/color/brown
 	name = "brown jumpsuit"
-	color = "#c08720"
+	icon_state = "brown"
+	item_state = "lb_suit"
 
 // coloured jumpsuits, female pattern
 

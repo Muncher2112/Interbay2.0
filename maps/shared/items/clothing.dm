@@ -17,7 +17,7 @@
 	name = "undertaker's helm"
 	desc = "To ward off the evil smells."
 	icon_state = "undertaker"
-	item_state = "underaker"
+	item_state = "undertaker"
 
 /obj/item/clothing/gloves/undertaker
 	name = "undertaker's gloves"
