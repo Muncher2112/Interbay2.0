@@ -66,7 +66,7 @@
 	name = OUTFIT_JOB_NAME("Chemist")
 	uniform = /obj/item/clothing/under/rank/chemist
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/chemist
-	id_type = /obj/item/weapon/card/id/medical/chemist
+	id_type = /obj/item/weapon/card/id/medical
 	pda_type = /obj/item/device/pda/chemist
 
 /decl/hierarchy/outfit/job/medical/chemist/New()

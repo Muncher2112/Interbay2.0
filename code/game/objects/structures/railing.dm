@@ -148,10 +148,10 @@
 	NeighborsCheck(UpdateNeighgors)
 	//icon_state = "railing[LeftSide[1]][LeftSide[2]][LeftSide[3]]-[RightSide[1]][RightSide[2]][RightSide[3]]"
 	overlays.Cut()
-	if (!check || !anchored)//|| !anchored
-		icon_state = "railing0"
+	if (!check || !anchored)//|| !anchoredp
+		icon_state = icon_modifier + "railing0"
 	else
-		icon_state = "railing1"
+		icon_state = icon_modifier + "railing1"
 		//����� �������
 		if (check & 32)
 			overlays += image ('icons/obj/railing.dmi', src, "corneroverlay")
