@@ -60,17 +60,31 @@
 		return 0
 	return 1
 
+//Reveals self as a heretic
+/mob/living/proc/reveal_self()
+	var/msg = ""
+	if (religion_is_legal())  //Non-heretics will still deny
+		msg = "I'm not one I swear it!"
+	else 
+		msg = "Yes!  I'm a heretic!"
+	agony_scream()
+	say(NewStutter(msg))
+
 //Reveals a random heretic
-/mob/living/proc/reveal_heretics(mob/living/M)
+/mob/living/proc/reveal_heretics()
+	to_world("In reveal heretics")
+	var/msg = " is one of them!"
 	var/name = ""
-	if (religion_is_legal())  //Non-heretics will say a random name
-		name = pick(GLOB.human_mob_list)
+	if (religion_is_legal())  //Non-heretics will say nothing
+		msg = "I dont know!"
+		say(NewStutter(msg))
+		return
 	else
 		name = pick(GLOB.all_religions[ILLEGAL_RELIGION].followers)  //Wow the datums saves us an entire for loop
-	emote("scream",1)
-	agony_scream()
-	say(NewStutter("[name] is one of them!"))
-
+		if(name)
+			say(NewStutter("[name] is one of them!"))
+		else 
+			say("I'm the only one!")
 
 //PRAYER
 var/accepted_prayer //The prayer that all those who are not heretics will have.
@@ -82,6 +96,38 @@ proc/generate_random_prayer()//This generates a new one.
 	prayer += "Amen."
 	return prayer
 
+/mob/living/proc/accuse_heretic()
+	set category = "Deo Machina"
+	set name = "Accuse Heretic"
+	var/list/victims = list()
+	for(var/mob/living/carbon/human/C in oview(1))
+		victims += C
+	var/mob/living/carbon/human/T = input(src, "Who will we accuse?") as null|anything in victims
+	if(!T)
+		return
+	say("[T] are you a heretic!?")
+	var/organ_pain = 0
+	for(var/obj/item/organ/external/org in T.organs)
+		organ_pain += org.get_pain() + org.get_damage()
+	if(prob(organ_pain - T.stats["con"]))  //Higher con helps your resist torture
+		T.reveal_self()
+
+/mob/living/proc/question_heretic()
+	set category = "Deo Machina"
+	set name = "Question Heretic"
+	var/list/victims = list()
+	for(var/mob/living/carbon/human/C in oview(1))
+		victims += C
+	var/mob/living/carbon/human/T = input(src, "Who will we question?") as null|anything in victims
+	if(!T)
+		return
+	say("[T], who is working in your cult!")
+	var/organ_pain = 0
+	for(var/obj/item/organ/external/org in T.organs)
+		organ_pain += org.get_pain() + org.get_damage()
+	if(prob(organ_pain - T.stats["con"]))  //Higher con helps your resist torture
+		T.reveal_heretics()
+	
 /mob/living/proc/recite_prayer()
 	set category = "Deo Machina"
 	set name = "Recite the prayer"
@@ -90,7 +136,6 @@ proc/generate_random_prayer()//This generates a new one.
 /obj/item/weapon/pen/crayon/chalk
 	name = "consecrated chalk"
 	icon = 'icons/effects/religion.dmi'
-	//TODO: Make this arbitar only
 	desc = "Heretical chalk used by Old God worshipers."
 	icon_state = "chalk"
 	colour = "#FFFFF"

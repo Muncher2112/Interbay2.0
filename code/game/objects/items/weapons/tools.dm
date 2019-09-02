@@ -150,7 +150,7 @@
 		item_state = "cutters_yellow"
 	. = ..()
 
-/obj/item/weapon/wirecutters/attack(mob/living/carbon/C as mob, mob/user as mob)
+/obj/item/weapon/wirecutters/attack(mob/living/carbon/C as mob, mob/living/carbon/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/weapon/handcuffs/cable)))
 		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\
 		"You cut \the [C]'s restraints with \the [src]!",\
@@ -160,7 +160,60 @@
 			C.buckled.unbuckle_mob()
 		C.update_inv_handcuffed()
 		return
-	else
+	else if(ishuman(C) && user.zone_sel.selecting == "mouth")
+		//Tearing out teeth and tounges
+		var/mob/living/carbon/human/H = C
+		var/obj/item/organ/external/head/O = locate() in H.organs
+		/*  Tounges are out for now
+		for (var/obj/item/weapon/grab/G in C.grabbed_by)
+			if(G.loc == user && G.state >= 2)
+				if(!O)
+					return
+				if(!user.doing_something)
+					user.doing_something = 1
+					H.visible_message("<span class='danger'>[user] tries to cut out [H]'s tongue with [src]!</span>",
+								"<span class='danger'>[user] tries to cut out your tongue with [src]!</span>")
+					if(do_after(user,100))//Losing your tongue is a pretty big deal, it should take a while.
+						var/obj/item/organ/internal/tongue/T = H.internal_organs_by_name[BP_TONGUE]
+						T.removed(H)
+						H.visible_message("<span class='danger'>[user] cuts out [H]'s tongue with [src]!</span>",
+								"<span class='danger'>[user] cuts out your tongue with [src]!</span>")
+						return
+
+		*/
+		if(!O || !O.get_teeth())
+			to_chat(user, "<span class='notice'>[H] doesn't have any teeth left!</span>")
+			return
+		if(!user.doing_something)
+			user.doing_something = 1
+			H.visible_message("<span class='danger'>[user] tries to tear off [H]'s tooth with [src]!</span>",
+								"<span class='danger'>[user] tries to tear off your tooth with [src]!</span>")
+			if(do_after(user, 50))
+				if(!O || !O.get_teeth()) return
+				var/obj/item/stack/teeth/E = pick(O.teeth_list)
+				if(!E || E.zero_amount()) return
+				var/obj/item/stack/teeth/T = new E.type(H.loc, 1)
+				E.use(1)
+				T.add_blood(H)
+				E.zero_amount() //Try to delete the teeth
+				H.visible_message("<span class='danger'>[user] tears off [H]'s tooth with [src]!</span>",
+								"<span class='danger'>[user] tears off your tooth with [src]!</span>")
+
+				H.apply_damage(rand(1, 3), BRUTE, O)
+				H.organs_by_name["head"].pain += 30
+				H.custom_pain("[pick("OH GOD YOUR MOUTH HURTS SO BAD!", "OH GOD WHY!", "OH GOD YOUR MOUTH!")]", 100, affecting = O)
+
+				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, -1) //And out it goes.
+
+				user.doing_something = 0
+			else
+				to_chat(user, "<span class='notice'>Your attempt to pull out a tooth fails...</span>")
+				user.doing_something = 0
+				return
+		else
+			to_chat(user, "<span class='notice'>You are already trying to pull out a tooth!</span>")
+		return
+	else 
 		..()
 
 /*

@@ -963,6 +963,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			"<span class='danger'>You hear a sickening crack.</span>")
 		jostle_bone()
 		if(can_feel_pain())
+			pain += 150
 			if(prob(50))
 				owner.agony_scream()
 

@@ -278,6 +278,7 @@ default behaviour is:
 
 /mob/living/proc/adjustHalLoss(var/amount)
 	adjustBruteLoss(amount * 0.5)
+		
 
 /mob/living/proc/setHalLoss(var/amount)
 	adjustBruteLoss((amount * 0.5)-getBruteLoss())
