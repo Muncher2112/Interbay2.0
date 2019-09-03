@@ -100,7 +100,7 @@
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
 	
 		if (!religion_is_legal())
-			stat("Old God favor:",GLOB.all_religions[religion].favor)
+			stat("God's favor:",GLOB.all_religions[religion].favor)
 
 
 /mob/living/carbon/human/ex_act(severity)

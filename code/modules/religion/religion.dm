@@ -46,6 +46,10 @@
 	agony_scream()
 	say(NewStutter(msg))
 
+/datum/religion/proc/add_spells(mob/target)
+	to_world("No spells to add!")
+	return
+
 /* LEGAL RELIIGON PROCS */
 //PRAYER
 var/accepted_prayer //The prayer that all those who are not heretics will have.
@@ -151,15 +155,26 @@ proc/generate_random_prayer()//This generates a new one.
 	if(!istype(get_active_hand(), user_religion.holy_item) && !istype(get_inactive_hand(), user_religion.holy_item))
 		to_chat(src, "<span class='warning'>You can't praise god without your [user_religion.holy_item]!</span>")
 		return
-	var/timer = 20
+	var/timer = 30
 	var/self = "You raise your [user_religion.holy_item] and chant praise to your god."
 	visible_message("<span class='warning'>\The [src] begins speaking praise for thier god.</span>", "<span class='notice'>[self]</span>", "You hear scratching.")
 	var/praise_sound = "sound/effects/badmood[pick(1,4)].ogg"
-	playsound(T, praise_sound,20,1)
-	if(do_after(src, timer))
-		//These variables used to just be functions that returned a hard coded value.  So don't blame me, this is actually faster.
-		user_religion.favor += 10
-		return 1
+	if(!doing_something)
+		doing_something = 1
+		if(do_after(src, timer))
+			//These variables used to just be functions that returned a hard coded value.  So don't blame me, this is actually faster.
+			user_religion.favor += 10
+			playsound(T, praise_sound,50,1)
+			doing_something = 0
+			return 1
+		else 
+			to_chat(src, "<span class='notice'>Your prayer is interupted</span>")
+			doing_something = 0
+			return
+		return 0
+	else 
+		to_chat(src, "<span class='notice'>You are already doing something.</span>")
+		return 0
 	return 0
 
 
