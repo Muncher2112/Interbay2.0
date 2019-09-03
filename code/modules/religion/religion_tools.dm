@@ -136,28 +136,16 @@
 
 /obj/machinery/old_god_shrine
 	name = "Old God Shrine"
-	icon = 'icons/effects/religion.dmi'
+	icon = 'icons/obj/old_god.dmi'
 	icon_state = "old_god_shrine"
 	density = 0
 	anchored = 1
 	use_power = 0
-	var/list/candles = list()
 
 /obj/machinery/old_god_shrine/New(l,d=0)
 	..(l)
-	for(var/obj/item/weapon/flame/candle/C in range(1, src))
-		candles += C
 	if(near_camera())
 		SSverina.visible_shrines += src
-
-/obj/machinery/old_god_shrine/Process()
-	if (candles.len == 0)
-		Destroy()
-	for(var/obj/item/weapon/flame/candle/C in candles) //Check for candles around
-		if(C.lit)
-			GLOB.all_religions[ILLEGAL_RELIGION].favor += 0.5
-		else
-			candles -= C
 
 /obj/machinery/old_god_shrine/Destroy()
 	SSverina.visible_shrines -= src

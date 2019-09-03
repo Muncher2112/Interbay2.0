@@ -522,11 +522,14 @@ var/global/datum/controller/occupations/job_master
 					H.verbs += /mob/living/proc/accuse_heretic
 					H.verbs += /mob/living/proc/question_heretic
 			else
+				//Pick an old god other then the template
+				H.religion = pick(GLOB.all_religions - ILLEGAL_RELIGION - LEGAL_RELIGION)
 				to_chat(H, "You are a worshipper of the <b><font color='red'>[H.religion]</font>. It is not a legal religion of this land. Do not be caught by the <b>Inquisition</b>. Check your notes for who your brothers and sisters are.")
-				H.verbs += /mob/proc/blessing_rune
-				H.verbs += /mob/proc/claiming_rune
-				H.verbs += /mob/proc/healing_rune
-				H.equip_to_storage(new /obj/item/weapon/pen/crayon/chalk)
+				H.verbs += /mob/living/proc/make_shrine
+				H.verbs += /mob/living/proc/praise_god
+				var/obj/item/I = GLOB.all_religions[H.religion].holy_item
+				I = new I
+				H.equip_to_storage(I)
 				GLOB.all_religions[ILLEGAL_RELIGION].followers += H.name
 				if(prob(5))
 					H.mind.prayer = accepted_prayer
