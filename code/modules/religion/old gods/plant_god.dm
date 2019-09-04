@@ -27,7 +27,6 @@
 	icon_state = "plant_god"
 
 /obj/machinery/old_god_shrine/plant_god_shrine/New(l,d=0)
-	to_world("Does nothing right now")
 
 /obj/machinery/old_god_shrine/plant_god_shrine/Process()
 	STOP_PROCESSING(SSmachines, src)  //This doesn't need any processing right now
