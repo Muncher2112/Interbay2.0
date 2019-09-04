@@ -50,6 +50,7 @@
 	to_chat(user, "<span class='notice'>The shard does nothing</span>")
 	return FALSE
 
+/*
 /datum/religion/lightbringer
 	name = "Zin the lightbringer"
 	holy_item = new /obj/item/device/glow_stone()
@@ -58,7 +59,7 @@
 
 /datum/religion/lightbringer/add_spells(mob/target)
 	target.verbs += /mob/living/proc/defending_light
-
+*/
 /obj/machinery/old_god_shrine/lightbringer_shrine
 	name = "Lightbringer shrine"
 	icon_state = "lightbringer"

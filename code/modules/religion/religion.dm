@@ -156,10 +156,10 @@ proc/generate_random_prayer()//This generates a new one.
 		to_chat(src, "<span class='warning'>You can't praise god without your [user_religion.holy_item]!</span>")
 		return
 	var/timer = 30
-	var/self = "You raise your [user_religion.holy_item] and chant praise to your god."
-	visible_message("<span class='warning'>\The [src] begins speaking praise for thier god.</span>", "<span class='notice'>[self]</span>", "You hear scratching.")
 	var/praise_sound = "sound/effects/badmood[pick(1,4)].ogg"
 	if(!doing_something)
+		var/self = "You raise your [user_religion.holy_item] and chant praise to your god."
+		visible_message("<span class='warning'>\The [src] begins speaking praise for thier god.</span>", "<span class='notice'>[self]</span>", "You hear scratching.")
 		doing_something = 1
 		if(do_after(src, timer))
 			//These variables used to just be functions that returned a hard coded value.  So don't blame me, this is actually faster.
