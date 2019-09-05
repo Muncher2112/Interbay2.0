@@ -949,7 +949,7 @@
 
 		for(var/entry in current_list[1])
 			var/obj/item/seeds/S = new entry(src)
-			var/name = S.name
+			var/name = S.seed_type
 			var/datum/stored_items/vending_products/product = new/datum/stored_items/vending_products(src, entry, name)
 
 			product.price = (entry in src.prices) ? src.prices[entry] : 0
