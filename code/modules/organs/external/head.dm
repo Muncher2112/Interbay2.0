@@ -22,7 +22,7 @@
 	var/eye_icon = "eyes_s"
 	var/eye_icon_location = 'icons/mob/human_face.dmi'
 	var/has_lips
-	var/list/teeth_list() = list()
+	var/list/teeth_list = list()
 	var/max_teeth = 32
 
 /obj/item/organ/external/head/set_dna(var/datum/dna/new_dna)

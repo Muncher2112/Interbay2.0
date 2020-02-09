@@ -136,7 +136,7 @@
 
 /obj/machinery/old_god_shrine
 	name = "Old God Shrine"
-	icon = 'icons/obj/old_god.dmi'
+	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "old_god_shrine"
 	density = 0
 	anchored = 1
