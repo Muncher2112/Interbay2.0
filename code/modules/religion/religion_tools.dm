@@ -69,7 +69,7 @@
 /obj/machinery/arbiter_computer
 	var/mob/living/suspect
 	name = "Heretic scanner machine"
-	icon = 'icons/obj/stationobjs.dmi'
+	icon = 'icons/obj/old_gods.dmi'
 	icon_state = "arbiter_computer"
 	density = 1
 	anchored = 1

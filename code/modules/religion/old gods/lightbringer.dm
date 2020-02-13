@@ -1,7 +1,7 @@
 /obj/item/device/glow_stone
 	name = "Glow stone"
 	desc = "A strange glowing rock used by followers of Zin, the lightbringer"
-	icon = 'icons/obj/stationobjs.dmi'
+	icon = 'icons/obj/old_gods.dmi'
 	icon_state = "light_shard"
 	item_state = "flashlight"
 	w_class = ITEM_SIZE_SMALL
