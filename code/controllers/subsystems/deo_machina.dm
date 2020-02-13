@@ -4,7 +4,7 @@ SUBSYSTEM_DEF(verina)
 	name = "Verina"
 	wait = 300  //30 seconds
 	priority = 20
-	flags = SS_BACKGROUND
+	flags = SS_NO_FIRE //TURN THIS ON IF YOU WANT TO MAKE THIS WORK
 	var/request_type = /obj/item/stack/material/phoron
 	var/obj/request_item = null
 	var/request_amount = -1
