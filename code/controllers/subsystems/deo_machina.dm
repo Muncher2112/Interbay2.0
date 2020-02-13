@@ -15,7 +15,7 @@ SUBSYSTEM_DEF(verina)
 	var/list/rewards = list()
 
 /datum/controller/subsystem/verina/New()
-	NEW_SS_GLOBAL(SSverina)
+	//NEW_SS_GLOBAL(SSverina)
 	rewards = typesof(/datum/reward) - /datum/reward
 
 /datum/controller/subsystem/verina/fire()
@@ -47,7 +47,7 @@ SUBSYSTEM_DEF(verina)
 
 /datum/controller/subsystem/verina/proc/get_shrine_locations()
 	var/shrine_locations = list()
-	for(var/obj/machinery/old_god_shrine/S in visible_shrines)
+	for(var/obj/old_god_shrine/S in visible_shrines)
 		shrine_locations += get_area(S)
 	return shrine_locations
 

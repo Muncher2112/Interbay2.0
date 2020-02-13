@@ -192,7 +192,7 @@ proc/generate_random_prayer()//This generates a new one.
 	visible_message("<span class='warning'>\The [src] quickly draws on the floor and begins to whisper quietly to themselves.</span>", "<span class='notice'>[self]</span>", "You hear scratching.")
 	if(do_after(src, timer))
 		//These variables used to just be functions that returned a hard coded value.  So don't blame me, this is actually faster.
-		var/obj/machinery/old_god_shrine/S = new user_religion.shrine(T)
+		var/obj/old_god_shrine/S = new user_religion.shrine(T)
 		var/area/A = get_area(S)
 		log_and_message_admins("created \an [S.name] rune at \the [A.name] - [loc.x]-[loc.y]-[loc.z].")
 		S.add_fingerprint(src)

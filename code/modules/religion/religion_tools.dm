@@ -69,7 +69,7 @@
 /obj/machinery/arbiter_computer
 	var/mob/living/suspect
 	name = "Heretic scanner machine"
-	icon = 'icons/obj/old_gods.dmi'
+	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "arbiter_computer"
 	density = 1
 	anchored = 1
@@ -91,9 +91,6 @@
 /obj/machinery/arbiter_computer/attack_hand(mob/user as mob)
 	..()
 	visible_message("<span class='notice'>The [src] beeps: \"Scan subject with arbiter scanner, and then use the scanner on this machine for results.\"</span>")
-	//visible_message("<span class='notice'>The [src] beeps: \"Verina's current request is [SSverina.last_fire]\"</span>")
-	var/list/visible_locations = SSverina.get_shrine_locations()
-	visible_message("<span class='notice'>The [src] beeps: \"I have detected shrines in the following locations: [visible_locations.Join(", ")]\"</span>")
 
 
 /obj/machinery/arbiter_computer/emag_act(var/remaining_charges, var/mob/user)
@@ -104,57 +101,3 @@
 		s.start()
 		visible_message("<span class='warning'>BZZzZZzZZzZT</span>")
 		return
-/obj/machinery/offering_pad
-	name = "Deo Machina offering pad"
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "broadcaster_off"
-	anchored = 1.0
-
-/obj/machinery/offering_pad/hear_talk(mob/living/M as mob, msg, var/verb="says", datum/language/speaking=null)
-	if (msg == accepted_prayer)
-		var/list/mobs = list()
-		var/list/objs = list()
-		get_mobs_and_objs_in_view_fast(loc,0,mobs,objs)
-		for (var/object in objs)
-			if (istype(object,SSverina.request_type))
-				if (istype(object,/obj/item/stack))
-					var/obj/item/stack/S = object
-					if (S.amount >= SSverina.request_amount)
-						S.amount -= SSverina.request_amount
-						SSverina.request_amount = 0
-					else
-						SSverina.request_amount -= S.amount
-						qdel(S)
-				else
-					SSverina.request_amount -= 1
-					qdel(object)
-				playsound(get_turf(src), 'sound/misc/interference.ogg', 25, 1, extrarange = 3, falloff = 5)
-				qdel(object)
-				flick("broadcaster_send", src)
-
-// ILLEGAL RELIGION
-
-/obj/machinery/old_god_shrine
-	name = "Old God Shrine"
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "old_god_shrine"
-	density = 0
-	anchored = 1
-	use_power = 0
-
-/obj/machinery/old_god_shrine/New(l,d=0)
-	..(l)
-	if(near_camera())
-		SSverina.visible_shrines += src
-
-/obj/machinery/old_god_shrine/Destroy()
-	SSverina.visible_shrines -= src
-	..()
-
-/obj/machinery/old_god_shrine/proc/near_camera()
-	if (!isturf(loc))
-		return 0
-	else if(!cameranet.is_visible(src))
-		return 0
-	GLOB.global_headset.autosay("Heretical Shrine detected in [get_area(src)]","Verina","Inquisition")
-	return 1
