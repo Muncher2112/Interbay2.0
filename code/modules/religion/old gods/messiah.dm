@@ -52,9 +52,8 @@
 /obj/item/crucifix/attack_self(var/mob/living/user)
 	if(empowered)
 		var/self = "You raise your Crucifix and chant as it begins to glow!."
-		src.visible_message("<span class='warning'>\The [src] begins chanting as a briliant light begins to shine!</span>", "<span class='notice'>[self]</span>", "You hear a low hum.")
-		var/turf/T = get_turf(src)
-		playsound(T, "sound/weapons/flash.ogg",100,1)
+		src.visible_message("<span class='warning'>\The [src] begins chanting as a briliant light begins to shine!</span>", "<span class='notice'>[self]</span>")
+		playsound(src.loc, "sound/weapons/flash.ogg",100,1)
 		for(var/mob/living/carbon/M in oview(5))
 			if(M.religion != MESSIAH)
 				playsound(src.loc, 'sound/effects/bang.ogg', 50, 1, 30)

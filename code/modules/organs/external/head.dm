@@ -1,4 +1,3 @@
-
 /obj/item/organ/external/head
 	organ_tag = BP_HEAD
 	icon_name = "head"
@@ -24,6 +23,7 @@
 	var/has_lips
 	var/list/teeth_list = list()
 	var/max_teeth = 32
+	var/tongue = null
 
 /obj/item/organ/external/head/set_dna(var/datum/dna/new_dna)
 	..()
@@ -178,3 +178,18 @@
 		qdel(src)
 		return 1
 	return 0
+
+/obj/item/tongue
+	..()
+	name = "Tongue"
+	w_class = 1
+	force = 0
+	throwforce = 0
+	gender = PLURAL
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "tongue"
+	desc = "Cat got your tongue.  Or the arbiter?"
+	icon = 'icons/obj/surgery.dmi'
+	drop_sound = null
+	var/removed = FALSE
+	

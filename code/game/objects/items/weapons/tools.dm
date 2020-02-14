@@ -163,10 +163,9 @@
 	else if(ishuman(C) && user.zone_sel.selecting == "mouth")
 		//Tearing out teeth and tounges
 		var/mob/living/carbon/human/H = C
-		var/obj/item/organ/external/head/O = locate() in H.organs
-		/*  Tounges are out for now
-		for (var/obj/item/weapon/grab/G in C.grabbed_by)
-			if(G.loc == user && G.state >= 2)
+		var/obj/item/organ/external/head/O = H.get_organ(BP_HEAD)
+		for(var/obj/item/grab/G in H.grabbed_by)
+			if(G.loc == user && G.type_name == GRAB_NORMAL )
 				if(!O)
 					return
 				if(!user.doing_something)
@@ -174,13 +173,20 @@
 					H.visible_message("<span class='danger'>[user] tries to cut out [H]'s tongue with [src]!</span>",
 								"<span class='danger'>[user] tries to cut out your tongue with [src]!</span>")
 					if(do_after(user,100))//Losing your tongue is a pretty big deal, it should take a while.
-						var/obj/item/organ/internal/tongue/T = H.internal_organs_by_name[BP_TONGUE]
-						T.removed(H)
+						var/obj/item/tongue/T = O.tongue
+						T.removed = TRUE
 						H.visible_message("<span class='danger'>[user] cuts out [H]'s tongue with [src]!</span>",
 								"<span class='danger'>[user] cuts out your tongue with [src]!</span>")
+						new T.type(H.loc, 1)
+						H.apply_damage(rand(1, 3), BRUTE, O)
+						H.organs_by_name["head"].pain += 30
+						H.custom_pain("[pick("OH GOD YOUR MOUTH HURTS SO BAD!", "OH GOD WHY!", "OH GOD YOUR MOUTH!")]", 100, affecting = O)
+
+						playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, -1) //And out it goes.
+
+						user.doing_something = 0
 						return
 
-		*/
 		if(!O || !O.get_teeth())
 			to_chat(user, "<span class='notice'>[H] doesn't have any teeth left!</span>")
 			return

@@ -42,6 +42,7 @@
 	..()
 
 	add_teeth()
+	add_tongue()
 	bladder = rand(0,100)
 	bowels = rand(0, 100)
 
@@ -882,6 +883,7 @@
 	species.create_organs(src) // Reset our organs/limbs.
 	restore_all_organs()       // Reapply robotics/amputated status from preferences.
 	add_teeth()
+	add_tongue()
 
 	if(!client || !key) //Don't boot out anyone already in the mob.
 		for (var/obj/item/organ/internal/brain/H in world)
@@ -900,13 +902,21 @@
 
 	..()
 /mob/living/carbon/human/proc/add_teeth()
-	var/obj/item/organ/external/head/U = locate() in organs
+	var/obj/item/organ/external/head/U = get_organ(BP_HEAD)
 	if(istype(U))
 		U.teeth_list.Cut() //Clear out their mouth of teeth
 		var/obj/item/stack/teeth/T = new species.teeth_type(U)
 		U.max_teeth = T.max_amount //Set max teeth for the head based on teeth spawntype
 		T.amount = T.max_amount
 		U.teeth_list += T
+
+/mob/living/carbon/human/proc/add_tongue()
+	var/obj/item/organ/external/head/U = get_organ(BP_HEAD)
+	if(istype(U))
+		U.tongue = null //Clear out their mouth of tongues
+		var/obj/item/tongue/T = new /obj/item/tongue
+		T.removed = FALSE
+		U.tongue = new /obj/item/tongue
 
 /mob/living/carbon/human/proc/is_lung_ruptured()
 	var/obj/item/organ/internal/lungs/L = internal_organs_by_name[BP_LUNGS]
@@ -1141,6 +1151,7 @@
 			unEquip(C)
 
 	add_teeth()
+	add_tongue()
 
 	return 1
 
